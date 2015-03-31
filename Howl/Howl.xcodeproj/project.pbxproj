@@ -16,6 +16,41 @@
 		05C225621ACA44FC00ACDF1A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05C225601ACA44FC00ACDF1A /* LaunchScreen.xib */; };
 		05C2256E1ACA44FC00ACDF1A /* HowlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C2256D1ACA44FC00ACDF1A /* HowlTests.m */; };
 		05C2257A1ACA46A300ACDF1A /* Function.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C225791ACA46A300ACDF1A /* Function.m */; };
+		05C2259F1ACA48A600ACDF1A /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C2257C1ACA48A600ACDF1A /* AddressBook.framework */; };
+		05C225A01ACA48A600ACDF1A /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C2257D1ACA48A600ACDF1A /* AudioUnit.framework */; };
+		05C225A11ACA48A600ACDF1A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C2257E1ACA48A600ACDF1A /* AVFoundation.framework */; };
+		05C225A21ACA48A600ACDF1A /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C2257F1ACA48A600ACDF1A /* AVKit.framework */; };
+		05C225A31ACA48A600ACDF1A /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C225801ACA48A600ACDF1A /* CoreAudio.framework */; };
+		05C225A41ACA48A600ACDF1A /* CoreAudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C225811ACA48A600ACDF1A /* CoreAudioKit.framework */; };
+		05C225A51ACA48A600ACDF1A /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C225821ACA48A600ACDF1A /* CoreBluetooth.framework */; };
+		05C225A61ACA48A600ACDF1A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C225831ACA48A600ACDF1A /* CoreData.framework */; };
+		05C225A71ACA48A600ACDF1A /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C225841ACA48A600ACDF1A /* CoreFoundation.framework */; };
+		05C225A81ACA48A600ACDF1A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C225851ACA48A600ACDF1A /* CoreLocation.framework */; };
+		05C225A91ACA48A600ACDF1A /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C225861ACA48A600ACDF1A /* CoreMedia.framework */; };
+		05C225AA1ACA48A600ACDF1A /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C225871ACA48A600ACDF1A /* CoreTelephony.framework */; };
+		05C225AB1ACA48A600ACDF1A /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C225881ACA48A600ACDF1A /* CoreText.framework */; };
+		05C225AC1ACA48A600ACDF1A /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C225891ACA48A600ACDF1A /* EventKit.framework */; };
+		05C225AD1ACA48A600ACDF1A /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C2258A1ACA48A600ACDF1A /* EventKitUI.framework */; };
+		05C225AE1ACA48A600ACDF1A /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C2258B1ACA48A600ACDF1A /* ExternalAccessory.framework */; };
+		05C225AF1ACA48A600ACDF1A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C2258C1ACA48A600ACDF1A /* Foundation.framework */; };
+		05C225B01ACA48A600ACDF1A /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C2258D1ACA48A600ACDF1A /* ImageIO.framework */; };
+		05C225B11ACA48A600ACDF1A /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C2258E1ACA48A600ACDF1A /* JavaScriptCore.framework */; };
+		05C225B21ACA48A600ACDF1A /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C2258F1ACA48A600ACDF1A /* LocalAuthentication.framework */; };
+		05C225B31ACA48A600ACDF1A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C225901ACA48A600ACDF1A /* MapKit.framework */; };
+		05C225B41ACA48A600ACDF1A /* MediaAccessibility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C225911ACA48A600ACDF1A /* MediaAccessibility.framework */; };
+		05C225B51ACA48A600ACDF1A /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C225921ACA48A600ACDF1A /* MessageUI.framework */; };
+		05C225B61ACA48A600ACDF1A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C225931ACA48A600ACDF1A /* MobileCoreServices.framework */; };
+		05C225B71ACA48A600ACDF1A /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C225941ACA48A600ACDF1A /* MultipeerConnectivity.framework */; };
+		05C225B81ACA48A600ACDF1A /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C225951ACA48A600ACDF1A /* NetworkExtension.framework */; };
+		05C225B91ACA48A600ACDF1A /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C225961ACA48A600ACDF1A /* NotificationCenter.framework */; };
+		05C225BA1ACA48A600ACDF1A /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C225971ACA48A600ACDF1A /* Photos.framework */; };
+		05C225BB1ACA48A600ACDF1A /* PhotosUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C225981ACA48A600ACDF1A /* PhotosUI.framework */; };
+		05C225BC1ACA48A600ACDF1A /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C225991ACA48A600ACDF1A /* SafariServices.framework */; };
+		05C225BD1ACA48A600ACDF1A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C2259A1ACA48A600ACDF1A /* Security.framework */; };
+		05C225BE1ACA48A600ACDF1A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C2259B1ACA48A600ACDF1A /* SystemConfiguration.framework */; };
+		05C225BF1ACA48A600ACDF1A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C2259C1ACA48A600ACDF1A /* UIKit.framework */; };
+		05C225C01ACA48A600ACDF1A /* WatchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C2259D1ACA48A600ACDF1A /* WatchKit.framework */; };
+		05C225C11ACA48A600ACDF1A /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C2259E1ACA48A600ACDF1A /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +80,41 @@
 		05C2256D1ACA44FC00ACDF1A /* HowlTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HowlTests.m; sourceTree = "<group>"; };
 		05C225781ACA46A300ACDF1A /* Function.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Function.h; sourceTree = "<group>"; };
 		05C225791ACA46A300ACDF1A /* Function.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Function.m; sourceTree = "<group>"; };
+		05C2257C1ACA48A600ACDF1A /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		05C2257D1ACA48A600ACDF1A /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		05C2257E1ACA48A600ACDF1A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		05C2257F1ACA48A600ACDF1A /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		05C225801ACA48A600ACDF1A /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		05C225811ACA48A600ACDF1A /* CoreAudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudioKit.framework; path = System/Library/Frameworks/CoreAudioKit.framework; sourceTree = SDKROOT; };
+		05C225821ACA48A600ACDF1A /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		05C225831ACA48A600ACDF1A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		05C225841ACA48A600ACDF1A /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		05C225851ACA48A600ACDF1A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		05C225861ACA48A600ACDF1A /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		05C225871ACA48A600ACDF1A /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		05C225881ACA48A600ACDF1A /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		05C225891ACA48A600ACDF1A /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		05C2258A1ACA48A600ACDF1A /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		05C2258B1ACA48A600ACDF1A /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		05C2258C1ACA48A600ACDF1A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		05C2258D1ACA48A600ACDF1A /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		05C2258E1ACA48A600ACDF1A /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		05C2258F1ACA48A600ACDF1A /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		05C225901ACA48A600ACDF1A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		05C225911ACA48A600ACDF1A /* MediaAccessibility.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaAccessibility.framework; path = System/Library/Frameworks/MediaAccessibility.framework; sourceTree = SDKROOT; };
+		05C225921ACA48A600ACDF1A /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		05C225931ACA48A600ACDF1A /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		05C225941ACA48A600ACDF1A /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
+		05C225951ACA48A600ACDF1A /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		05C225961ACA48A600ACDF1A /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		05C225971ACA48A600ACDF1A /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		05C225981ACA48A600ACDF1A /* PhotosUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhotosUI.framework; path = System/Library/Frameworks/PhotosUI.framework; sourceTree = SDKROOT; };
+		05C225991ACA48A600ACDF1A /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		05C2259A1ACA48A600ACDF1A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		05C2259B1ACA48A600ACDF1A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		05C2259C1ACA48A600ACDF1A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		05C2259D1ACA48A600ACDF1A /* WatchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchKit.framework; path = System/Library/Frameworks/WatchKit.framework; sourceTree = SDKROOT; };
+		05C2259E1ACA48A600ACDF1A /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +122,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05C2259F1ACA48A600ACDF1A /* AddressBook.framework in Frameworks */,
+				05C225A01ACA48A600ACDF1A /* AudioUnit.framework in Frameworks */,
+				05C225A11ACA48A600ACDF1A /* AVFoundation.framework in Frameworks */,
+				05C225A21ACA48A600ACDF1A /* AVKit.framework in Frameworks */,
+				05C225A31ACA48A600ACDF1A /* CoreAudio.framework in Frameworks */,
+				05C225A41ACA48A600ACDF1A /* CoreAudioKit.framework in Frameworks */,
+				05C225A51ACA48A600ACDF1A /* CoreBluetooth.framework in Frameworks */,
+				05C225A61ACA48A600ACDF1A /* CoreData.framework in Frameworks */,
+				05C225A71ACA48A600ACDF1A /* CoreFoundation.framework in Frameworks */,
+				05C225A81ACA48A600ACDF1A /* CoreLocation.framework in Frameworks */,
+				05C225A91ACA48A600ACDF1A /* CoreMedia.framework in Frameworks */,
+				05C225AA1ACA48A600ACDF1A /* CoreTelephony.framework in Frameworks */,
+				05C225AB1ACA48A600ACDF1A /* CoreText.framework in Frameworks */,
+				05C225AC1ACA48A600ACDF1A /* EventKit.framework in Frameworks */,
+				05C225AD1ACA48A600ACDF1A /* EventKitUI.framework in Frameworks */,
+				05C225AE1ACA48A600ACDF1A /* ExternalAccessory.framework in Frameworks */,
+				05C225AF1ACA48A600ACDF1A /* Foundation.framework in Frameworks */,
+				05C225B01ACA48A600ACDF1A /* ImageIO.framework in Frameworks */,
+				05C225B11ACA48A600ACDF1A /* JavaScriptCore.framework in Frameworks */,
+				05C225B21ACA48A600ACDF1A /* LocalAuthentication.framework in Frameworks */,
+				05C225B31ACA48A600ACDF1A /* MapKit.framework in Frameworks */,
+				05C225B41ACA48A600ACDF1A /* MediaAccessibility.framework in Frameworks */,
+				05C225B51ACA48A600ACDF1A /* MessageUI.framework in Frameworks */,
+				05C225B61ACA48A600ACDF1A /* MobileCoreServices.framework in Frameworks */,
+				05C225B71ACA48A600ACDF1A /* MultipeerConnectivity.framework in Frameworks */,
+				05C225B81ACA48A600ACDF1A /* NetworkExtension.framework in Frameworks */,
+				05C225B91ACA48A600ACDF1A /* NotificationCenter.framework in Frameworks */,
+				05C225BA1ACA48A600ACDF1A /* Photos.framework in Frameworks */,
+				05C225BB1ACA48A600ACDF1A /* PhotosUI.framework in Frameworks */,
+				05C225BC1ACA48A600ACDF1A /* SafariServices.framework in Frameworks */,
+				05C225BD1ACA48A600ACDF1A /* Security.framework in Frameworks */,
+				05C225BE1ACA48A600ACDF1A /* SystemConfiguration.framework in Frameworks */,
+				05C225BF1ACA48A600ACDF1A /* UIKit.framework in Frameworks */,
+				05C225C01ACA48A600ACDF1A /* WatchKit.framework in Frameworks */,
+				05C225C11ACA48A600ACDF1A /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +173,41 @@
 		05C225421ACA44FC00ACDF1A = {
 			isa = PBXGroup;
 			children = (
+				05C2257C1ACA48A600ACDF1A /* AddressBook.framework */,
+				05C2257D1ACA48A600ACDF1A /* AudioUnit.framework */,
+				05C2257E1ACA48A600ACDF1A /* AVFoundation.framework */,
+				05C2257F1ACA48A600ACDF1A /* AVKit.framework */,
+				05C225801ACA48A600ACDF1A /* CoreAudio.framework */,
+				05C225811ACA48A600ACDF1A /* CoreAudioKit.framework */,
+				05C225821ACA48A600ACDF1A /* CoreBluetooth.framework */,
+				05C225831ACA48A600ACDF1A /* CoreData.framework */,
+				05C225841ACA48A600ACDF1A /* CoreFoundation.framework */,
+				05C225851ACA48A600ACDF1A /* CoreLocation.framework */,
+				05C225861ACA48A600ACDF1A /* CoreMedia.framework */,
+				05C225871ACA48A600ACDF1A /* CoreTelephony.framework */,
+				05C225881ACA48A600ACDF1A /* CoreText.framework */,
+				05C225891ACA48A600ACDF1A /* EventKit.framework */,
+				05C2258A1ACA48A600ACDF1A /* EventKitUI.framework */,
+				05C2258B1ACA48A600ACDF1A /* ExternalAccessory.framework */,
+				05C2258C1ACA48A600ACDF1A /* Foundation.framework */,
+				05C2258D1ACA48A600ACDF1A /* ImageIO.framework */,
+				05C2258E1ACA48A600ACDF1A /* JavaScriptCore.framework */,
+				05C2258F1ACA48A600ACDF1A /* LocalAuthentication.framework */,
+				05C225901ACA48A600ACDF1A /* MapKit.framework */,
+				05C225911ACA48A600ACDF1A /* MediaAccessibility.framework */,
+				05C225921ACA48A600ACDF1A /* MessageUI.framework */,
+				05C225931ACA48A600ACDF1A /* MobileCoreServices.framework */,
+				05C225941ACA48A600ACDF1A /* MultipeerConnectivity.framework */,
+				05C225951ACA48A600ACDF1A /* NetworkExtension.framework */,
+				05C225961ACA48A600ACDF1A /* NotificationCenter.framework */,
+				05C225971ACA48A600ACDF1A /* Photos.framework */,
+				05C225981ACA48A600ACDF1A /* PhotosUI.framework */,
+				05C225991ACA48A600ACDF1A /* SafariServices.framework */,
+				05C2259A1ACA48A600ACDF1A /* Security.framework */,
+				05C2259B1ACA48A600ACDF1A /* SystemConfiguration.framework */,
+				05C2259C1ACA48A600ACDF1A /* UIKit.framework */,
+				05C2259D1ACA48A600ACDF1A /* WatchKit.framework */,
+				05C2259E1ACA48A600ACDF1A /* WebKit.framework */,
 				05C2254D1ACA44FC00ACDF1A /* Howl */,
 				05C2256A1ACA44FC00ACDF1A /* HowlTests */,
 				05C2254C1ACA44FC00ACDF1A /* Products */,
@@ -86,7 +226,7 @@
 		05C2254D1ACA44FC00ACDF1A /* Howl */ = {
 			isa = PBXGroup;
 			children = (
-				05C2257B1ACA46B500ACDF1A /* Function */,
+				05C2257B1ACA46B500ACDF1A /* AppBackbone */,
 				05C225521ACA44FC00ACDF1A /* AppDelegate.h */,
 				05C225531ACA44FC00ACDF1A /* AppDelegate.m */,
 				05C225581ACA44FC00ACDF1A /* ViewController.h */,
@@ -126,13 +266,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		05C2257B1ACA46B500ACDF1A /* Function */ = {
+		05C2257B1ACA46B500ACDF1A /* AppBackbone */ = {
 			isa = PBXGroup;
 			children = (
 				05C225781ACA46A300ACDF1A /* Function.h */,
 				05C225791ACA46A300ACDF1A /* Function.m */,
 			);
-			name = Function;
+			name = AppBackbone;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -363,6 +503,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Howl/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -373,6 +514,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Howl/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
