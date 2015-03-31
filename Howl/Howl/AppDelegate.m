@@ -2,13 +2,11 @@
 //  AppDelegate.m
 //  Howl
 //
-//  Created by Ryan Paglinawan on 3/24/15.
+//  Created by Ryan Paglinawan on 3/30/15.
 //  Copyright (c) 2015 Ryan Paglinawan. All rights reserved.
 //
 
 #import "AppDelegate.h"
-#import "DetailViewController.h"
-#import "MasterViewController.h"
 
 @interface AppDelegate ()
 
@@ -19,9 +17,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
-    MasterViewController *controller = (MasterViewController *)navigationController.topViewController;
-    controller.managedObjectContext = self.managedObjectContext;
     return YES;
 }
 
@@ -56,7 +51,7 @@
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
 
 - (NSURL *)applicationDocumentsDirectory {
-    // The directory the application uses to store the Core Data store file. This code uses a directory named "Rymotion-1-Animation-Interactive.Howl" in the application's documents directory.
+    // The directory the application uses to store the Core Data store file. This code uses a directory named "RyanPaglinawan.Howl" in the application's documents directory.
     return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
 }
 

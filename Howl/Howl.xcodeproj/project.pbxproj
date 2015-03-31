@@ -1,0 +1,460 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05C225511ACA44FC00ACDF1A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C225501ACA44FC00ACDF1A /* main.m */; };
+		05C225541ACA44FC00ACDF1A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C225531ACA44FC00ACDF1A /* AppDelegate.m */; };
+		05C225571ACA44FC00ACDF1A /* Howl.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 05C225551ACA44FC00ACDF1A /* Howl.xcdatamodeld */; };
+		05C2255A1ACA44FC00ACDF1A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C225591ACA44FC00ACDF1A /* ViewController.m */; };
+		05C2255D1ACA44FC00ACDF1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05C2255B1ACA44FC00ACDF1A /* Main.storyboard */; };
+		05C2255F1ACA44FC00ACDF1A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05C2255E1ACA44FC00ACDF1A /* Images.xcassets */; };
+		05C225621ACA44FC00ACDF1A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05C225601ACA44FC00ACDF1A /* LaunchScreen.xib */; };
+		05C2256E1ACA44FC00ACDF1A /* HowlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C2256D1ACA44FC00ACDF1A /* HowlTests.m */; };
+		05C2257A1ACA46A300ACDF1A /* Function.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C225791ACA46A300ACDF1A /* Function.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		05C225681ACA44FC00ACDF1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05C225431ACA44FC00ACDF1A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05C2254A1ACA44FC00ACDF1A;
+			remoteInfo = Howl;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05C2254B1ACA44FC00ACDF1A /* Howl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Howl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		05C2254F1ACA44FC00ACDF1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05C225501ACA44FC00ACDF1A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		05C225521ACA44FC00ACDF1A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		05C225531ACA44FC00ACDF1A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		05C225561ACA44FC00ACDF1A /* Howl.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Howl.xcdatamodel; sourceTree = "<group>"; };
+		05C225581ACA44FC00ACDF1A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		05C225591ACA44FC00ACDF1A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		05C2255C1ACA44FC00ACDF1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		05C2255E1ACA44FC00ACDF1A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		05C225611ACA44FC00ACDF1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		05C225671ACA44FC00ACDF1A /* HowlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HowlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		05C2256C1ACA44FC00ACDF1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05C2256D1ACA44FC00ACDF1A /* HowlTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HowlTests.m; sourceTree = "<group>"; };
+		05C225781ACA46A300ACDF1A /* Function.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Function.h; sourceTree = "<group>"; };
+		05C225791ACA46A300ACDF1A /* Function.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Function.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		05C225481ACA44FC00ACDF1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05C225641ACA44FC00ACDF1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05C225421ACA44FC00ACDF1A = {
+			isa = PBXGroup;
+			children = (
+				05C2254D1ACA44FC00ACDF1A /* Howl */,
+				05C2256A1ACA44FC00ACDF1A /* HowlTests */,
+				05C2254C1ACA44FC00ACDF1A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		05C2254C1ACA44FC00ACDF1A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				05C2254B1ACA44FC00ACDF1A /* Howl.app */,
+				05C225671ACA44FC00ACDF1A /* HowlTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		05C2254D1ACA44FC00ACDF1A /* Howl */ = {
+			isa = PBXGroup;
+			children = (
+				05C2257B1ACA46B500ACDF1A /* Function */,
+				05C225521ACA44FC00ACDF1A /* AppDelegate.h */,
+				05C225531ACA44FC00ACDF1A /* AppDelegate.m */,
+				05C225581ACA44FC00ACDF1A /* ViewController.h */,
+				05C225591ACA44FC00ACDF1A /* ViewController.m */,
+				05C2255B1ACA44FC00ACDF1A /* Main.storyboard */,
+				05C2255E1ACA44FC00ACDF1A /* Images.xcassets */,
+				05C225601ACA44FC00ACDF1A /* LaunchScreen.xib */,
+				05C225551ACA44FC00ACDF1A /* Howl.xcdatamodeld */,
+				05C2254E1ACA44FC00ACDF1A /* Supporting Files */,
+			);
+			path = Howl;
+			sourceTree = "<group>";
+		};
+		05C2254E1ACA44FC00ACDF1A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				05C2254F1ACA44FC00ACDF1A /* Info.plist */,
+				05C225501ACA44FC00ACDF1A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		05C2256A1ACA44FC00ACDF1A /* HowlTests */ = {
+			isa = PBXGroup;
+			children = (
+				05C2256D1ACA44FC00ACDF1A /* HowlTests.m */,
+				05C2256B1ACA44FC00ACDF1A /* Supporting Files */,
+			);
+			path = HowlTests;
+			sourceTree = "<group>";
+		};
+		05C2256B1ACA44FC00ACDF1A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				05C2256C1ACA44FC00ACDF1A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		05C2257B1ACA46B500ACDF1A /* Function */ = {
+			isa = PBXGroup;
+			children = (
+				05C225781ACA46A300ACDF1A /* Function.h */,
+				05C225791ACA46A300ACDF1A /* Function.m */,
+			);
+			name = Function;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		05C2254A1ACA44FC00ACDF1A /* Howl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05C225711ACA44FC00ACDF1A /* Build configuration list for PBXNativeTarget "Howl" */;
+			buildPhases = (
+				05C225471ACA44FC00ACDF1A /* Sources */,
+				05C225481ACA44FC00ACDF1A /* Frameworks */,
+				05C225491ACA44FC00ACDF1A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Howl;
+			productName = Howl;
+			productReference = 05C2254B1ACA44FC00ACDF1A /* Howl.app */;
+			productType = "com.apple.product-type.application";
+		};
+		05C225661ACA44FC00ACDF1A /* HowlTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05C225741ACA44FC00ACDF1A /* Build configuration list for PBXNativeTarget "HowlTests" */;
+			buildPhases = (
+				05C225631ACA44FC00ACDF1A /* Sources */,
+				05C225641ACA44FC00ACDF1A /* Frameworks */,
+				05C225651ACA44FC00ACDF1A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05C225691ACA44FC00ACDF1A /* PBXTargetDependency */,
+			);
+			name = HowlTests;
+			productName = HowlTests;
+			productReference = 05C225671ACA44FC00ACDF1A /* HowlTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		05C225431ACA44FC00ACDF1A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Ryan Paglinawan";
+				TargetAttributes = {
+					05C2254A1ACA44FC00ACDF1A = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					05C225661ACA44FC00ACDF1A = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 05C2254A1ACA44FC00ACDF1A;
+					};
+				};
+			};
+			buildConfigurationList = 05C225461ACA44FC00ACDF1A /* Build configuration list for PBXProject "Howl" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 05C225421ACA44FC00ACDF1A;
+			productRefGroup = 05C2254C1ACA44FC00ACDF1A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				05C2254A1ACA44FC00ACDF1A /* Howl */,
+				05C225661ACA44FC00ACDF1A /* HowlTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		05C225491ACA44FC00ACDF1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05C2255D1ACA44FC00ACDF1A /* Main.storyboard in Resources */,
+				05C225621ACA44FC00ACDF1A /* LaunchScreen.xib in Resources */,
+				05C2255F1ACA44FC00ACDF1A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05C225651ACA44FC00ACDF1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		05C225471ACA44FC00ACDF1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05C225541ACA44FC00ACDF1A /* AppDelegate.m in Sources */,
+				05C225571ACA44FC00ACDF1A /* Howl.xcdatamodeld in Sources */,
+				05C2255A1ACA44FC00ACDF1A /* ViewController.m in Sources */,
+				05C225511ACA44FC00ACDF1A /* main.m in Sources */,
+				05C2257A1ACA46A300ACDF1A /* Function.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05C225631ACA44FC00ACDF1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05C2256E1ACA44FC00ACDF1A /* HowlTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		05C225691ACA44FC00ACDF1A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05C2254A1ACA44FC00ACDF1A /* Howl */;
+			targetProxy = 05C225681ACA44FC00ACDF1A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		05C2255B1ACA44FC00ACDF1A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				05C2255C1ACA44FC00ACDF1A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		05C225601ACA44FC00ACDF1A /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				05C225611ACA44FC00ACDF1A /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		05C2256F1ACA44FC00ACDF1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		05C225701ACA44FC00ACDF1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		05C225721ACA44FC00ACDF1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Howl/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		05C225731ACA44FC00ACDF1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Howl/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		05C225751ACA44FC00ACDF1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HowlTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Howl.app/Howl";
+			};
+			name = Debug;
+		};
+		05C225761ACA44FC00ACDF1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HowlTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Howl.app/Howl";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		05C225461ACA44FC00ACDF1A /* Build configuration list for PBXProject "Howl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05C2256F1ACA44FC00ACDF1A /* Debug */,
+				05C225701ACA44FC00ACDF1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05C225711ACA44FC00ACDF1A /* Build configuration list for PBXNativeTarget "Howl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05C225721ACA44FC00ACDF1A /* Debug */,
+				05C225731ACA44FC00ACDF1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		05C225741ACA44FC00ACDF1A /* Build configuration list for PBXNativeTarget "HowlTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05C225751ACA44FC00ACDF1A /* Debug */,
+				05C225761ACA44FC00ACDF1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		05C225551ACA44FC00ACDF1A /* Howl.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				05C225561ACA44FC00ACDF1A /* Howl.xcdatamodel */,
+			);
+			currentVersion = 05C225561ACA44FC00ACDF1A /* Howl.xcdatamodel */;
+			path = Howl.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 05C225431ACA44FC00ACDF1A /* Project object */;
+}
