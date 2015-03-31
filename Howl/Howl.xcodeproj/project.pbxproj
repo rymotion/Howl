@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0554F1051ACAF780000A298C /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0554F1031ACAF780000A298C /* libsqlite3.0.dylib */; };
+		0554F1061ACAF780000A298C /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0554F1041ACAF780000A298C /* libstdc++.6.0.9.dylib */; };
+		0554F1091ACAF7B0000A298C /* Database_logic.m in Sources */ = {isa = PBXBuildFile; fileRef = 0554F1081ACAF7B0000A298C /* Database_logic.m */; };
+		0554F10B1ACAF8B7000A298C /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0554F10A1ACAF8B7000A298C /* libsqlite3.dylib */; };
 		05C225511ACA44FC00ACDF1A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C225501ACA44FC00ACDF1A /* main.m */; };
 		05C225541ACA44FC00ACDF1A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C225531ACA44FC00ACDF1A /* AppDelegate.m */; };
 		05C225571ACA44FC00ACDF1A /* Howl.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 05C225551ACA44FC00ACDF1A /* Howl.xcdatamodeld */; };
@@ -64,6 +68,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0554F1031ACAF780000A298C /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		0554F1041ACAF780000A298C /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
+		0554F1071ACAF7B0000A298C /* Database_logic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Database_logic.h; sourceTree = "<group>"; };
+		0554F1081ACAF7B0000A298C /* Database_logic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Database_logic.m; sourceTree = "<group>"; };
+		0554F10A1ACAF8B7000A298C /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		05C2254B1ACA44FC00ACDF1A /* Howl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Howl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05C2254F1ACA44FC00ACDF1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05C225501ACA44FC00ACDF1A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -122,6 +131,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0554F10B1ACAF8B7000A298C /* libsqlite3.dylib in Frameworks */,
+				0554F1051ACAF780000A298C /* libsqlite3.0.dylib in Frameworks */,
+				0554F1061ACAF780000A298C /* libstdc++.6.0.9.dylib in Frameworks */,
 				05C2259F1ACA48A600ACDF1A /* AddressBook.framework in Frameworks */,
 				05C225A01ACA48A600ACDF1A /* AudioUnit.framework in Frameworks */,
 				05C225A11ACA48A600ACDF1A /* AVFoundation.framework in Frameworks */,
@@ -173,6 +185,9 @@
 		05C225421ACA44FC00ACDF1A = {
 			isa = PBXGroup;
 			children = (
+				0554F10A1ACAF8B7000A298C /* libsqlite3.dylib */,
+				0554F1031ACAF780000A298C /* libsqlite3.0.dylib */,
+				0554F1041ACAF780000A298C /* libstdc++.6.0.9.dylib */,
 				05C2257C1ACA48A600ACDF1A /* AddressBook.framework */,
 				05C2257D1ACA48A600ACDF1A /* AudioUnit.framework */,
 				05C2257E1ACA48A600ACDF1A /* AVFoundation.framework */,
@@ -270,6 +285,8 @@
 			isa = PBXGroup;
 			children = (
 				05C225781ACA46A300ACDF1A /* Function.h */,
+				0554F1071ACAF7B0000A298C /* Database_logic.h */,
+				0554F1081ACAF7B0000A298C /* Database_logic.m */,
 				05C225791ACA46A300ACDF1A /* Function.m */,
 			);
 			name = AppBackbone;
@@ -378,6 +395,7 @@
 				05C225541ACA44FC00ACDF1A /* AppDelegate.m in Sources */,
 				05C225571ACA44FC00ACDF1A /* Howl.xcdatamodeld in Sources */,
 				05C2255A1ACA44FC00ACDF1A /* ViewController.m in Sources */,
+				0554F1091ACAF7B0000A298C /* Database_logic.m in Sources */,
 				05C225511ACA44FC00ACDF1A /* main.m in Sources */,
 				05C2257A1ACA46A300ACDF1A /* Function.m in Sources */,
 			);
@@ -574,6 +592,7 @@
 				05C225731ACA44FC00ACDF1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		05C225741ACA44FC00ACDF1A /* Build configuration list for PBXNativeTarget "HowlTests" */ = {
 			isa = XCConfigurationList;
@@ -582,6 +601,7 @@
 				05C225761ACA44FC00ACDF1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
