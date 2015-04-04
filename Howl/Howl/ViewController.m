@@ -63,3 +63,65 @@
 }
 
 @end
+
+#pragma mark
+
+@interface GPSViewController()
+
+@end
+
+@implementation GPSViewController
+
+@synthesize latitudeTextField, longitudeTextField, accuracyTextField;
+
+- (void) viewDidLoad {
+    
+    lm = [[CLLocationManager alloc]init];
+    if ([lm locationServicesEnabled]) {
+        
+        lm.delegate = self;
+        lm.desiredAccuracy = kCLLocationAccuracyBest;
+        lm.distanceFilter = 1000.0f;
+        [lm startUpdatingLocation];
+        
+    }
+}
+- (void) locationManager:(CLLocationManager *)manager
+     didUpdateToLocation:(CLLocation *) newLocation
+            fromLocation:(CLLocation *)oldLocation {
+    
+    NSString *lat = [[NSString alloc] initWithFormat:@"%g", newLocation.coordinate.latitude];
+    latitudeTextField.text = lat;
+    
+    NSString *lng = [[NSString alloc] initWithFormat:@"%g", newLocation.coordinate.longitude];
+    longitudeTextField.text = lng;
+    
+    NSString *acc = [[NSString alloc] initWithFormat:@"%g", newLocation.horizontalAccuracy];
+    accuracyTextField.text = acc;
+    
+    [acc release];
+    [lat release];
+    [lng release];
+}
+- (void) locationManager:(CLLocationManager *)manager
+        didFailWithError:(NSError *)error {
+    
+    NSString *msg = @"Error obtaining location";
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
+                                                    message:msg delegate:nil
+                                          cancelButtonTitle:@"OK"
+                                          otherButtonTitles:nil];
+    [alert show];
+    [msg release];
+    [alert release];
+}
+
+- (void) dealloc {
+    [lm release];
+    [latitudeTextField release];
+    [longitudeTextField release];
+    [accuracyTextField release];
+    [super dealloc];
+}
+
+@end
