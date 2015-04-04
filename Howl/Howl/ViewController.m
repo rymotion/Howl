@@ -43,7 +43,7 @@
 }
 
 - (void) callNumber {//this should cycle through the database match the campus and security office number (GPS location code stuff should also go here)
-    
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"tel: "]];
 }
 
 - (IBAction) btnSend: (id) call{//this is going to recognize the call button pressed to call the number from the database
