@@ -30,25 +30,33 @@
 }
 
 - (void) createTableNamed:(NSString *) tableName
-               withField1:(NSString *) field1
-               withField2:(NSString *) field2
-               withField3:(NSString *) field3
-               withField4:(NSString *) field4 {
+               withField1:(NSString *) school
+               withField2:(NSString *) schoolInit
+               withField3:(NSString *) campusNam
+               withField4:(NSString *) secOff {
     char *err;
-    NSString *sql = [NSString stringWithFormat: @"CREATE TABLE IF NOT EXISTS '%@' ('%@' TEXT PRIMARY KEY, '%@' TEXT);", tableName, field1, field2, field3, field4];
+    NSString *sql = [NSString stringWithFormat: @"CREATE TABLE IF NOT EXISTS '%@' ('%@' TEXT PRIMARY KEY, '%@' TEXT);", tableName, school, schoolInit, campusNam, secOff];
     if (sqlite3_exec(db, [sql UTF8String], NULL, NULL, &err) != SQLITE_OK) {
         sqlite3_close(db);
         NSAssert(0, @"Tabled failed to create.");
     }
 }
-- (void)viewDidLoad {
+
+- (void) callNumber {//this should cycle through the database match the campus and security office number (GPS location code stuff should also go here)
+    
+}
+
+- (IBAction) btnSend: (id) call{//this is going to recognize the call button pressed to call the number from the database
+    [self callNumber];
+} 
+- (void) viewDidLoad {
     [self openDB]; // this will open database
     [self createTableNamed:@"Howl Directory" withField1:@"School Name" withField2:@"School Initials" withField3:@"Campus Name" withField4:@"Security Office"];
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)didReceiveMemoryWarning {
+- (void) didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }

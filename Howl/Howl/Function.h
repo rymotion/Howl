@@ -8,8 +8,13 @@
 //  This will take care of the whole functionality of the app.
 
 #import <Foundation/Foundation.h>
+#import "sqlite3.h"
+@interface Function : NSObject {
+    sqlite3 *db; //creates the sqlite 3 object
+}
 
-@interface Function : NSObject
+- (NSString *) filePath;
+
 @property (strong) NSString *number;
 
 @end
