@@ -5,6 +5,7 @@
 //  Created by Ryan Paglinawan on 3/30/15.
 //  Copyright (c) 2015 Ryan Paglinawan. All rights reserved.
 //
+//  Comment any changes and what each function does so that no one gets lost
 
 #import "ViewController.h"
 
@@ -17,7 +18,7 @@
 - (NSString *) filePath {
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentDir = [paths objectAtIndex:0];
-    return [documentDir stringByAppendingPathComponent:@"database.sql"];
+    return [documentDir stringByAppendingPathComponent:@"dataBaseHowl.sql"];
     //returns full path of the SQLite database path that will be created in the Documents path on device
 }
 
