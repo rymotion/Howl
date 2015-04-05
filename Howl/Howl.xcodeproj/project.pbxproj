@@ -18,7 +18,6 @@
 		05C2255F1ACA44FC00ACDF1A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05C2255E1ACA44FC00ACDF1A /* Images.xcassets */; };
 		05C225621ACA44FC00ACDF1A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05C225601ACA44FC00ACDF1A /* LaunchScreen.xib */; };
 		05C2256E1ACA44FC00ACDF1A /* HowlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C2256D1ACA44FC00ACDF1A /* HowlTests.m */; };
-		05C2257A1ACA46A300ACDF1A /* Function.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C225791ACA46A300ACDF1A /* Function.m */; };
 		05C2259F1ACA48A600ACDF1A /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C2257C1ACA48A600ACDF1A /* AddressBook.framework */; };
 		05C225A11ACA48A600ACDF1A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C2257E1ACA48A600ACDF1A /* AVFoundation.framework */; };
 		05C225A21ACA48A600ACDF1A /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C2257F1ACA48A600ACDF1A /* AVKit.framework */; };
@@ -83,8 +82,6 @@
 		05C225671ACA44FC00ACDF1A /* HowlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HowlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		05C2256C1ACA44FC00ACDF1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05C2256D1ACA44FC00ACDF1A /* HowlTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HowlTests.m; sourceTree = "<group>"; };
-		05C225781ACA46A300ACDF1A /* Function.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Function.h; sourceTree = "<group>"; };
-		05C225791ACA46A300ACDF1A /* Function.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Function.m; sourceTree = "<group>"; };
 		05C2257C1ACA48A600ACDF1A /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		05C2257E1ACA48A600ACDF1A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		05C2257F1ACA48A600ACDF1A /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
@@ -277,8 +274,6 @@
 		05C2257B1ACA46B500ACDF1A /* AppBackbone */ = {
 			isa = PBXGroup;
 			children = (
-				05C225781ACA46A300ACDF1A /* Function.h */,
-				05C225791ACA46A300ACDF1A /* Function.m */,
 			);
 			name = AppBackbone;
 			sourceTree = "<group>";
@@ -387,7 +382,6 @@
 				05C225571ACA44FC00ACDF1A /* Howl.xcdatamodeld in Sources */,
 				05C2255A1ACA44FC00ACDF1A /* ViewController.m in Sources */,
 				05C225511ACA44FC00ACDF1A /* main.m in Sources */,
-				05C2257A1ACA46A300ACDF1A /* Function.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

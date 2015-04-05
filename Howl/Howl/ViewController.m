@@ -107,9 +107,6 @@
     NSString *acc = [[NSString alloc] initWithFormat:@"%g", newLocation.horizontalAccuracy];
     accuracyTextField.text = acc;
     
-    return [acc release];
-    return [lat release];
-    return [lng release];
 }
 - (void) locationManager:(CLLocationManager *)manager
         didFailWithError:(NSError *)error {
@@ -120,16 +117,6 @@
                                           cancelButtonTitle:@"OK"
                                           otherButtonTitles:nil];
     [alert show];
-    return [msg release];
-    return [alert release];
-}
-
-- (void) dealloc {
-    [lm release];
-    [latitudeTextField release];
-    [longitudeTextField release];
-    [accuracyTextField release];
-    [super dealloc];
 }
 
 @end
