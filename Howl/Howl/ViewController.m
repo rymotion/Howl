@@ -77,13 +77,21 @@
 - (void) viewDidLoad {
     
     lm = [[CLLocationManager alloc]init];
-    if ([lm locationServicesEnabled]) {
+    if ([CLLocationManager authorizationStatus]) {
         
         lm.delegate = self;
         lm.desiredAccuracy = kCLLocationAccuracyBest;
         lm.distanceFilter = 1000.0f;
         [lm startUpdatingLocation];
         
+    }
+    else {
+        NSString *msg = @"Looks like location services is not enabled";
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
+                                                        message: msg
+                                                       delegate:nil
+                                              cancelButtonTitle: @"Ok"
+                                              otherButtonTitles: @"Settings", nil];
     }
 }
 - (void) locationManager:(CLLocationManager *)manager
@@ -99,9 +107,9 @@
     NSString *acc = [[NSString alloc] initWithFormat:@"%g", newLocation.horizontalAccuracy];
     accuracyTextField.text = acc;
     
-    [acc release];
-    [lat release];
-    [lng release];
+    return [acc release];
+    return [lat release];
+    return [lng release];
 }
 - (void) locationManager:(CLLocationManager *)manager
         didFailWithError:(NSError *)error {
@@ -112,8 +120,8 @@
                                           cancelButtonTitle:@"OK"
                                           otherButtonTitles:nil];
     [alert show];
-    [msg release];
-    [alert release];
+    return [msg release];
+    return [alert release];
 }
 
 - (void) dealloc {
