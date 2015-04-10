@@ -20,7 +20,6 @@
         IBOutlet UITextField *findByRegisterNumberTextField;
         IBOutlet UIScrollView *myScrollView;
 )
-    -(IBAction)saveData:(id)sender;
     -(IBAction)findData:(id)sender;
 @end
 

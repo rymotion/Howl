@@ -37,27 +37,6 @@ nibBundleOrNil
     // Dispose of any resources that can be recreated.
 }
 
--(IBAction)saveData:(id)sender{
-    BOOL success = NO;
-    NSString *alertString = @"Data Insertion failed";
-    if (regNoTextField.text.length>0 &&nameTextField.text.length>0 &&
-        departmentTextField.text.length>0 &&yearTextField.text.length>0 )
-    {
-        success = [[DBManager getSharedInstance]saveData:
-                   regNoTextField.text name:nameTextField.text department:
-                   departmentTextField.text year:yearTextField.text];
-    }
-    else{
-        alertString = @"Enter all fields";
-    }
-    if (success == NO) {
-        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:
-                              alertString message:nil
-                                                      delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-        [alert show];
-    }
-}
-
 -(IBAction)findData:(id)sender{
     NSArray *data = [[DBManager getSharedInstance]findByRegisterNumber:
                      findByRegisterNumberTextField.text];
