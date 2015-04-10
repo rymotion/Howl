@@ -15,108 +15,82 @@
 
 @implementation ViewController
 
-- (NSString *) filePath {
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *documentDir = [paths objectAtIndex:0];
-    return [documentDir stringByAppendingPathComponent:@"dataBaseHowl.sql"];
-    //returns full path of the SQLite database path that will be created in the Documents path on device
-}
-
-- (void) openDB {
-    //creates the database
-    if (sqlite3_open([[self filePath] UTF8String], &db) != SQLITE_OK ) {
-        sqlite3_close(db);
-        NSAssert(0, @"Database failed to open.");
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)
+nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
     }
+    return self;
 }
 
-- (void) createTableNamed:(NSString *) tableName
-               withField1:(NSString *) school
-               withField2:(NSString *) schoolInit
-               withField3:(NSString *) campusNam
-               withField4:(NSString *) secOff {
-    char *err;
-    NSString *sql = [NSString stringWithFormat: @"CREATE TABLE IF NOT EXISTS '%@' ('%@' TEXT PRIMARY KEY, '%@' TEXT);", tableName, school, schoolInit, campusNam, secOff];
-    if (sqlite3_exec(db, [sql UTF8String], NULL, NULL, &err) != SQLITE_OK) {
-        sqlite3_close(db);
-        NSAssert(0, @"Tabled failed to create.");
-    }
-}
-
-- (void) callNumber {//this should cycle through the database match the campus and security office number (GPS location code stuff should also go here)
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"tel: "]];
-}
-
-- (IBAction) btnSend: (id) call{//this is going to recognize the call button pressed to call the number from the database
-    [self callNumber];
-} 
-- (void) viewDidLoad {
-    [self openDB]; // this will open database
-    [self createTableNamed:@"Howl Directory" withField1:@"School Name" withField2:@"School Initials" withField3:@"Campus Name" withField4:@"Security Office"];
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    // Do any additional setup after loading the view from its nib.
 }
 
-- (void) didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-@end
-
-#pragma mark
-
-@interface GPSViewController()
-
-@end
-
-@implementation GPSViewController
-
-@synthesize latitudeTextField, longitudeTextField, accuracyTextField;
-
-- (void) viewDidLoad {
-    
-    lm = [[CLLocationManager alloc]init];
-    if ([CLLocationManager authorizationStatus]) {
-        
-        lm.delegate = self;
-        lm.desiredAccuracy = kCLLocationAccuracyBest;
-        lm.distanceFilter = 1000.0f;
-        [lm startUpdatingLocation];
-        
+-(IBAction)saveData:(id)sender{
+    BOOL success = NO;
+    NSString *alertString = @"Data Insertion failed";
+    if (regNoTextField.text.length>0 &&nameTextField.text.length>0 &&
+        departmentTextField.text.length>0 &&yearTextField.text.length>0 )
+    {
+        success = [[DBManager getSharedInstance]saveData:
+                   regNoTextField.text name:nameTextField.text department:
+                   departmentTextField.text year:yearTextField.text];
     }
-    else {
-        NSString *msg = @"Looks like location services is not enabled";
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
-                                                        message: msg
-                                                       delegate:nil
-                                              cancelButtonTitle: @"Ok"
-                                              otherButtonTitles: @"Settings", nil];
+    else{
+        alertString = @"Enter all fields";
+    }
+    if (success == NO) {
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:
+                              alertString message:nil
+                                                      delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alert show];
     }
 }
-- (void) locationManager:(CLLocationManager *)manager
-     didUpdateToLocation:(CLLocation *) newLocation
-            fromLocation:(CLLocation *)oldLocation {
-    
-    NSString *lat = [[NSString alloc] initWithFormat:@"%g", newLocation.coordinate.latitude];
-    latitudeTextField.text = lat;
-    
-    NSString *lng = [[NSString alloc] initWithFormat:@"%g", newLocation.coordinate.longitude];
-    longitudeTextField.text = lng;
-    
-    NSString *acc = [[NSString alloc] initWithFormat:@"%g", newLocation.horizontalAccuracy];
-    accuracyTextField.text = acc;
-    
-}
-- (void) locationManager:(CLLocationManager *)manager
-        didFailWithError:(NSError *)error {
-    
-    NSString *msg = @"Error obtaining location";
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
-                                                    message:msg delegate:nil
-                                          cancelButtonTitle:@"OK"
-                                          otherButtonTitles:nil];
-    [alert show];
+
+-(IBAction)findData:(id)sender{
+    NSArray *data = [[DBManager getSharedInstance]findByRegisterNumber:
+                     findByRegisterNumberTextField.text];
+    if (data == nil) {
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:
+                              @"Data not found" message:nil delegate:nil cancelButtonTitle:
+                              @"OK" otherButtonTitles:nil];
+        [alert show];
+        regNoTextField.text = @"";
+        nameTextField.text =@"";
+        departmentTextField.text = @"";
+        yearTextField.text =@"";
+    }
+    else{
+        regNoTextField.text = findByRegisterNumberTextField.text;
+        nameTextField.text =[data objectAtIndex:0];
+        departmentTextField.text = [data objectAtIndex:1];
+        yearTextField.text =[data objectAtIndex:2];
+    }
 }
 
+#pragma mark - Text field delegate
+-(void)textFieldDidBeginEditing:(UITextField *)textField{
+    [myScrollView setFrame:CGRectMake(10, 50, 300, 200)];
+    [myScrollView setContentSize:CGSizeMake(300, 350)];
+}
+-(void)textFieldDidEndEditing:(UITextField *)textField{
+    [myScrollView setFrame:CGRectMake(10, 50, 300, 350)];
+    
+}
+-(BOOL) textFieldShouldReturn:(UITextField *)textField{
+    
+    [textField resignFirstResponder];
+    return YES;
+}
 @end
