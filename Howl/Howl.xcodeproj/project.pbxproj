@@ -55,6 +55,7 @@
 		CC35E7011AD343B200A1E115 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC35E7001AD343B200A1E115 /* MapViewController.swift */; };
 		CDFF30F31AD650AE004B017D /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFF30F21AD650AE004B017D /* DBManager.m */; };
 		CDFF30F61AD770DC004B017D /* dataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFF30F51AD770DC004B017D /* dataBase.m */; };
+		CDFF30F91AD7A3FC004B017D /* Camera_implementation.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFF30F81AD7A3FC004B017D /* Camera_implementation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +126,8 @@
 		CDFF30F21AD650AE004B017D /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DBManager.m; path = Howl/DBManager.m; sourceTree = "<group>"; };
 		CDFF30F41AD770DC004B017D /* dataBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dataBase.h; sourceTree = "<group>"; };
 		CDFF30F51AD770DC004B017D /* dataBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dataBase.m; sourceTree = "<group>"; };
+		CDFF30F71AD7A3FC004B017D /* Camera_implementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Camera_implementation.h; sourceTree = "<group>"; };
+		CDFF30F81AD7A3FC004B017D /* Camera_implementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Camera_implementation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,6 +249,8 @@
 				05C225521ACA44FC00ACDF1A /* AppDelegate.h */,
 				05C225531ACA44FC00ACDF1A /* AppDelegate.m */,
 				05C225581ACA44FC00ACDF1A /* ViewController.h */,
+				CDFF30F71AD7A3FC004B017D /* Camera_implementation.h */,
+				CDFF30F81AD7A3FC004B017D /* Camera_implementation.m */,
 				05C225591ACA44FC00ACDF1A /* ViewController.m */,
 				CDFF30F41AD770DC004B017D /* dataBase.h */,
 				CDFF30F51AD770DC004B017D /* dataBase.m */,
@@ -393,6 +398,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDFF30F91AD7A3FC004B017D /* Camera_implementation.m in Sources */,
 				05C225541ACA44FC00ACDF1A /* AppDelegate.m in Sources */,
 				05C225571ACA44FC00ACDF1A /* Howl.xcdatamodeld in Sources */,
 				05C2255A1ACA44FC00ACDF1A /* ViewController.m in Sources */,

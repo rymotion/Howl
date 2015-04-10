@@ -10,7 +10,7 @@
 #import <UIKit/UIKit.h>
 #import "dataBase.h"
 #import <Foundation/Foundation.h>
-#import <CoreLocation/CoreLocation.h>
+#import "Camera_implementation.h"
 
 @interface ViewController : UIViewController {
         IBOutlet UITextField *regNoTextField;
@@ -22,4 +22,3 @@
 )
     -(IBAction)findData:(id)sender;
 @end
-
