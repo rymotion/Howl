@@ -53,6 +53,7 @@
 		05C225C01ACA48A600ACDF1A /* WatchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C2259D1ACA48A600ACDF1A /* WatchKit.framework */; };
 		05C225C11ACA48A600ACDF1A /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C2259E1ACA48A600ACDF1A /* WebKit.framework */; };
 		CC35E7011AD343B200A1E115 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC35E7001AD343B200A1E115 /* MapViewController.swift */; };
+		CDFF30F31AD650AE004B017D /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFF30F21AD650AE004B017D /* DBManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +120,8 @@
 		05C2259E1ACA48A600ACDF1A /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		CC35E6FF1AD343B100A1E115 /* Howl-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Howl-Bridging-Header.h"; sourceTree = "<group>"; };
 		CC35E7001AD343B200A1E115 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		CDFF30F11AD650AE004B017D /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DBManager.h; path = Howl/DBManager.h; sourceTree = "<group>"; };
+		CDFF30F21AD650AE004B017D /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DBManager.m; path = Howl/DBManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +182,8 @@
 		05C225421ACA44FC00ACDF1A = {
 			isa = PBXGroup;
 			children = (
+				CDFF30F11AD650AE004B017D /* DBManager.h */,
+				CDFF30F21AD650AE004B017D /* DBManager.m */,
 				0554F10A1ACAF8B7000A298C /* libsqlite3.dylib */,
 				0554F1031ACAF780000A298C /* libsqlite3.0.dylib */,
 				0554F1041ACAF780000A298C /* libstdc++.6.0.9.dylib */,
@@ -386,6 +391,7 @@
 				05C225541ACA44FC00ACDF1A /* AppDelegate.m in Sources */,
 				05C225571ACA44FC00ACDF1A /* Howl.xcdatamodeld in Sources */,
 				05C2255A1ACA44FC00ACDF1A /* ViewController.m in Sources */,
+				CDFF30F31AD650AE004B017D /* DBManager.m in Sources */,
 				CC35E7011AD343B200A1E115 /* MapViewController.swift in Sources */,
 				05C225511ACA44FC00ACDF1A /* main.m in Sources */,
 			);
