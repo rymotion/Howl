@@ -32,7 +32,7 @@
     else{
         imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
     }
-    [self presentModalViewController:imagePicker animated:YES];
+    [self presentViewController:imagePicker animated:YES completion:nil];
 }
 -(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info{
     UIImage *image = [info objectForKey:UIImagePickerControllerEditedImage];
@@ -43,7 +43,7 @@
 }
 
 -(void)imagePickerControllerDidCancel:(UIImagePickerController *)picker{
-    [self dismissModalViewControllerAnimated:YES];
+    [self presentViewController:imagePicker animated:YES completion:nil];
 }
 
 @end

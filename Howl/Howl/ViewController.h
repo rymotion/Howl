@@ -21,5 +21,5 @@
         IBOutlet UITextField *findByRegisterNumberTextField;
         IBOutlet UIScrollView *myScrollView;
 }
-    -(IBAction)findData:(id)sender;
+    //-(IBAction)findData:(id)sender;
 @end

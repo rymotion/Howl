@@ -107,7 +107,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                 
                 if (error == nil) {
                     
-                    if let p = CLPlacemark(placemark: placemarks?[0] as CLPlacemark) {
+                    if let p = CLPlacemark(placemark: placemarks?[0] as! CLPlacemark) {
                         
                         
                         
@@ -166,7 +166,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         
         
         // centers map on users location
-        var userLocation: CLLocation = locations[0] as CLLocation
+        var userLocation: CLLocation = locations[0] as! CLLocation
         var latitude = userLocation.coordinate.latitude
         var longitude = userLocation.coordinate.longitude
         var coordinate = CLLocationCoordinate2DMake(latitude, longitude)

@@ -1,53 +1,67 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="h6X-ZI-jfS">
+<<<<<<< HEAD
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+=======
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Yrp-ag-gBB">
+>>>>>>> origin/master
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
     <scenes>
-        <!--MainMenu-->
-        <scene sceneID="tne-QT-ifu">
+        <!--mainScreen-->
+        <scene sceneID="RQr-ju-W1Z">
             <objects>
-                <viewController title="MainMenu" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="QJe-Mt-8sK" userLabel="mainScreen" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="Po4-aw-OEU"/>
+                        <viewControllerLayoutGuide type="bottom" id="Bkl-YZ-dbp"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="468" y="993"/>
-        </scene>
-        <!--Picture View Controller-->
-        <scene sceneID="MDK-0b-JgO">
-            <objects>
-                <viewController id="Yrp-ag-gBB" customClass="PictureViewController" customModule="Howl" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ARF-su-o1V"/>
-                        <viewControllerLayoutGuide type="bottom" id="Gwz-uE-oXY"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="CQO-nv-guf">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <view key="view" contentMode="scaleToFill" id="ykA-su-pFZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+<<<<<<< HEAD
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4mp-YK-9Bw">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <state key="normal" title="Button" image="mainScreen" backgroundImage="mainScreen">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+=======
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pq5-Xh-00L">
+                                <rect key="frame" x="8" y="109" width="304" height="196"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Photo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PlW-jC-aeM">
                                 <rect key="frame" x="16" y="64" width="288" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pq5-Xh-00L">
-                                <rect key="frame" x="8" y="109" width="304" height="196"/>
-                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VkY-dz-Kb0">
+                                <rect key="frame" x="125" y="357" width="70" height="34"/>
+                                <state key="normal" title="Set Image">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="setImage:" destination="Yrp-ag-gBB" eventType="touchUpInside" id="brT-eD-YXl"/>
+                                </connections>
+>>>>>>> origin/master
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="4mp-YK-9Bw" secondAttribute="trailing" id="6AL-dr-g7m"/>
+                            <constraint firstItem="4mp-YK-9Bw" firstAttribute="top" secondItem="ykA-su-pFZ" secondAttribute="top" id="X0f-k3-nrd"/>
+                            <constraint firstItem="4mp-YK-9Bw" firstAttribute="bottom" secondItem="Bkl-YZ-dbp" secondAttribute="top" id="mLF-qe-ZlC"/>
+                            <constraint firstItem="4mp-YK-9Bw" firstAttribute="leading" secondItem="ykA-su-pFZ" secondAttribute="leading" id="ui2-6x-oaT"/>
+                        </constraints>
                     </view>
+<<<<<<< HEAD
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+=======
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="profileImage" destination="pq5-Xh-00L" id="mic-ic-zXD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3cO-HE-aa4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -77,10 +91,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+>>>>>>> origin/master
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="u5z-ZY-Wyz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dpP-co-VhC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="468" y="377"/>
+            <point key="canvasLocation" x="-300" y="408"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="mainScreen" width="640" height="1136"/>
+    </resources>
 </document>
