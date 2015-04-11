@@ -10,7 +10,7 @@ import UIKit
 
 class PictureViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
-    @IBOutlet var profileImage: UIImageView!
+    @IBOutlet var profilePic: UIImageView!
     
     @IBAction func setImage(sender: AnyObject) {
         
@@ -22,6 +22,26 @@ class PictureViewController: UIViewController, UIImagePickerControllerDelegate, 
         self.presentViewController(image, animated: true, completion: nil)
         
     }
+    
+    @IBAction func chooseImage(sender: AnyObject) {
+        
+        var image = UIImagePickerController()
+        image.delegate = self
+        image.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
+        image.allowsEditing = false
+        
+        self.presentViewController(image, animated: true, completion: nil)
+        
+    }
+    
+    func imagePickerController(picker: UIImagePickerController!, didFinishPickingImage image: UIImage!, editingInfo: [NSObject : AnyObject]!) {
+        
+        self.dismissViewControllerAnimated(true, completion: nil)
+        
+        profilePic.image = image
+
+    }
+    
     
     func displayAlert(title: String, error: String) {
         
@@ -43,7 +63,8 @@ class PictureViewController: UIViewController, UIImagePickerControllerDelegate, 
     
     override func viewDidAppear(animated: Bool) {
         
-        if profileImage.image == nil {
+        if profilePic.image == nil {
+            
             self.displayAlert("Please select an image to get full functionality of this app", error: "")
         }
         
