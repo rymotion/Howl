@@ -85,7 +85,13 @@
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X0B-lO-QKO">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <items>
-                                    <navigationItem title="Title" id="9z4-Ct-Hb4"/>
+                                    <navigationItem title="Title" id="9z4-Ct-Hb4">
+                                        <barButtonItem key="leftBarButtonItem" title="back" id="4PQ-le-esc">
+                                            <connections>
+                                                <segue destination="dG0-Vt-Lsz" kind="unwind" unwindAction="backToViewController:" id="mjp-PL-Gd4"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
                         </subviews>
@@ -107,6 +113,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rVb-7W-Mly" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="dG0-Vt-Lsz" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="727" y="1073"/>
         </scene>
@@ -125,13 +132,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mainScreen" translatesAutoresizingMaskIntoConstraints="NO" id="5Ia-VI-uQP">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JT0-ag-sJE">
-                                <rect key="frame" x="0.0" y="66" width="320" height="384"/>
-                                <state key="normal" title="Button" image="mSButton">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wvk-2R-uBp">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wvk-2R-uBp">
                                 <rect key="frame" x="16" y="458" width="64" height="58"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="64" id="Pcz-Dr-zl5"/>
@@ -140,22 +141,19 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="infoOpen:" destination="hLg-ic-uEE" eventType="touchUpInside" id="VVT-Pz-PO2"/>
                                     <segue destination="gp5-pj-2HH" kind="show" identifier="infoSegue" id="ala-Bg-gEZ"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mSButton" translatesAutoresizingMaskIntoConstraints="NO" id="i9Y-S1-aTA">
+                                <rect key="frame" x="20" y="74" width="280" height="296"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="5Ia-VI-uQP" firstAttribute="leading" secondItem="X6t-Aa-eo6" secondAttribute="leading" id="85x-zl-t1E"/>
-                            <constraint firstItem="JT0-ag-sJE" firstAttribute="trailing" secondItem="5Ia-VI-uQP" secondAttribute="trailing" id="DVm-b8-lq9"/>
-                            <constraint firstItem="wvk-2R-uBp" firstAttribute="top" secondItem="JT0-ag-sJE" secondAttribute="bottom" constant="8" id="EZ1-e1-ZdU"/>
                             <constraint firstItem="5Ia-VI-uQP" firstAttribute="bottom" secondItem="0xe-UL-bEv" secondAttribute="top" id="Ic0-bI-dJ5"/>
                             <constraint firstItem="5Ia-VI-uQP" firstAttribute="top" secondItem="X6t-Aa-eo6" secondAttribute="top" id="X5Q-FC-WdV"/>
-                            <constraint firstItem="JT0-ag-sJE" firstAttribute="top" secondItem="5ci-bH-azm" secondAttribute="bottom" constant="46" id="bxc-el-gRG"/>
-                            <constraint firstItem="JT0-ag-sJE" firstAttribute="leading" secondItem="5Ia-VI-uQP" secondAttribute="leading" id="fEX-o6-W2J"/>
                             <constraint firstItem="0xe-UL-bEv" firstAttribute="top" secondItem="wvk-2R-uBp" secondAttribute="bottom" constant="52" id="mKC-wZ-pWw"/>
-                            <constraint firstItem="0xe-UL-bEv" firstAttribute="top" secondItem="JT0-ag-sJE" secondAttribute="bottom" constant="118" id="oxM-uF-HLJ"/>
                             <constraint firstItem="wvk-2R-uBp" firstAttribute="leading" secondItem="X6t-Aa-eo6" secondAttribute="leadingMargin" id="qzd-Zv-YRj"/>
                             <constraint firstAttribute="trailing" secondItem="5Ia-VI-uQP" secondAttribute="trailing" id="uDD-Ca-gkC"/>
                         </constraints>
