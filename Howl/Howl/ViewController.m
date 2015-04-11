@@ -24,6 +24,9 @@ nibBundleOrNil
     }
     return self;
 }
+- (IBAction)infoOpen:(id)sender {
+    [self performSegueWithIdentifier:@"infoSegue" sender:self];
+}
 
 - (void)viewDidLoad
 {

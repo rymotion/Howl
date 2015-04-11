@@ -10,11 +10,10 @@ import UIKit
 
 class PictureViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
-<<<<<<< HEAD
     @IBOutlet var profileImage: UIImageView!
-=======
+
     @IBOutlet var profilePic: UIImageView!
->>>>>>> refs/remotes/origin/master
+
     
     @IBAction func setImage(sender: AnyObject) {
         
@@ -27,8 +26,6 @@ class PictureViewController: UIViewController, UIImagePickerControllerDelegate, 
         
     }
     
-<<<<<<< HEAD
-=======
     @IBAction func chooseImage(sender: AnyObject) {
         
         var image = UIImagePickerController()
@@ -40,16 +37,14 @@ class PictureViewController: UIViewController, UIImagePickerControllerDelegate, 
         
     }
     
-    func imagePickerController(picker: UIImagePickerController!, didFinishPickingImage image: UIImage!, editingInfo: [NSObject : AnyObject]!) {
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage!, editingInfo: [NSObject : AnyObject]!) {
         
         self.dismissViewControllerAnimated(true, completion: nil)
         
         profilePic.image = image
 
     }
-    
-    
->>>>>>> refs/remotes/origin/master
+
     func displayAlert(title: String, error: String) {
         
         var alert = UIAlertController(title: title, message: error, preferredStyle: UIAlertControllerStyle.Alert)
@@ -64,21 +59,17 @@ class PictureViewController: UIViewController, UIImagePickerControllerDelegate, 
         
         super.viewDidLoad()
         // if user tries to use app without image
+        
+        println("view did load")
 
        
     }
     
     override func viewDidAppear(animated: Bool) {
-        
-<<<<<<< HEAD
-        if profileImage.image == nil {
-=======
+   
         if profilePic.image == nil {
-            
->>>>>>> refs/remotes/origin/master
             self.displayAlert("Please select an image to get full functionality of this app", error: "")
         }
-        
         
     }
 
