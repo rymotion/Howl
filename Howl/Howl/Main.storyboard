@@ -90,12 +90,34 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mainScreen" translatesAutoresizingMaskIntoConstraints="NO" id="5Ia-VI-uQP">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JT0-ag-sJE">
+                                <rect key="frame" x="0.0" y="95" width="320" height="377"/>
+                                <state key="normal" title="Button" image="mSButton">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wvk-2R-uBp">
+                                <rect key="frame" x="16" y="502" width="58" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="58" id="Pcz-Dr-zl5"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="infoButton">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="5Ia-VI-uQP" firstAttribute="leading" secondItem="X6t-Aa-eo6" secondAttribute="leading" id="85x-zl-t1E"/>
+                            <constraint firstItem="JT0-ag-sJE" firstAttribute="trailing" secondItem="5Ia-VI-uQP" secondAttribute="trailing" id="DVm-b8-lq9"/>
+                            <constraint firstItem="wvk-2R-uBp" firstAttribute="top" secondItem="JT0-ag-sJE" secondAttribute="bottom" constant="30" id="EZ1-e1-ZdU"/>
                             <constraint firstItem="5Ia-VI-uQP" firstAttribute="bottom" secondItem="0xe-UL-bEv" secondAttribute="top" id="Ic0-bI-dJ5"/>
                             <constraint firstItem="5Ia-VI-uQP" firstAttribute="top" secondItem="X6t-Aa-eo6" secondAttribute="top" id="X5Q-FC-WdV"/>
+                            <constraint firstItem="JT0-ag-sJE" firstAttribute="top" secondItem="5ci-bH-azm" secondAttribute="bottom" constant="75" id="bxc-el-gRG"/>
+                            <constraint firstItem="JT0-ag-sJE" firstAttribute="leading" secondItem="5Ia-VI-uQP" secondAttribute="leading" id="fEX-o6-W2J"/>
+                            <constraint firstItem="0xe-UL-bEv" firstAttribute="top" secondItem="wvk-2R-uBp" secondAttribute="bottom" constant="8" symbolic="YES" id="mKC-wZ-pWw"/>
+                            <constraint firstItem="0xe-UL-bEv" firstAttribute="top" secondItem="JT0-ag-sJE" secondAttribute="bottom" constant="96" id="oxM-uF-HLJ"/>
+                            <constraint firstItem="wvk-2R-uBp" firstAttribute="leading" secondItem="X6t-Aa-eo6" secondAttribute="leadingMargin" id="qzd-Zv-YRj"/>
                             <constraint firstAttribute="trailing" secondItem="5Ia-VI-uQP" secondAttribute="trailing" id="uDD-Ca-gkC"/>
                         </constraints>
                     </view>
@@ -108,6 +130,8 @@
     </scenes>
     <resources>
         <image name="2HOWL_Photo page.png" width="640" height="1136"/>
+        <image name="infoButton" width="77" height="77"/>
+        <image name="mSButton" width="485" height="507"/>
         <image name="mainScreen" width="640" height="1136"/>
     </resources>
 </document>
