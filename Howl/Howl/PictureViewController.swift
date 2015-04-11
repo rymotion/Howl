@@ -24,6 +24,7 @@ class PictureViewController: UIViewController, UIImagePickerControllerDelegate, 
         
         self.presentViewController(image, animated: true, completion: nil)
         
+        
     }
     
     
@@ -32,7 +33,9 @@ class PictureViewController: UIViewController, UIImagePickerControllerDelegate, 
         self.dismissViewControllerAnimated(true, completion: nil)
         
         profilePic.image = image
-
+        
+        NSUserDefaults.standardUserDefaults().setObject(UIImagePNGRepresentation(image), forKey: "profilePic")
+        
     }
 
     func displayAlert(title: String, error: String) {
@@ -50,17 +53,30 @@ class PictureViewController: UIViewController, UIImagePickerControllerDelegate, 
         super.viewDidLoad()
         // if user tries to use app without image
         
-        println("view did load")
+
+        
 
        
     }
     
     override func viewDidAppear(animated: Bool) {
-   
-        if profilePic.image == nil {
-            self.displayAlert("Please select an image to get full functionality of this app", error: "")
+        
+        println("view did appear called")
+        
+        var image: AnyObject? = NSUserDefaults.standardUserDefaults().objectForKey("profilePic")
+        
+        if image == nil {
+            
+            self.displayAlert("Please take a photo to get full functionality", error: "")
+            
+        } else {
+            
+            println("segue")
+            self.performSegueWithIdentifier("basicSegue", sender: self)
+            
         }
         
+
     }
 
     override func didReceiveMemoryWarning() {

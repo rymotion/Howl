@@ -13,7 +13,6 @@
 		05C225511ACA44FC00ACDF1A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C225501ACA44FC00ACDF1A /* main.m */; };
 		05C225541ACA44FC00ACDF1A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C225531ACA44FC00ACDF1A /* AppDelegate.m */; };
 		05C225571ACA44FC00ACDF1A /* Howl.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 05C225551ACA44FC00ACDF1A /* Howl.xcdatamodeld */; };
-		05C2255A1ACA44FC00ACDF1A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C225591ACA44FC00ACDF1A /* ViewController.m */; };
 		05C2255F1ACA44FC00ACDF1A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05C2255E1ACA44FC00ACDF1A /* Images.xcassets */; };
 		05C225621ACA44FC00ACDF1A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05C225601ACA44FC00ACDF1A /* LaunchScreen.xib */; };
 		05C2256E1ACA44FC00ACDF1A /* HowlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C2256D1ACA44FC00ACDF1A /* HowlTests.m */; };
@@ -56,6 +55,7 @@
 		CC2245C71AD8E8C100C85392 /* 2HOWL_Photo page.png in Resources */ = {isa = PBXBuildFile; fileRef = CC2245C61AD8E8C100C85392 /* 2HOWL_Photo page.png */; };
 		CC2245C91AD8ECAA00C85392 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC2245C81AD8ECAA00C85392 /* Main.storyboard */; };
 		CC35E7011AD343B200A1E115 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC35E7001AD343B200A1E115 /* MapViewController.swift */; };
+		CC5816EF1AD9337F00B74281 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5816EE1AD9337F00B74281 /* TestViewController.swift */; };
 		CDFF30F31AD650AE004B017D /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFF30F21AD650AE004B017D /* DBManager.m */; };
 		CDFF30F91AD7A3FC004B017D /* Camera_implementation.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFF30F81AD7A3FC004B017D /* Camera_implementation.m */; };
 /* End PBXBuildFile section */
@@ -80,8 +80,6 @@
 		05C225521ACA44FC00ACDF1A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		05C225531ACA44FC00ACDF1A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		05C225561ACA44FC00ACDF1A /* Howl.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Howl.xcdatamodel; sourceTree = "<group>"; };
-		05C225581ACA44FC00ACDF1A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		05C225591ACA44FC00ACDF1A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		05C2255E1ACA44FC00ACDF1A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		05C225611ACA44FC00ACDF1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		05C225671ACA44FC00ACDF1A /* HowlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HowlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,6 +125,7 @@
 		CC2245C81AD8ECAA00C85392 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		CC35E6FF1AD343B100A1E115 /* Howl-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Howl-Bridging-Header.h"; sourceTree = "<group>"; };
 		CC35E7001AD343B200A1E115 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		CC5816EE1AD9337F00B74281 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		CDFF30F11AD650AE004B017D /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DBManager.h; path = Howl/DBManager.h; sourceTree = "<group>"; };
 		CDFF30F21AD650AE004B017D /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DBManager.m; path = Howl/DBManager.m; sourceTree = "<group>"; };
 		CDFF30F71AD7A3FC004B017D /* Camera_implementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Camera_implementation.h; sourceTree = "<group>"; };
@@ -250,13 +249,12 @@
 			isa = PBXGroup;
 			children = (
 				CC2245C41AD8DF5F00C85392 /* PictureViewController.swift */,
+				CC5816EE1AD9337F00B74281 /* TestViewController.swift */,
 				CC2245C81AD8ECAA00C85392 /* Main.storyboard */,
 				05C225521ACA44FC00ACDF1A /* AppDelegate.h */,
 				05C225531ACA44FC00ACDF1A /* AppDelegate.m */,
-				05C225581ACA44FC00ACDF1A /* ViewController.h */,
 				CDFF30F71AD7A3FC004B017D /* Camera_implementation.h */,
 				CDFF30F81AD7A3FC004B017D /* Camera_implementation.m */,
-				05C225591ACA44FC00ACDF1A /* ViewController.m */,
 				CC35E7001AD343B200A1E115 /* MapViewController.swift */,
 				05C2255E1ACA44FC00ACDF1A /* Images.xcassets */,
 				05C225601ACA44FC00ACDF1A /* LaunchScreen.xib */,
@@ -410,9 +408,9 @@
 				CC2245C51AD8DF5F00C85392 /* PictureViewController.swift in Sources */,
 				05C225541ACA44FC00ACDF1A /* AppDelegate.m in Sources */,
 				05C225571ACA44FC00ACDF1A /* Howl.xcdatamodeld in Sources */,
-				05C2255A1ACA44FC00ACDF1A /* ViewController.m in Sources */,
 				CDFF30F31AD650AE004B017D /* DBManager.m in Sources */,
 				CC35E7011AD343B200A1E115 /* MapViewController.swift in Sources */,
+				CC5816EF1AD9337F00B74281 /* TestViewController.swift in Sources */,
 				05C225511ACA44FC00ACDF1A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

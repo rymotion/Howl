@@ -20,21 +20,6 @@ import MapKit
 var places = [Dictionary<String, String>()]
 
 var activePlace = -1 // no active place
-/*
-// this was for my project held table of users previous locations
-class TableViewController: UITableViewController {
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        if places.count == 1 {
-            places.removeAtIndex(0)
-            places.append(["name":"Taj Mahal", "lat": "27.175277", "lon":"78.042128"])
-        }
-        
-    }
-    
-*/
 
 class ViewController: UIViewController, CLLocationManagerDelegate {
     
@@ -84,7 +69,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         
         // creates the long press recognizer
         var UILongPress = UILongPressGestureRecognizer(target: self, action: "action:")
-        UILongPress.minimumPressDuration = 2.0
+        UILongPress.minimumPressDuration = 1.0
         
         map.addGestureRecognizer(UILongPress)
     }
@@ -94,66 +79,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         
         if gestureRecognizer.state == UIGestureRecognizerState.Began {
             
-            var touchPoint = gestureRecognizer.locationInView(self.map)
-            
-            var newCoordinate = self.map.convertPoint(touchPoint, toCoordinateFromView: self.map)
-            
-            var location = CLLocation(latitude: newCoordinate.latitude, longitude: newCoordinate.longitude)
-            
-            CLGeocoder().reverseGeocodeLocation(location, completionHandler: { (placemarks, error) -> Void in
                 
-                
-                var title = ""
-                
-                if (error == nil) {
-                    
-                    if let p = CLPlacemark(placemark: placemarks?[0] as! CLPlacemark) {
-                        
-                        
-                        
-                        var subThoroughfare:String = ""
-                        var thoroughfare:String = ""
-                        
-                        if p.subThoroughfare != nil {
-                            
-                            subThoroughfare = p.subThoroughfare
-                            
-                        }
-                        
-                        if p.thoroughfare != nil {
-                            
-                            thoroughfare = p.thoroughfare
-                            
-                        }
-                        
-                        title = "\(subThoroughfare) \(thoroughfare)"
-                        
-                        
-                    }
-                    
-                }
-                
-                if title == "" {
-                    
-                    title = "Added \(NSDate())"
-                    
-                }
-                
-                
-                places.append(["name":title,"lat":"\(newCoordinate.latitude)","lon":"\(newCoordinate.longitude)"])
-                
-                var annotation = MKPointAnnotation()
-                
-                annotation.coordinate = newCoordinate
-                
-                annotation.title = title
-                
-                self.map.addAnnotation(annotation)
-                
-                
-            })
-            
-            
             
         }
         
@@ -166,7 +92,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         
         
         // centers map on users location
-        var userLocation: CLLocation = locations[0] as! CLLocation
+        var userLocation: CLLocation = locations[0] as CLLocation
         var latitude = userLocation.coordinate.latitude
         var longitude = userLocation.coordinate.longitude
         var coordinate = CLLocationCoordinate2DMake(latitude, longitude)
