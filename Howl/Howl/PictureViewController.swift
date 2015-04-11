@@ -10,6 +10,7 @@ import UIKit
 
 class PictureViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
+    @IBOutlet var profileImage: UIImageView!
     
     @IBAction func setImage(sender: AnyObject) {
         
@@ -31,12 +32,21 @@ class PictureViewController: UIViewController, UIImagePickerControllerDelegate, 
         self.presentViewController(alert, animated: true, completion: nil)
         
     }
-    
+
     override func viewDidLoad() {
         
         super.viewDidLoad()
         // if user tries to use app without image
-        self.displayAlert("Please select an image to get full functionality of this app", error: "")
+
+       
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        
+        if profileImage.image == nil {
+            self.displayAlert("Please select an image to get full functionality of this app", error: "")
+        }
+        
         
     }
 
