@@ -36,7 +36,7 @@ nibBundleOrNil
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+/*
 -(IBAction)findData:(id)sender{
     NSArray *data = [[DBManager getSharedInstance]findByRegisterNumber:
                      findByRegisterNumberTextField.text];
@@ -57,7 +57,7 @@ nibBundleOrNil
         yearTextField.text =[data objectAtIndex:2];
     }
 }
-
+*/
 #pragma mark - Text field delegate
 -(void)textFieldDidBeginEditing:(UITextField *)textField{
     [myScrollView setFrame:CGRectMake(10, 50, 300, 200)];

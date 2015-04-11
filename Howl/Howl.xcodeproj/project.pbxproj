@@ -52,9 +52,10 @@
 		05C225BF1ACA48A600ACDF1A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C2259C1ACA48A600ACDF1A /* UIKit.framework */; };
 		05C225C01ACA48A600ACDF1A /* WatchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C2259D1ACA48A600ACDF1A /* WatchKit.framework */; };
 		05C225C11ACA48A600ACDF1A /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C2259E1ACA48A600ACDF1A /* WebKit.framework */; };
+		CC2245C31AD8DCE600C85392 /* 1HOWL_Title page.png in Resources */ = {isa = PBXBuildFile; fileRef = CC2245C21AD8DCE600C85392 /* 1HOWL_Title page.png */; };
+		CC2245C51AD8DF5F00C85392 /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2245C41AD8DF5F00C85392 /* PictureViewController.swift */; };
 		CC35E7011AD343B200A1E115 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC35E7001AD343B200A1E115 /* MapViewController.swift */; };
 		CDFF30F31AD650AE004B017D /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFF30F21AD650AE004B017D /* DBManager.m */; };
-		CDFF30F61AD770DC004B017D /* dataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFF30F51AD770DC004B017D /* dataBase.m */; };
 		CDFF30F91AD7A3FC004B017D /* Camera_implementation.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFF30F81AD7A3FC004B017D /* Camera_implementation.m */; };
 /* End PBXBuildFile section */
 
@@ -120,12 +121,12 @@
 		05C2259C1ACA48A600ACDF1A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		05C2259D1ACA48A600ACDF1A /* WatchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchKit.framework; path = System/Library/Frameworks/WatchKit.framework; sourceTree = SDKROOT; };
 		05C2259E1ACA48A600ACDF1A /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		CC2245C21AD8DCE600C85392 /* 1HOWL_Title page.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1HOWL_Title page.png"; sourceTree = "<group>"; };
+		CC2245C41AD8DF5F00C85392 /* PictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
 		CC35E6FF1AD343B100A1E115 /* Howl-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Howl-Bridging-Header.h"; sourceTree = "<group>"; };
 		CC35E7001AD343B200A1E115 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		CDFF30F11AD650AE004B017D /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DBManager.h; path = Howl/DBManager.h; sourceTree = "<group>"; };
 		CDFF30F21AD650AE004B017D /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DBManager.m; path = Howl/DBManager.m; sourceTree = "<group>"; };
-		CDFF30F41AD770DC004B017D /* dataBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dataBase.h; sourceTree = "<group>"; };
-		CDFF30F51AD770DC004B017D /* dataBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dataBase.m; sourceTree = "<group>"; };
 		CDFF30F71AD7A3FC004B017D /* Camera_implementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Camera_implementation.h; sourceTree = "<group>"; };
 		CDFF30F81AD7A3FC004B017D /* Camera_implementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Camera_implementation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -228,6 +229,7 @@
 				05C2259D1ACA48A600ACDF1A /* WatchKit.framework */,
 				05C2259E1ACA48A600ACDF1A /* WebKit.framework */,
 				05C2254D1ACA44FC00ACDF1A /* Howl */,
+				05C2257B1ACA46B500ACDF1A /* AppBackbone */,
 				05C2256A1ACA44FC00ACDF1A /* HowlTests */,
 				05C2254C1ACA44FC00ACDF1A /* Products */,
 			);
@@ -245,15 +247,13 @@
 		05C2254D1ACA44FC00ACDF1A /* Howl */ = {
 			isa = PBXGroup;
 			children = (
-				05C2257B1ACA46B500ACDF1A /* AppBackbone */,
+				CC2245C41AD8DF5F00C85392 /* PictureViewController.swift */,
 				05C225521ACA44FC00ACDF1A /* AppDelegate.h */,
 				05C225531ACA44FC00ACDF1A /* AppDelegate.m */,
 				05C225581ACA44FC00ACDF1A /* ViewController.h */,
 				CDFF30F71AD7A3FC004B017D /* Camera_implementation.h */,
 				CDFF30F81AD7A3FC004B017D /* Camera_implementation.m */,
 				05C225591ACA44FC00ACDF1A /* ViewController.m */,
-				CDFF30F41AD770DC004B017D /* dataBase.h */,
-				CDFF30F51AD770DC004B017D /* dataBase.m */,
 				CC35E7001AD343B200A1E115 /* MapViewController.swift */,
 				05C2255B1ACA44FC00ACDF1A /* Main.storyboard */,
 				05C2255E1ACA44FC00ACDF1A /* Images.xcassets */,
@@ -268,6 +268,7 @@
 		05C2254E1ACA44FC00ACDF1A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CC2245C21AD8DCE600C85392 /* 1HOWL_Title page.png */,
 				05C2254F1ACA44FC00ACDF1A /* Info.plist */,
 				05C225501ACA44FC00ACDF1A /* main.m */,
 			);
@@ -296,6 +297,7 @@
 			children = (
 			);
 			name = AppBackbone;
+			path = Howl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -378,6 +380,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC2245C31AD8DCE600C85392 /* 1HOWL_Title page.png in Resources */,
 				05C2255D1ACA44FC00ACDF1A /* Main.storyboard in Resources */,
 				05C225621ACA44FC00ACDF1A /* LaunchScreen.xib in Resources */,
 				05C2255F1ACA44FC00ACDF1A /* Images.xcassets in Resources */,
@@ -399,13 +402,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDFF30F91AD7A3FC004B017D /* Camera_implementation.m in Sources */,
+				CC2245C51AD8DF5F00C85392 /* PictureViewController.swift in Sources */,
 				05C225541ACA44FC00ACDF1A /* AppDelegate.m in Sources */,
 				05C225571ACA44FC00ACDF1A /* Howl.xcdatamodeld in Sources */,
 				05C2255A1ACA44FC00ACDF1A /* ViewController.m in Sources */,
 				CDFF30F31AD650AE004B017D /* DBManager.m in Sources */,
 				CC35E7011AD343B200A1E115 /* MapViewController.swift in Sources */,
 				05C225511ACA44FC00ACDF1A /* main.m in Sources */,
-				CDFF30F61AD770DC004B017D /* dataBase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
