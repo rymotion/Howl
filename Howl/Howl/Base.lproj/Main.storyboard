@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
 =======
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Yrp-ag-gBB">
 >>>>>>> origin/master
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+=======
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Yrp-ag-gBB">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+>>>>>>> refs/remotes/origin/master
     </dependencies>
     <scenes>
         <!--mainScreen-->
@@ -16,6 +23,7 @@
                         <viewControllerLayoutGuide type="top" id="Po4-aw-OEU"/>
                         <viewControllerLayoutGuide type="bottom" id="Bkl-YZ-dbp"/>
                     </layoutGuides>
+<<<<<<< HEAD
                     <view key="view" contentMode="scaleToFill" id="ykA-su-pFZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -27,6 +35,32 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
 =======
+=======
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="993"/>
+        </scene>
+        <!--Picture View Controller-->
+        <scene sceneID="MDK-0b-JgO">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3cO-HE-aa4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="Yrp-ag-gBB" customClass="PictureViewController" customModule="Howl" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ARF-su-o1V"/>
+                        <viewControllerLayoutGuide type="bottom" id="Gwz-uE-oXY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CQO-nv-guf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+>>>>>>> refs/remotes/origin/master
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pq5-Xh-00L">
                                 <rect key="frame" x="8" y="109" width="304" height="196"/>
                             </imageView>
@@ -44,7 +78,10 @@
                                 <connections>
                                     <action selector="setImage:" destination="Yrp-ag-gBB" eventType="touchUpInside" id="brT-eD-YXl"/>
                                 </connections>
+<<<<<<< HEAD
 >>>>>>> origin/master
+=======
+>>>>>>> refs/remotes/origin/master
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -63,9 +100,63 @@
                         <outlet property="profileImage" destination="pq5-Xh-00L" id="mic-ic-zXD"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3cO-HE-aa4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-376" y="377"/>
+        </scene>
+        <!--Picture View Controller-->
+        <scene sceneID="zCq-8h-gi5">
+            <objects>
+                <viewController id="5lF-Et-346" customClass="PictureViewController" customModule="Howl" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YDf-R9-jRE"/>
+                        <viewControllerLayoutGuide type="bottom" id="fRg-YK-ony"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WUv-oT-P5W">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Cj4-et-Fif">
+                                <rect key="frame" x="96" y="169" width="131" height="128"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="93c-tG-cnz">
+                                <rect key="frame" x="50" y="369" width="222" height="34"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="setImage:" destination="5lF-Et-346" eventType="touchUpInside" id="51u-kY-WL1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O5A-ib-X0y">
+                                <rect key="frame" x="50" y="434" width="222" height="37"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="chooseImage:" destination="5lF-Et-346" eventType="touchUpInside" id="SIt-8Z-bmS"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2HOWL_Photo page.png" translatesAutoresizingMaskIntoConstraints="NO" id="iz7-4K-O0O">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iz7-4K-O0O" firstAttribute="leading" secondItem="WUv-oT-P5W" secondAttribute="leading" id="297-dF-TXU"/>
+                            <constraint firstItem="Cj4-et-Fif" firstAttribute="top" secondItem="YDf-R9-jRE" secondAttribute="bottom" constant="149" id="BKL-fo-ypf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Cj4-et-Fif" secondAttribute="trailing" constant="77" id="CZJ-tB-yG0"/>
+                            <constraint firstAttribute="trailing" secondItem="iz7-4K-O0O" secondAttribute="trailing" id="HUK-yE-gy0"/>
+                            <constraint firstItem="fRg-YK-ony" firstAttribute="top" secondItem="Cj4-et-Fif" secondAttribute="bottom" constant="271" id="bz8-DN-od9"/>
+                            <constraint firstItem="iz7-4K-O0O" firstAttribute="top" secondItem="WUv-oT-P5W" secondAttribute="top" id="jvp-pe-ftq"/>
+                            <constraint firstItem="Cj4-et-Fif" firstAttribute="leading" secondItem="WUv-oT-P5W" secondAttribute="leadingMargin" constant="80" id="uaT-c1-C0C"/>
+                            <constraint firstItem="iz7-4K-O0O" firstAttribute="bottom" secondItem="fRg-YK-ony" secondAttribute="top" id="wzt-aj-YEY"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mll-4S-ca0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-331" y="992"/>
         </scene>
         <!--Startup-->
         <scene sceneID="rxc-0J-1lf">
@@ -99,6 +190,10 @@
         </scene>
     </scenes>
     <resources>
+<<<<<<< HEAD
         <image name="mainScreen" width="640" height="1136"/>
+=======
+        <image name="2HOWL_Photo page.png" width="640" height="1136"/>
+>>>>>>> refs/remotes/origin/master
     </resources>
 </document>
