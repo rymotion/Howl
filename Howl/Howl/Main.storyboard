@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="LeS-b2-Ubg">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Picture View Controller-->
+        <scene sceneID="cjn-So-2Hj">
+            <objects>
+                <viewController id="LeS-b2-Ubg" customClass="PictureViewController" customModule="Howl" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yf6-d9-SRf"/>
+                        <viewControllerLayoutGuide type="bottom" id="1s4-Bi-3rf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ka2-JS-CFu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2HOWL_Photo page.png" translatesAutoresizingMaskIntoConstraints="NO" id="LmK-he-QjA">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="orm-2a-1Eb">
+                                <rect key="frame" x="51" y="436" width="219" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="fAn-BT-4Q4"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="chooseImage:" destination="LeS-b2-Ubg" eventType="touchUpInside" id="I55-5g-AEl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="45c-wJ-VNY">
+                                <rect key="frame" x="51" y="369" width="219" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="DWz-xJ-lqW"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="setImage:" destination="LeS-b2-Ubg" eventType="touchUpInside" id="S4O-3E-Vvz"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5S9-ML-pS9">
+                                <rect key="frame" x="95" y="169" width="130" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5S9-ML-pS9" firstAttribute="centerX" secondItem="45c-wJ-VNY" secondAttribute="centerX" id="0E7-ue-J8F"/>
+                            <constraint firstItem="LmK-he-QjA" firstAttribute="bottom" secondItem="1s4-Bi-3rf" secondAttribute="top" id="2Wa-1d-Nir"/>
+                            <constraint firstItem="orm-2a-1Eb" firstAttribute="centerX" secondItem="LmK-he-QjA" secondAttribute="centerX" id="4f4-ND-XT5"/>
+                            <constraint firstItem="1s4-Bi-3rf" firstAttribute="top" secondItem="orm-2a-1Eb" secondAttribute="bottom" constant="96" id="8cX-Ds-kqu"/>
+                            <constraint firstAttribute="trailing" secondItem="LmK-he-QjA" secondAttribute="trailing" id="Bhx-Xn-Tqn"/>
+                            <constraint firstItem="45c-wJ-VNY" firstAttribute="leading" secondItem="ka2-JS-CFu" secondAttribute="leadingMargin" constant="35" id="Uk9-ON-ulK"/>
+                            <constraint firstItem="5S9-ML-pS9" firstAttribute="leading" secondItem="ka2-JS-CFu" secondAttribute="leadingMargin" constant="79" id="Uqd-Ii-9Vi"/>
+                            <constraint firstItem="45c-wJ-VNY" firstAttribute="top" secondItem="5S9-ML-pS9" secondAttribute="bottom" constant="72" id="aBg-Nc-Onc"/>
+                            <constraint firstItem="5S9-ML-pS9" firstAttribute="top" secondItem="yf6-d9-SRf" secondAttribute="bottom" constant="149" id="bo9-po-3ZT"/>
+                            <constraint firstItem="LmK-he-QjA" firstAttribute="top" secondItem="ka2-JS-CFu" secondAttribute="top" id="cEO-2S-CaA"/>
+                            <constraint firstItem="LmK-he-QjA" firstAttribute="leading" secondItem="ka2-JS-CFu" secondAttribute="leading" id="cVa-4o-WeX"/>
+                            <constraint firstItem="orm-2a-1Eb" firstAttribute="trailing" secondItem="45c-wJ-VNY" secondAttribute="trailing" id="fEj-Rm-4AK"/>
+                            <constraint firstItem="orm-2a-1Eb" firstAttribute="leading" secondItem="45c-wJ-VNY" secondAttribute="leading" id="ryH-VW-CQi"/>
+                            <constraint firstItem="orm-2a-1Eb" firstAttribute="top" secondItem="45c-wJ-VNY" secondAttribute="bottom" constant="34" id="ws9-21-NbQ"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="profilePic" destination="5S9-ML-pS9" id="ZeT-w2-BNY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eXX-JY-bUi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="592" y="458"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="2HOWL_Photo page.png" width="640" height="1136"/>
+    </resources>
+</document>
