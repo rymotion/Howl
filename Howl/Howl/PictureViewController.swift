@@ -26,16 +26,6 @@ class PictureViewController: UIViewController, UIImagePickerControllerDelegate, 
         
     }
     
-    @IBAction func chooseImage(sender: AnyObject) {
-        
-        var image = UIImagePickerController()
-        image.delegate = self
-        image.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
-        image.allowsEditing = false
-        
-        self.presentViewController(image, animated: true, completion: nil)
-        
-    }
     
     func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage!, editingInfo: [NSObject : AnyObject]!) {
         
