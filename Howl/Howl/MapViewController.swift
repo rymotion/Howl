@@ -41,7 +41,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         
         
         // centers map on users location
-        userLocation = locations[0] as CLLocation
+        userLocation = locations[0] as! CLLocation
         var latitude = userLocation.coordinate.latitude
         var longitude = userLocation.coordinate.longitude
         var coordinate = CLLocationCoordinate2DMake(latitude, longitude)
