@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="LeS-b2-Ubg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ikJ-IE-cSy">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -63,6 +63,49 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eXX-JY-bUi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="325" y="354"/>
+        </scene>
+        <!--Initial View Controller-->
+        <scene sceneID="RmI-DS-4fl">
+            <objects>
+                <viewController id="ikJ-IE-cSy" customClass="InitialViewController" customModule="Howl" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FOI-C2-Uzl"/>
+                        <viewControllerLayoutGuide type="bottom" id="QvN-kd-8Qu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kHT-AF-Fa0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mainScreen" translatesAutoresizingMaskIntoConstraints="NO" id="PKD-5f-YGn">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter emergency phone numbers:" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fIZ-aF-Le9">
+                                <rect key="frame" x="16" y="135" width="288" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZbX-pP-omR">
+                                <rect key="frame" x="116" y="387" width="88" height="45"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="done:" destination="ikJ-IE-cSy" eventType="touchUpInside" id="lC7-Z6-nNe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="contactTextField" destination="fIZ-aF-Le9" id="l87-TE-WEp"/>
+                        <segue destination="hLg-ic-uEE" kind="show" identifier="standardSegue" id="11n-Je-voo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NBc-LG-nth" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="315" y="1073"/>
         </scene>
         <!--infoController-->
         <scene sceneID="T3O-CZ-dft">
@@ -159,10 +202,40 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <segue destination="pxm-n5-4ni" kind="show" identifier="mapSegue" id="dAp-7O-qhs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D1D-US-nXV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="727" y="364"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="Zth-MO-1kP">
+            <objects>
+                <viewController id="pxm-n5-4ni" customClass="MapViewController" customModule="Howl" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xUg-vi-XD6"/>
+                        <viewControllerLayoutGuide type="bottom" id="fja-40-OdJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SPk-Cr-9IQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="jAt-eA-3PP">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="map" destination="jAt-eA-3PP" id="eEZ-oD-s5Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cuQ-vG-zEC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1156" y="364"/>
         </scene>
     </scenes>
     <resources>
@@ -171,4 +244,7 @@
         <image name="mainScreen" width="640" height="1136"/>
         <image name="photoButt" width="445" height="75"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="11n-Je-voo"/>
+    </inferredMetricsTieBreakers>
 </document>

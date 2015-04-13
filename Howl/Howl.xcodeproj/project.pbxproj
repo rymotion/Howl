@@ -56,6 +56,8 @@
 		CC2245C91AD8ECAA00C85392 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC2245C81AD8ECAA00C85392 /* Main.storyboard */; };
 		CC35E7011AD343B200A1E115 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC35E7001AD343B200A1E115 /* MapViewController.swift */; };
 		CC5816EF1AD9337F00B74281 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5816EE1AD9337F00B74281 /* TestViewController.swift */; };
+		CC5816F11AD958F800B74281 /* place.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5816F01AD958F800B74281 /* place.swift */; };
+		CC5816F31AD961FA00B74281 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5816F21AD961FA00B74281 /* InitialViewController.swift */; };
 		CDFF30F31AD650AE004B017D /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFF30F21AD650AE004B017D /* DBManager.m */; };
 		CDFF30F91AD7A3FC004B017D /* Camera_implementation.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFF30F81AD7A3FC004B017D /* Camera_implementation.m */; };
 /* End PBXBuildFile section */
@@ -126,6 +128,8 @@
 		CC35E6FF1AD343B100A1E115 /* Howl-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Howl-Bridging-Header.h"; sourceTree = "<group>"; };
 		CC35E7001AD343B200A1E115 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		CC5816EE1AD9337F00B74281 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		CC5816F01AD958F800B74281 /* place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = place.swift; sourceTree = "<group>"; };
+		CC5816F21AD961FA00B74281 /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		CDFF30F11AD650AE004B017D /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DBManager.h; path = Howl/DBManager.h; sourceTree = "<group>"; };
 		CDFF30F21AD650AE004B017D /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DBManager.m; path = Howl/DBManager.m; sourceTree = "<group>"; };
 		CDFF30F71AD7A3FC004B017D /* Camera_implementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Camera_implementation.h; sourceTree = "<group>"; };
@@ -250,8 +254,10 @@
 			children = (
 				CC2245C41AD8DF5F00C85392 /* PictureViewController.swift */,
 				CC5816EE1AD9337F00B74281 /* TestViewController.swift */,
+				CC5816F01AD958F800B74281 /* place.swift */,
 				CC2245C81AD8ECAA00C85392 /* Main.storyboard */,
 				05C225521ACA44FC00ACDF1A /* AppDelegate.h */,
+				CC5816F21AD961FA00B74281 /* InitialViewController.swift */,
 				05C225531ACA44FC00ACDF1A /* AppDelegate.m */,
 				CDFF30F71AD7A3FC004B017D /* Camera_implementation.h */,
 				CDFF30F81AD7A3FC004B017D /* Camera_implementation.m */,
@@ -268,9 +274,9 @@
 		05C2254E1ACA44FC00ACDF1A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				05C2254F1ACA44FC00ACDF1A /* Info.plist */,
 				CC2245C61AD8E8C100C85392 /* 2HOWL_Photo page.png */,
 				CC2245C21AD8DCE600C85392 /* 1HOWL_Title page.png */,
-				05C2254F1ACA44FC00ACDF1A /* Info.plist */,
 				05C225501ACA44FC00ACDF1A /* main.m */,
 			);
 			name = "Supporting Files";
@@ -409,7 +415,9 @@
 				05C225541ACA44FC00ACDF1A /* AppDelegate.m in Sources */,
 				05C225571ACA44FC00ACDF1A /* Howl.xcdatamodeld in Sources */,
 				CDFF30F31AD650AE004B017D /* DBManager.m in Sources */,
+				CC5816F31AD961FA00B74281 /* InitialViewController.swift in Sources */,
 				CC35E7011AD343B200A1E115 /* MapViewController.swift in Sources */,
+				CC5816F11AD958F800B74281 /* place.swift in Sources */,
 				CC5816EF1AD9337F00B74281 /* TestViewController.swift in Sources */,
 				05C225511ACA44FC00ACDF1A /* main.m in Sources */,
 			);

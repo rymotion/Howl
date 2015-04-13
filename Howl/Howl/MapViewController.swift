@@ -17,11 +17,9 @@
 import UIKit
 import MapKit
 
-var places = [Dictionary<String, String>()]
+var userLocation = CLLocation()
 
-var activePlace = -1 // no active place
-
-class ViewController: UIViewController, CLLocationManagerDelegate {
+class MapViewController: UIViewController, CLLocationManagerDelegate {
     
     @IBOutlet var map: MKMapView!
     
@@ -33,76 +31,31 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         // create location manager
         manager = CLLocationManager()
         manager.delegate = self
-        // retrieves most accurate user location drains battery
         manager.desiredAccuracy = kCLLocationAccuracyBest
-        
-        
-        if (activePlace == -1) {
-            
-            manager.requestWhenInUseAuthorization()
-            manager.startUpdatingLocation()
-            
-        } else {
-            
-            // there is an activePlace get the location of the users activePlace
-            let latitude = NSString(string:  places[activePlace]["lat"]!).doubleValue
-            let longitude = NSString(string:  places[activePlace]["lon"]!).doubleValue
-            var coordinate = CLLocationCoordinate2DMake(latitude, longitude)
-            var latDelta: CLLocationDegrees = 0.01
-            var lonDelta: CLLocationDegrees = 0.01
-            
-            var span:MKCoordinateSpan = MKCoordinateSpanMake(latDelta, lonDelta)
-            var region: MKCoordinateRegion = MKCoordinateRegionMake(coordinate, span)
-            
-            self.map.setRegion(region, animated: true)
-            
-            var annotation = MKPointAnnotation()
-            
-            annotation.coordinate = coordinate
-            
-            annotation.title = places[activePlace]["name"]
-            
-            self.map.addAnnotation(annotation)
-            
-        }
-        
-        
-        // creates the long press recognizer
-        var UILongPress = UILongPressGestureRecognizer(target: self, action: "action:")
-        UILongPress.minimumPressDuration = 1.0
-        
-        map.addGestureRecognizer(UILongPress)
-    }
-    
-    func action(gestureRecognizer:UIGestureRecognizer) {
-        
-        
-        if gestureRecognizer.state == UIGestureRecognizerState.Began {
-            
-                
-            
-        }
-        
+        manager.requestWhenInUseAuthorization()
+        manager.startUpdatingLocation()
         
     }
-    
-    
     
     func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
         
         
         // centers map on users location
-        var userLocation: CLLocation = locations[0] as CLLocation
+        userLocation = locations[0] as CLLocation
         var latitude = userLocation.coordinate.latitude
         var longitude = userLocation.coordinate.longitude
         var coordinate = CLLocationCoordinate2DMake(latitude, longitude)
         var latDelta: CLLocationDegrees = 0.01
         var lonDelta: CLLocationDegrees = 0.01
         
+        println("user location is \(userLocation)")
+        
         var span:MKCoordinateSpan = MKCoordinateSpanMake(latDelta, lonDelta)
         var region: MKCoordinateRegion = MKCoordinateRegionMake(coordinate, span)
         
         self.map.setRegion(region, animated: true)
+        
+        self.map.showsUserLocation = true
         
     }
     
