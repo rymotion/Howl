@@ -44,11 +44,11 @@ class TestViewController: UIViewController, MFMessageComposeViewControllerDelega
         
         println(array)
         
-        var UILongPress = UILongPressGestureRecognizer(target: self, action: "action:")
+        var UILongPress = UILongPressGestureRecognizer(target: self, action: "action1:")
         UILongPress.minimumPressDuration = 1.0
         view.addGestureRecognizer(UILongPress)
         
-        let tapGesture = UITapGestureRecognizer(target: self, action: "action1:")
+        let tapGesture = UITapGestureRecognizer(target: self, action: "action:")
         tapGesture.numberOfTapsRequired = 2
         view.addGestureRecognizer(tapGesture)
         
@@ -68,7 +68,7 @@ class TestViewController: UIViewController, MFMessageComposeViewControllerDelega
     
     func action1(gestureRecognizer:UIGestureRecognizer) {
         
-        if gestureRecognizer.state == UIGestureRecognizerState.Ended {
+        if gestureRecognizer.state == UIGestureRecognizerState.Began {
             //println("gesture")
             let phone = "tel://1111111111"
             let url:NSURL = NSURL(string:phone)!
@@ -79,7 +79,7 @@ class TestViewController: UIViewController, MFMessageComposeViewControllerDelega
     
     func action(gestureRecognizer:UIGestureRecognizer) {
         
-        if gestureRecognizer.state == UIGestureRecognizerState.Began {
+        if gestureRecognizer.state == UIGestureRecognizerState.Ended {
             //println("gesture")
             let phone = "tel://9099124128"
             let url:NSURL = NSURL(string:phone)!
