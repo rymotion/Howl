@@ -21,8 +21,6 @@
 		05C2259F1ACA48A600ACDF1A /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C2257C1ACA48A600ACDF1A /* AddressBook.framework */; };
 		05C225A11ACA48A600ACDF1A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C2257E1ACA48A600ACDF1A /* AVFoundation.framework */; };
 		05C225A21ACA48A600ACDF1A /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C2257F1ACA48A600ACDF1A /* AVKit.framework */; };
-		05C225A31ACA48A600ACDF1A /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C225801ACA48A600ACDF1A /* CoreAudio.framework */; };
-		05C225A41ACA48A600ACDF1A /* CoreAudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C225811ACA48A600ACDF1A /* CoreAudioKit.framework */; };
 		05C225A51ACA48A600ACDF1A /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C225821ACA48A600ACDF1A /* CoreBluetooth.framework */; };
 		05C225A61ACA48A600ACDF1A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C225831ACA48A600ACDF1A /* CoreData.framework */; };
 		05C225A71ACA48A600ACDF1A /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C225841ACA48A600ACDF1A /* CoreFoundation.framework */; };
@@ -53,6 +51,7 @@
 		05C225C01ACA48A600ACDF1A /* WatchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C2259D1ACA48A600ACDF1A /* WatchKit.framework */; };
 		05C225C11ACA48A600ACDF1A /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C2259E1ACA48A600ACDF1A /* WebKit.framework */; };
 		CC35E7011AD343B200A1E115 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC35E7001AD343B200A1E115 /* MapViewController.swift */; };
+		CD9AB2EF1AD39E140002F324 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD9AB2EE1AD39E140002F324 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,8 +85,6 @@
 		05C2257C1ACA48A600ACDF1A /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		05C2257E1ACA48A600ACDF1A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		05C2257F1ACA48A600ACDF1A /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
-		05C225801ACA48A600ACDF1A /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
-		05C225811ACA48A600ACDF1A /* CoreAudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudioKit.framework; path = System/Library/Frameworks/CoreAudioKit.framework; sourceTree = SDKROOT; };
 		05C225821ACA48A600ACDF1A /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		05C225831ACA48A600ACDF1A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		05C225841ACA48A600ACDF1A /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
@@ -119,6 +116,7 @@
 		05C2259E1ACA48A600ACDF1A /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		CC35E6FF1AD343B100A1E115 /* Howl-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Howl-Bridging-Header.h"; sourceTree = "<group>"; };
 		CC35E7001AD343B200A1E115 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		CD9AB2EE1AD39E140002F324 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,8 +130,6 @@
 				05C2259F1ACA48A600ACDF1A /* AddressBook.framework in Frameworks */,
 				05C225A11ACA48A600ACDF1A /* AVFoundation.framework in Frameworks */,
 				05C225A21ACA48A600ACDF1A /* AVKit.framework in Frameworks */,
-				05C225A31ACA48A600ACDF1A /* CoreAudio.framework in Frameworks */,
-				05C225A41ACA48A600ACDF1A /* CoreAudioKit.framework in Frameworks */,
 				05C225A51ACA48A600ACDF1A /* CoreBluetooth.framework in Frameworks */,
 				05C225A61ACA48A600ACDF1A /* CoreData.framework in Frameworks */,
 				05C225A71ACA48A600ACDF1A /* CoreFoundation.framework in Frameworks */,
@@ -179,14 +175,13 @@
 		05C225421ACA44FC00ACDF1A = {
 			isa = PBXGroup;
 			children = (
+				CD9AB2EE1AD39E140002F324 /* Default-568h@2x.png */,
 				0554F10A1ACAF8B7000A298C /* libsqlite3.dylib */,
 				0554F1031ACAF780000A298C /* libsqlite3.0.dylib */,
 				0554F1041ACAF780000A298C /* libstdc++.6.0.9.dylib */,
 				05C2257C1ACA48A600ACDF1A /* AddressBook.framework */,
 				05C2257E1ACA48A600ACDF1A /* AVFoundation.framework */,
 				05C2257F1ACA48A600ACDF1A /* AVKit.framework */,
-				05C225801ACA48A600ACDF1A /* CoreAudio.framework */,
-				05C225811ACA48A600ACDF1A /* CoreAudioKit.framework */,
 				05C225821ACA48A600ACDF1A /* CoreBluetooth.framework */,
 				05C225831ACA48A600ACDF1A /* CoreData.framework */,
 				05C225841ACA48A600ACDF1A /* CoreFoundation.framework */,
@@ -332,6 +327,11 @@
 				TargetAttributes = {
 					05C2254A1ACA44FC00ACDF1A = {
 						CreatedOnToolsVersion = 6.2;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					05C225661ACA44FC00ACDF1A = {
 						CreatedOnToolsVersion = 6.2;
@@ -364,6 +364,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				05C2255D1ACA44FC00ACDF1A /* Main.storyboard in Resources */,
+				CD9AB2EF1AD39E140002F324 /* Default-568h@2x.png in Resources */,
 				05C225621ACA44FC00ACDF1A /* LaunchScreen.xib in Resources */,
 				05C2255F1ACA44FC00ACDF1A /* Images.xcassets in Resources */,
 			);
@@ -518,6 +519,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Howl/Howl-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -531,6 +533,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Howl/Howl-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

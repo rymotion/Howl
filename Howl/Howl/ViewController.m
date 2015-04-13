@@ -92,6 +92,7 @@
                                                        delegate:nil
                                               cancelButtonTitle: @"Ok"
                                               otherButtonTitles: @"Settings", nil];
+        
     }
 }
 - (void) locationManager:(CLLocationManager *)manager

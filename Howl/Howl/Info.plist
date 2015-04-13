@@ -29,7 +29,16 @@
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
+		<string>gps</string>
+		<string>location-services</string>
+		<string>microphone</string>
+		<string>peer-peer</string>
+		<string>telephony</string>
+		<string>front-facing-camera</string>
+		<string>wifi</string>
 	</array>
+	<key>UIRequiresPersistentWiFi</key>
+		<boolean>YES</boolean>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
