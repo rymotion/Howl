@@ -10,6 +10,7 @@
 		0554F1051ACAF780000A298C /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0554F1031ACAF780000A298C /* libsqlite3.0.dylib */; };
 		0554F1061ACAF780000A298C /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0554F1041ACAF780000A298C /* libstdc++.6.0.9.dylib */; };
 		0554F10B1ACAF8B7000A298C /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0554F10A1ACAF8B7000A298C /* libsqlite3.dylib */; };
+		058B30ED1ADDD6D400EFCC3F /* Info.m in Sources */ = {isa = PBXBuildFile; fileRef = 058B30EC1ADDD6D400EFCC3F /* Info.m */; };
 		05C225511ACA44FC00ACDF1A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C225501ACA44FC00ACDF1A /* main.m */; };
 		05C225541ACA44FC00ACDF1A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C225531ACA44FC00ACDF1A /* AppDelegate.m */; };
 		05C225571ACA44FC00ACDF1A /* Howl.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 05C225551ACA44FC00ACDF1A /* Howl.xcdatamodeld */; };
@@ -76,6 +77,8 @@
 		0554F1031ACAF780000A298C /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		0554F1041ACAF780000A298C /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
 		0554F10A1ACAF8B7000A298C /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		058B30EB1ADDD6D400EFCC3F /* Info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Info.h; sourceTree = "<group>"; };
+		058B30EC1ADDD6D400EFCC3F /* Info.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Info.m; sourceTree = "<group>"; };
 		05C2254B1ACA44FC00ACDF1A /* Howl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Howl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05C2254F1ACA44FC00ACDF1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05C225501ACA44FC00ACDF1A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -267,6 +270,8 @@
 				05C225551ACA44FC00ACDF1A /* Howl.xcdatamodeld */,
 				05C2254E1ACA44FC00ACDF1A /* Supporting Files */,
 				CC35E6FF1AD343B100A1E115 /* Howl-Bridging-Header.h */,
+				058B30EB1ADDD6D400EFCC3F /* Info.h */,
+				058B30EC1ADDD6D400EFCC3F /* Info.m */,
 			);
 			path = Howl;
 			sourceTree = "<group>";
@@ -416,6 +421,7 @@
 				05C225571ACA44FC00ACDF1A /* Howl.xcdatamodeld in Sources */,
 				CDFF30F31AD650AE004B017D /* DBManager.m in Sources */,
 				CC5816F31AD961FA00B74281 /* InitialViewController.swift in Sources */,
+				058B30ED1ADDD6D400EFCC3F /* Info.m in Sources */,
 				CC35E7011AD343B200A1E115 /* MapViewController.swift in Sources */,
 				CC5816F11AD958F800B74281 /* place.swift in Sources */,
 				CC5816EF1AD9337F00B74281 /* TestViewController.swift in Sources */,
