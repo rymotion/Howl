@@ -16,10 +16,13 @@ import android.telephony.TelephonyManager;
 import android.telephony.PhoneStateListener;
 import android.view.View;
 import android.support.v4.view.GestureDetectorCompat;
+import android.telephony.SmsManager;
+import android.telephony.SmsMessage;
 
 //We take the shit from Howl iOS and put the shit in the shit for Android shit
 public class MainActivity extends Activity implements
-    GestureDetector.OnGestureListener {
+    GestureDetector.OnGestureListener,
+    GestureDetector.OnDoubleTapListener {
 
     private static final String DEBUG_TAG = "Gestures";
     private GestureDetectorCompat mDetector;
@@ -84,5 +87,20 @@ public class MainActivity extends Activity implements
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public boolean onSingleTapConfirmed (MotionEvent e) {
+        return false;
+    }
+
+    @Override
+    public boolean onDoubleTap (MotionEvent e) {
+        return false;
+    }
+
+    @Override
+    public boolean onDoubleTapEvent (MotionEvent e) {
+        return false;
     }
 }
