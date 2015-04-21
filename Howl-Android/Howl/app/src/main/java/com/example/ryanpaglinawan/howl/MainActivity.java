@@ -19,8 +19,7 @@ import android.support.v4.view.GestureDetectorCompat;
 
 
 public class MainActivity extends Activity implements
-    GestureDetector.OnGestureListener,
-    GestureDetector.SimpleOnGestureListener {
+    GestureDetector.OnGestureListener {
 
     private static final String DEBUG_TAG = "Gestures";
     private GestureDetectorCompat mDetector;
@@ -32,8 +31,33 @@ public class MainActivity extends Activity implements
     }
 
     @Override
+    public boolean onDown (MotionEvent e) {
+        return false;
+    }
+
+    @Override
+    public void onShowPress (MotionEvent e) {
+
+    }
+
+    @Override
+    public boolean onSingleTapUp (MotionEvent e) {
+        return false;
+    }
+
+    @Override
+    public boolean onScroll (MotionEvent e1, MotionEvent e2, float distanceX, float distanceY) {
+        return false;
+    }
+
+    @Override
     public void onLongPress(MotionEvent event){
         Log.d(DEBUG_TAG, "onLongPress: " + event.toString());
+    }
+
+    @Override
+    public boolean onFling (MotionEvent e1, MotionEvent e2, float velocityX, float velocityY) {
+        return false;
     }
 
     @Override
