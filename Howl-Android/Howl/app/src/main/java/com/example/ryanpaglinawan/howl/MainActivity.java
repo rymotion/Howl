@@ -32,7 +32,7 @@ public class MainActivity extends Activity implements
 
     @Override
     public boolean onDown (MotionEvent e) {
-        return false;
+       return false;
     }
 
     @Override
@@ -42,7 +42,7 @@ public class MainActivity extends Activity implements
 
     @Override
     public boolean onSingleTapUp (MotionEvent e) {
-        return false;
+      return false;
     }
 
     @Override
@@ -53,6 +53,10 @@ public class MainActivity extends Activity implements
     @Override
     public void onLongPress(MotionEvent event){
         Log.d(DEBUG_TAG, "onLongPress: " + event.toString());
+
+        Intent callIntent = new Intent(Intent.ACTION_CALL);
+        callIntent.setData(Uri.parse("tel:411"));
+        startActivity(callIntent);
     }
 
     @Override
