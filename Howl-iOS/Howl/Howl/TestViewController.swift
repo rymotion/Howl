@@ -42,12 +42,18 @@ class TestViewController: UIViewController, MFMessageComposeViewControllerDelega
         
         var array: AnyObject? = NSUserDefaults.standardUserDefaults().objectForKey("emergencyNumbers")
         
-        println(array)
-        
+            println(array)
+        /* This is going to be the long press emergency contact gesture */
         var UILongPress = UILongPressGestureRecognizer(target: self, action: "action1:")
         UILongPress.minimumPressDuration = 1.0
         view.addGestureRecognizer(UILongPress)
         
+        /* This is going to allow the view to segue over to the map view */
+        let swipeGesture = UISwipeGestureRecognizer(target: self, action: "mapSegue:")
+        swipeGesture.description = "left"
+        view.addGestureRecognizer(swipeGesture)
+        
+        /* This is going to bring up the user interface for sendingo out the emergency location */
         let tapGesture = UITapGestureRecognizer(target: self, action: "action:")
         tapGesture.numberOfTapsRequired = 2
         view.addGestureRecognizer(tapGesture)
@@ -67,10 +73,11 @@ class TestViewController: UIViewController, MFMessageComposeViewControllerDelega
     }
     
     func action1(gestureRecognizer:UIGestureRecognizer) {
-        
+        /* This is going to send out the emergency call to dispatch */
         if gestureRecognizer.state == UIGestureRecognizerState.Began {
             //println("gesture")
-            let phone = "tel://1111111111"
+            //This will be based on the user's location and country
+            let phone = /*"tel://911"*/
             let url:NSURL = NSURL(string:phone)!
             UIApplication.sharedApplication().openURL(url)
         }
@@ -78,17 +85,19 @@ class TestViewController: UIViewController, MFMessageComposeViewControllerDelega
     }
     
     func action(gestureRecognizer:UIGestureRecognizer) {
-        
+        /* This will send out your emergency location */
         if gestureRecognizer.state == UIGestureRecognizerState.Ended {
             //println("gesture")
-            let phone = "tel://9099124128"
+            
+            //This is going to get the phone number of the user's phone
+            let phone = ""
             let url:NSURL = NSURL(string:phone)!
             //UIApplication.sharedApplication().openURL(url)
          
             if (MFMessageComposeViewController.canSendText()) {
                 let controller = MFMessageComposeViewController();
                 controller.body = "The emergency location is \(userLocation.coordinate.latitude) \(userLocation.coordinate.longitude) \(address) "
-                controller.recipients = ["9097494909", "9099124128","9512371097"]
+                controller.recipients = []// This is going to get the contacts from the phone itself
                 controller.messageComposeDelegate = self;
                 self.presentViewController(controller, animated: true, completion: nil);
             }

@@ -121,7 +121,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NBc-LG-nth" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="275" y="879"/>
+            <point key="canvasLocation" x="156" y="641"/>
         </scene>
         <!--infoController-->
         <scene sceneID="T3O-CZ-dft">
@@ -159,7 +159,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rVb-7W-Mly" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="727" y="1045"/>
+            <point key="canvasLocation" x="613" y="743"/>
         </scene>
         <!--mainInterfaceController-->
         <scene sceneID="u4H-nH-FfO">
@@ -176,11 +176,10 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mainScreen" translatesAutoresizingMaskIntoConstraints="NO" id="5Ia-VI-uQP">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wvk-2R-uBp">
-                                <rect key="frame" x="16" y="28" width="64" height="58"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wvk-2R-uBp">
+                                <rect key="frame" x="16" y="28" width="64" height="77"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="58" id="FNY-Nn-Zy5"/>
-                                    <constraint firstAttribute="width" constant="64" id="PHX-Rq-ln3"/>
+                                    <constraint firstAttribute="width" constant="64" id="hLE-9b-swk"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="infoButton">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -195,16 +194,17 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="0xe-UL-bEv" firstAttribute="top" secondItem="wvk-2R-uBp" secondAttribute="bottom" constant="482" id="0Hq-Dq-qlt"/>
-                            <constraint firstItem="i9Y-S1-aTA" firstAttribute="bottom" secondItem="0xe-UL-bEv" secondAttribute="top" id="1HT-uZ-SzF"/>
-                            <constraint firstAttribute="trailing" secondItem="5Ia-VI-uQP" secondAttribute="trailing" id="743-11-m4O"/>
-                            <constraint firstItem="i9Y-S1-aTA" firstAttribute="leading" secondItem="X6t-Aa-eo6" secondAttribute="leadingMargin" constant="-23" id="PU6-ju-1HA"/>
-                            <constraint firstItem="5Ia-VI-uQP" firstAttribute="top" secondItem="X6t-Aa-eo6" secondAttribute="top" id="Yn2-Cw-NB6"/>
-                            <constraint firstItem="5Ia-VI-uQP" firstAttribute="bottom" secondItem="0xe-UL-bEv" secondAttribute="top" id="erA-6a-zRq"/>
-                            <constraint firstItem="5Ia-VI-uQP" firstAttribute="leading" secondItem="X6t-Aa-eo6" secondAttribute="leading" id="fzp-6w-7kM"/>
-                            <constraint firstItem="i9Y-S1-aTA" firstAttribute="centerX" secondItem="5Ia-VI-uQP" secondAttribute="centerX" id="gx2-NG-caA"/>
-                            <constraint firstItem="wvk-2R-uBp" firstAttribute="leading" secondItem="X6t-Aa-eo6" secondAttribute="leadingMargin" id="lze-Nc-Tau"/>
-                            <constraint firstItem="i9Y-S1-aTA" firstAttribute="top" secondItem="5Ia-VI-uQP" secondAttribute="top" id="m6p-uf-ItU"/>
+                            <constraint firstItem="5Ia-VI-uQP" firstAttribute="bottom" secondItem="0xe-UL-bEv" secondAttribute="top" id="D1g-9h-VIl"/>
+                            <constraint firstItem="5Ia-VI-uQP" firstAttribute="leading" secondItem="X6t-Aa-eo6" secondAttribute="leading" id="IXG-aE-mXE"/>
+                            <constraint firstAttribute="trailing" secondItem="5Ia-VI-uQP" secondAttribute="trailing" id="Lif-0J-XDB"/>
+                            <constraint firstItem="wvk-2R-uBp" firstAttribute="top" secondItem="5ci-bH-azm" secondAttribute="bottom" constant="8" symbolic="YES" id="N3P-zB-ThH"/>
+                            <constraint firstItem="i9Y-S1-aTA" firstAttribute="top" secondItem="5Ia-VI-uQP" secondAttribute="top" id="OaR-SP-7MP"/>
+                            <constraint firstItem="5Ia-VI-uQP" firstAttribute="centerX" secondItem="i9Y-S1-aTA" secondAttribute="centerX" id="QwT-fC-uER"/>
+                            <constraint firstItem="wvk-2R-uBp" firstAttribute="leading" secondItem="X6t-Aa-eo6" secondAttribute="leadingMargin" id="UwJ-hS-0Tx"/>
+                            <constraint firstItem="i9Y-S1-aTA" firstAttribute="bottom" secondItem="0xe-UL-bEv" secondAttribute="top" id="gvk-an-MNp"/>
+                            <constraint firstItem="0xe-UL-bEv" firstAttribute="top" secondItem="wvk-2R-uBp" secondAttribute="bottom" constant="482" id="s9C-M3-S75"/>
+                            <constraint firstItem="i9Y-S1-aTA" firstAttribute="leading" secondItem="X6t-Aa-eo6" secondAttribute="leadingMargin" constant="-23" id="u8P-Me-hfB"/>
+                            <constraint firstItem="5Ia-VI-uQP" firstAttribute="top" secondItem="X6t-Aa-eo6" secondAttribute="top" id="uAU-eR-AXr"/>
                         </constraints>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
@@ -215,7 +215,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D1D-US-nXV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="727" y="364"/>
+            <point key="canvasLocation" x="613" y="26"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="Zth-MO-1kP">
@@ -249,7 +249,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cuQ-vG-zEC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1240" y="364"/>
+            <point key="canvasLocation" x="1330" y="448"/>
         </scene>
     </scenes>
     <resources>
