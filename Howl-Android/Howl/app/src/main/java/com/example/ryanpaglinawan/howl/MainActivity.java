@@ -17,7 +17,7 @@ import android.telephony.PhoneStateListener;
 import android.view.View;
 import android.support.v4.view.GestureDetectorCompat;
 
-
+//We take the shit from Howl iOS and put the shit in the shit for Android shit
 public class MainActivity extends Activity implements
     GestureDetector.OnGestureListener {
 
