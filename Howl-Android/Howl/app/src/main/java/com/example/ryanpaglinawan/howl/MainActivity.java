@@ -2,11 +2,28 @@ package com.example.ryanpaglinawan.howl;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.GestureDetector;
+import android.view.MotionEvent;
+import android.hardware.Camera;
+import android.net.Uri;
+import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
+import android.telephony.TelephonyManager;
+import android.telephony.PhoneStateListener;
+import android.view.View;
+import android.support.v4.view.GestureDetectorCompat;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends Activity implements
+    GestureDetector.OnGestureListener,
+    GestureDetector.SimpleOnGestureListener {
+
+    private static final String DEBUG_TAG = "Gestures";
+    private GestureDetectorCompat mDetector;
 
     @Override
     protected void onCreate (Bundle savedInstanceState) {
@@ -14,6 +31,10 @@ public class MainActivity extends ActionBarActivity {
         setContentView(R.layout.main);
     }
 
+    @Override
+    public void onLongPress(MotionEvent event){
+        Log.d(DEBUG_TAG, "onLongPress: " + event.toString());
+    }
 
     @Override
     public boolean onCreateOptionsMenu (Menu menu) {
