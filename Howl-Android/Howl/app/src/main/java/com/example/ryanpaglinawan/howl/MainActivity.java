@@ -96,11 +96,16 @@ public class MainActivity extends Activity implements
 
     @Override
     public boolean onDoubleTap (MotionEvent e) {
-        return false;
+       sendSMSMessage();
+        Log.d(DEBUG_TAG, "Message sent");
     }
 
     @Override
     public boolean onDoubleTapEvent (MotionEvent e) {
         return false;
+    }
+
+    protected void sendSMSMessage() {
+     // this is what I asked to be done
     }
 }
