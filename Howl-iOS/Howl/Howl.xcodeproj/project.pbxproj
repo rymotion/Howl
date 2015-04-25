@@ -10,6 +10,7 @@
 		0554F1051ACAF780000A298C /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0554F1031ACAF780000A298C /* libsqlite3.0.dylib */; };
 		0554F1061ACAF780000A298C /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0554F1041ACAF780000A298C /* libstdc++.6.0.9.dylib */; };
 		0554F10B1ACAF8B7000A298C /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0554F10A1ACAF8B7000A298C /* libsqlite3.dylib */; };
+		055C8B811AEAD9C6000813B3 /* AddressBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 055C8B801AEAD9C6000813B3 /* AddressBook.m */; };
 		058B30ED1ADDD6D400EFCC3F /* Info.m in Sources */ = {isa = PBXBuildFile; fileRef = 058B30EC1ADDD6D400EFCC3F /* Info.m */; };
 		05C225511ACA44FC00ACDF1A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C225501ACA44FC00ACDF1A /* main.m */; };
 		05C225541ACA44FC00ACDF1A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C225531ACA44FC00ACDF1A /* AppDelegate.m */; };
@@ -60,7 +61,6 @@
 		CC5816F11AD958F800B74281 /* place.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5816F01AD958F800B74281 /* place.swift */; };
 		CC5816F31AD961FA00B74281 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5816F21AD961FA00B74281 /* InitialViewController.swift */; };
 		CDFF30F31AD650AE004B017D /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFF30F21AD650AE004B017D /* DBManager.m */; };
-		CDFF30F91AD7A3FC004B017D /* Camera_implementation.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFF30F81AD7A3FC004B017D /* Camera_implementation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +77,8 @@
 		0554F1031ACAF780000A298C /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		0554F1041ACAF780000A298C /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
 		0554F10A1ACAF8B7000A298C /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		055C8B7F1AEAD9C6000813B3 /* AddressBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddressBook.h; path = Howl/AddressBook.h; sourceTree = "<group>"; };
+		055C8B801AEAD9C6000813B3 /* AddressBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddressBook.m; path = Howl/AddressBook.m; sourceTree = "<group>"; };
 		058B30EB1ADDD6D400EFCC3F /* Info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Info.h; sourceTree = "<group>"; };
 		058B30EC1ADDD6D400EFCC3F /* Info.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Info.m; sourceTree = "<group>"; };
 		05C2254B1ACA44FC00ACDF1A /* Howl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Howl.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -135,8 +137,6 @@
 		CC5816F21AD961FA00B74281 /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		CDFF30F11AD650AE004B017D /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DBManager.h; path = Howl/DBManager.h; sourceTree = "<group>"; };
 		CDFF30F21AD650AE004B017D /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DBManager.m; path = Howl/DBManager.m; sourceTree = "<group>"; };
-		CDFF30F71AD7A3FC004B017D /* Camera_implementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Camera_implementation.h; sourceTree = "<group>"; };
-		CDFF30F81AD7A3FC004B017D /* Camera_implementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Camera_implementation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +197,8 @@
 		05C225421ACA44FC00ACDF1A = {
 			isa = PBXGroup;
 			children = (
+				055C8B7F1AEAD9C6000813B3 /* AddressBook.h */,
+				055C8B801AEAD9C6000813B3 /* AddressBook.m */,
 				CDFF30F11AD650AE004B017D /* DBManager.h */,
 				CDFF30F21AD650AE004B017D /* DBManager.m */,
 				0554F10A1ACAF8B7000A298C /* libsqlite3.dylib */,
@@ -262,8 +264,6 @@
 				05C225521ACA44FC00ACDF1A /* AppDelegate.h */,
 				CC5816F21AD961FA00B74281 /* InitialViewController.swift */,
 				05C225531ACA44FC00ACDF1A /* AppDelegate.m */,
-				CDFF30F71AD7A3FC004B017D /* Camera_implementation.h */,
-				CDFF30F81AD7A3FC004B017D /* Camera_implementation.m */,
 				CC35E7001AD343B200A1E115 /* MapViewController.swift */,
 				05C2255E1ACA44FC00ACDF1A /* Images.xcassets */,
 				05C225601ACA44FC00ACDF1A /* LaunchScreen.xib */,
@@ -415,7 +415,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDFF30F91AD7A3FC004B017D /* Camera_implementation.m in Sources */,
 				CC2245C51AD8DF5F00C85392 /* PictureViewController.swift in Sources */,
 				05C225541ACA44FC00ACDF1A /* AppDelegate.m in Sources */,
 				05C225571ACA44FC00ACDF1A /* Howl.xcdatamodeld in Sources */,
@@ -425,6 +424,7 @@
 				CC35E7011AD343B200A1E115 /* MapViewController.swift in Sources */,
 				CC5816F11AD958F800B74281 /* place.swift in Sources */,
 				CC5816EF1AD9337F00B74281 /* TestViewController.swift in Sources */,
+				055C8B811AEAD9C6000813B3 /* AddressBook.m in Sources */,
 				05C225511ACA44FC00ACDF1A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -106,6 +106,21 @@ public class MainActivity extends Activity implements
     }
 
     protected void sendSMSMessage() {
-     // this is what I asked to be done
+        Log.i("Send SMS", "");
+
+        String phoneNo = txtphoneNo.getText().toString();
+        String message = txtMessage.getText().toString();
+
+        try {
+            SmsManager smsManager = SmsManager.getDefault();
+            smsManager.sendTextMessage(phoneNo, null, message, null, null);
+            Toast.makeText(getApplicationContext(), "SMS sent.",
+                    Toast.LENGTH_LONG).show();
+        } catch (Exception e) {
+            Toast.makeText(getApplicationContext(),
+                    "SMS faild, please try again.",
+                    Toast.LENGTH_LONG).show();
+            e.printStackTrace();
+        }
     }
 }
