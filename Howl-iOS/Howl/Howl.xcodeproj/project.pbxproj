@@ -11,6 +11,7 @@
 		0554F1061ACAF780000A298C /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0554F1041ACAF780000A298C /* libstdc++.6.0.9.dylib */; };
 		0554F10B1ACAF8B7000A298C /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0554F10A1ACAF8B7000A298C /* libsqlite3.dylib */; };
 		055C8B811AEAD9C6000813B3 /* AddressBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 055C8B801AEAD9C6000813B3 /* AddressBook.m */; };
+		055C8B831AECDEA9000813B3 /* mainWatch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 055C8B821AECDEA9000813B3 /* mainWatch.storyboard */; };
 		058B30ED1ADDD6D400EFCC3F /* Info.m in Sources */ = {isa = PBXBuildFile; fileRef = 058B30EC1ADDD6D400EFCC3F /* Info.m */; };
 		05C225511ACA44FC00ACDF1A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C225501ACA44FC00ACDF1A /* main.m */; };
 		05C225541ACA44FC00ACDF1A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C225531ACA44FC00ACDF1A /* AppDelegate.m */; };
@@ -77,8 +78,9 @@
 		0554F1031ACAF780000A298C /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		0554F1041ACAF780000A298C /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
 		0554F10A1ACAF8B7000A298C /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		055C8B7F1AEAD9C6000813B3 /* AddressBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddressBook.h; path = Howl/AddressBook.h; sourceTree = "<group>"; };
-		055C8B801AEAD9C6000813B3 /* AddressBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddressBook.m; path = Howl/AddressBook.m; sourceTree = "<group>"; };
+		055C8B7F1AEAD9C6000813B3 /* AddressBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressBook.h; sourceTree = "<group>"; };
+		055C8B801AEAD9C6000813B3 /* AddressBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressBook.m; sourceTree = "<group>"; };
+		055C8B821AECDEA9000813B3 /* mainWatch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = mainWatch.storyboard; sourceTree = "<group>"; };
 		058B30EB1ADDD6D400EFCC3F /* Info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Info.h; sourceTree = "<group>"; };
 		058B30EC1ADDD6D400EFCC3F /* Info.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Info.m; sourceTree = "<group>"; };
 		05C2254B1ACA44FC00ACDF1A /* Howl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Howl.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -197,8 +199,6 @@
 		05C225421ACA44FC00ACDF1A = {
 			isa = PBXGroup;
 			children = (
-				055C8B7F1AEAD9C6000813B3 /* AddressBook.h */,
-				055C8B801AEAD9C6000813B3 /* AddressBook.m */,
 				CDFF30F11AD650AE004B017D /* DBManager.h */,
 				CDFF30F21AD650AE004B017D /* DBManager.m */,
 				0554F10A1ACAF8B7000A298C /* libsqlite3.dylib */,
@@ -257,6 +257,9 @@
 		05C2254D1ACA44FC00ACDF1A /* Howl */ = {
 			isa = PBXGroup;
 			children = (
+				055C8B821AECDEA9000813B3 /* mainWatch.storyboard */,
+				055C8B7F1AEAD9C6000813B3 /* AddressBook.h */,
+				055C8B801AEAD9C6000813B3 /* AddressBook.m */,
 				CC2245C41AD8DF5F00C85392 /* PictureViewController.swift */,
 				CC5816EE1AD9337F00B74281 /* TestViewController.swift */,
 				CC5816F01AD958F800B74281 /* place.swift */,
@@ -396,6 +399,7 @@
 				CC2245C31AD8DCE600C85392 /* 1HOWL_Title page.png in Resources */,
 				CC2245C71AD8E8C100C85392 /* 2HOWL_Photo page.png in Resources */,
 				05C225621ACA44FC00ACDF1A /* LaunchScreen.xib in Resources */,
+				055C8B831AECDEA9000813B3 /* mainWatch.storyboard in Resources */,
 				05C2255F1ACA44FC00ACDF1A /* Images.xcassets in Resources */,
 				CC2245C91AD8ECAA00C85392 /* Main.storyboard in Resources */,
 			);

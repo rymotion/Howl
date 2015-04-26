@@ -54,6 +54,7 @@
 }
 - (void)listPeopleInAddressBook:(ABAddressBookRef)addressBook
 {
+    //This should iterate through all listed contacts in the list
     NSArray *allPeople = CFBridgingRelease(ABAddressBookCopyArrayOfAllPeople(addressBook));
     NSInteger numberOfPeople = [allPeople count];
     
