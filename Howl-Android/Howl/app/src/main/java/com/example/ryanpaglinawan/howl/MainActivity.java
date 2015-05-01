@@ -108,7 +108,7 @@ public class MainActivity extends Activity implements
     protected void callEmNum() {
         Log.d("Calling police", "");
 
-        String phoneNo = 
+        String phoneNo = getEmNum();
     }
     protected void sendSMSMessage() {
         Log.i("Send SMS", "");
@@ -127,5 +127,8 @@ public class MainActivity extends Activity implements
                     Toast.LENGTH_LONG).show();
             e.printStackTrace();
         }
+    }
+    protected void getEmNum() {
+        
     }
 }

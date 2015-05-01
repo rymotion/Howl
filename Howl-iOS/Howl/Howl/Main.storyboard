@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="LeS-b2-Ubg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="LeS-b2-Ubg">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Picture View Controller-->
+        <!--Photo_ID-->
         <scene sceneID="cjn-So-2Hj">
             <objects>
-                <viewController id="LeS-b2-Ubg" customClass="PictureViewController" customModule="Howl" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Photo_ID" id="LeS-b2-Ubg" customClass="PictureViewController" customModule="Howl" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yf6-d9-SRf"/>
                         <viewControllerLayoutGuide type="bottom" id="1s4-Bi-3rf"/>
@@ -126,7 +126,7 @@
         <!--infoController-->
         <scene sceneID="T3O-CZ-dft">
             <objects>
-                <viewController id="gp5-pj-2HH" userLabel="infoController" sceneMemberID="viewController">
+                <viewController title="Info_View" id="gp5-pj-2HH" userLabel="infoController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="So3-YE-vvi"/>
                         <viewControllerLayoutGuide type="bottom" id="amw-3y-vJK"/>
@@ -164,7 +164,7 @@
         <!--mainInterfaceController-->
         <scene sceneID="u4H-nH-FfO">
             <objects>
-                <viewController id="hLg-ic-uEE" userLabel="mainInterfaceController" customClass="TestViewController" customModule="Howl" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Main_Interface" id="hLg-ic-uEE" userLabel="mainInterfaceController" customClass="TestViewController" customModule="Howl" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5ci-bH-azm"/>
                         <viewControllerLayoutGuide type="bottom" id="0xe-UL-bEv"/>
@@ -191,6 +191,12 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mSButton" translatesAutoresizingMaskIntoConstraints="NO" id="i9Y-S1-aTA">
                                 <rect key="frame" x="-7" y="0.0" width="335" height="568"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZUL-RT-bHA">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -217,10 +223,10 @@
             </objects>
             <point key="canvasLocation" x="613" y="26"/>
         </scene>
-        <!--Map View Controller-->
+        <!--Map_view-->
         <scene sceneID="Zth-MO-1kP">
             <objects>
-                <viewController id="pxm-n5-4ni" customClass="MapViewController" customModule="Howl" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Map_view" id="pxm-n5-4ni" customClass="MapViewController" customModule="Howl" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xUg-vi-XD6"/>
                         <viewControllerLayoutGuide type="bottom" id="fja-40-OdJ"/>
@@ -259,6 +265,6 @@
         <image name="photoButt" width="445" height="75"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="T1s-lM-qHL"/>
+        <segue reference="11n-Je-voo"/>
     </inferredMetricsTieBreakers>
 </document>
