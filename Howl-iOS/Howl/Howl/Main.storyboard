@@ -62,7 +62,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eXX-JY-bUi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="156" y="26"/>
+            <point key="canvasLocation" x="156" y="6"/>
         </scene>
         <!--Initial View Controller-->
         <scene sceneID="RmI-DS-4fl">
@@ -259,6 +259,6 @@
         <image name="photoButt" width="445" height="75"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="11n-Je-voo"/>
+        <segue reference="T1s-lM-qHL"/>
     </inferredMetricsTieBreakers>
 </document>

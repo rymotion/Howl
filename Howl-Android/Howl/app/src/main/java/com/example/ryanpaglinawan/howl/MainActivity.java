@@ -5,19 +5,19 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.GestureDetector;
-import android.view.MotionEvent;
+import android.view.GestureDetector;    //This one
+import android.view.MotionEvent;    //This one
 import android.hardware.Camera;
 import android.net.Uri;
-import android.app.Activity;
+import android.app.Activity;    //This one
 import android.content.Context;
-import android.content.Intent;
-import android.telephony.TelephonyManager;
-import android.telephony.PhoneStateListener;
+import android.content.Intent;  //This one
+import android.telephony.TelephonyManager;  //This one
+import android.telephony.PhoneStateListener;    //This one
 import android.view.View;
-import android.support.v4.view.GestureDetectorCompat;
-import android.telephony.SmsManager;
-import android.telephony.SmsMessage;
+import android.support.v4.view.GestureDetectorCompat;   //This one
+import android.telephony.SmsManager;    //This one
+import android.telephony.SmsMessage;    //This one
 
 //We take the shit from Howl iOS and put the shit in the shit for Android shit
 public class MainActivity extends Activity implements
@@ -105,6 +105,11 @@ public class MainActivity extends Activity implements
         return false;
     }
 
+    protected void callEmNum() {
+        Log.d("Calling police", "");
+
+        String phoneNo = 
+    }
     protected void sendSMSMessage() {
         Log.i("Send SMS", "");
 

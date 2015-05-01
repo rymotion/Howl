@@ -50,7 +50,7 @@ class TestViewController: UIViewController, MFMessageComposeViewControllerDelega
         
         /* This is going to allow the view to segue over to the map view */
         let swipeGesture = UISwipeGestureRecognizer(target: self, action: "mapSegue:")
-        swipeGesture.description = "left"
+        //swipeGesture.description = "left"
         view.addGestureRecognizer(swipeGesture)
         
         /* This is going to bring up the user interface for sendingo out the emergency location */
@@ -71,6 +71,7 @@ class TestViewController: UIViewController, MFMessageComposeViewControllerDelega
         }
         
     }
+    func getEmNum(NSString)
     
     func action1(gestureRecognizer:UIGestureRecognizer) {
         /* This is going to send out the emergency call to dispatch */
@@ -78,7 +79,7 @@ class TestViewController: UIViewController, MFMessageComposeViewControllerDelega
             //println("gesture")
             //This will be based on the user's location and country
             let phone = /*"tel://911"*/
-            let url:NSURL = NSURL(string:phone)!
+            NSString.self url = NSURL(string:phone)!
             UIApplication.sharedApplication().openURL(url)
         }
         
@@ -133,6 +134,8 @@ class TestViewController: UIViewController, MFMessageComposeViewControllerDelega
             
             var postalCode = ""
             
+            var country = ""
+            
             if (error == nil) {
                 
                 if let p = CLPlacemark(placemark: placemarks?[0] as! CLPlacemark) {
@@ -151,6 +154,8 @@ class TestViewController: UIViewController, MFMessageComposeViewControllerDelega
                         state = p.administrativeArea
                         
                         postalCode = p.postalCode
+                        
+                        //country = p.
                         
                         
                     }

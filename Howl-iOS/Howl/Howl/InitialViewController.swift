@@ -67,7 +67,7 @@ class InitialViewController: UIViewController, UITextFieldDelegate {
         // Dispose of any resources that can be recreated.
     }
 
-    func textFieldShouldReturn(textField: UITextField!) -> Bool {
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
         
         contactTextField.resignFirstResponder()  //if desired
         contactNumbers.append(contactTextField.text)
