@@ -7,8 +7,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.GestureDetector;    //This one
 import android.view.MotionEvent;    //This one
-import android.hardware.Camera;
-import android.net.Uri;
 import android.app.Activity;    //This one
 import android.content.Context;
 import android.content.Intent;  //This one
@@ -21,7 +19,6 @@ import android.telephony.SmsMessage;    //This one
 
 //We take the shit from Howl iOS and put the shit in the shit for Android shit
 public class MainActivity extends Activity implements
-    GestureDetector.OnGestureListener,
     GestureDetector.OnDoubleTapListener {
 
     private static final String DEBUG_TAG = "Gestures";
@@ -34,37 +31,9 @@ public class MainActivity extends Activity implements
     }
 
     @Override
-    public boolean onDown (MotionEvent e) {
-       return false;
-    }
-
-    @Override
-    public void onShowPress (MotionEvent e) {
-
-    }
-
-    @Override
-    public boolean onSingleTapUp (MotionEvent e) {
-      return false;
-    }
-
-    @Override
-    public boolean onScroll (MotionEvent e1, MotionEvent e2, float distanceX, float distanceY) {
-        return false;
-    }
-
-    @Override
     public void onLongPress(MotionEvent event){
-        Log.d(DEBUG_TAG, "onLongPress: " + event.toString());
+        callEmNum();
 
-        Intent callIntent = new Intent(Intent.ACTION_CALL);
-        callIntent.setData(Uri.parse("tel:411"));
-        startActivity(callIntent);
-    }
-
-    @Override
-    public boolean onFling (MotionEvent e1, MotionEvent e2, float velocityX, float velocityY) {
-        return false;
     }
 
     @Override
@@ -90,11 +59,6 @@ public class MainActivity extends Activity implements
     }
 
     @Override
-    public boolean onSingleTapConfirmed (MotionEvent e) {
-        return false;
-    }
-
-    @Override
     public boolean onDoubleTap (MotionEvent e) {
        sendSMSMessage();
         Log.d(DEBUG_TAG, "Message sent");
@@ -102,13 +66,14 @@ public class MainActivity extends Activity implements
 
     @Override
     public boolean onDoubleTapEvent (MotionEvent e) {
-        return false;
+        sendSMSMessage();
+        Log.d(DEBUG_TAG, "Message sent");
     }
 
     protected void callEmNum() {
-        Log.d("Calling police", "");
+        Log.d(DEBUG_TAG, "Emergency services contacted");
+        getEmNum();
 
-        String phoneNo = getEmNum();
     }
     protected void sendSMSMessage() {
         Log.i("Send SMS", "");
@@ -129,6 +94,15 @@ public class MainActivity extends Activity implements
         }
     }
     protected void getEmNum() {
-        
+        /*
+            this is going to the GPS to find out what country you are in and will set it to the
+            callEmNum function or atl east I hope
+        */
+    }
+    protected void getContact(){
+        /*
+            This will get the contacts from the users phone and set it to the app
+        */
+
     }
 }

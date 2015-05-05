@@ -11,48 +11,29 @@ import MessageUI
 import MapKit
 
 class TestViewController: UIViewController, MFMessageComposeViewControllerDelegate, CLLocationManagerDelegate {
-
     var array = [AnyObject]()
-    
     var manager: CLLocationManager!
-    
     var address = ""
-    
     var buildings = [CLLocation]()
-    
     var nearBuildings = [CLLocation]()
-    
     @IBAction func backToViewController(segue:UIStoryboardSegue) {
-        
     }
-    
     override func viewDidAppear(animated: Bool) {
-        
         super.viewDidAppear(true)
         buildings.append(userLocation)
-        
-        //println("vector[0] = \(buildings[0])")
     }
-    
     override func viewDidLoad() {
-        
         super.viewDidLoad()
-        
-        //println("view did load")
-        
         var array: AnyObject? = NSUserDefaults.standardUserDefaults().objectForKey("emergencyNumbers")
-        
             println(array)
         /* This is going to be the long press emergency contact gesture */
         var UILongPress = UILongPressGestureRecognizer(target: self, action: "action1:")
         UILongPress.minimumPressDuration = 1.0
         view.addGestureRecognizer(UILongPress)
-        
         /* This is going to allow the view to segue over to the map view */
         let swipeGesture = UISwipeGestureRecognizer(target: self, action: "mapSegue:")
         //swipeGesture.description = "left"
         view.addGestureRecognizer(swipeGesture)
-        
         /* This is going to bring up the user interface for sendingo out the emergency location */
         let tapGesture = UITapGestureRecognizer(target: self, action: "action:")
         tapGesture.numberOfTapsRequired = 2
@@ -71,7 +52,9 @@ class TestViewController: UIViewController, MFMessageComposeViewControllerDelega
         }
         
     }
-    func getEmNum(NSString)
+    func getEmNum(NSString){
+        locationManager(<#manager: CLLocationManager!#>, didChangeAuthorizationStatus: <#CLAuthorizationStatus#>)
+    }
     
     func action1(gestureRecognizer:UIGestureRecognizer) {
         /* This is going to send out the emergency call to dispatch */
