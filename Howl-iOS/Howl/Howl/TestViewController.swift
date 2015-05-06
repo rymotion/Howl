@@ -53,7 +53,15 @@ class TestViewController: UIViewController, MFMessageComposeViewControllerDelega
         
     }
     func getEmNum(NSString){
-        locationManager(<#manager: CLLocationManager!#>, didChangeAuthorizationStatus: <#CLAuthorizationStatus#>)
+        /*
+            This is going to read the SQLite database that will get the correct emergency number based on the country 
+            the user is in called in from the locationManager function
+        */
+    }
+    func getRec(NSString){
+        /*
+            This is going to be the code that will be put in to generate the group text
+        */
     }
     
     func action1(gestureRecognizer:UIGestureRecognizer) {
@@ -67,11 +75,15 @@ class TestViewController: UIViewController, MFMessageComposeViewControllerDelega
         }
         
     }
-    
+    func mapSegue(gestureRecognizer:UIGestureRecognizer) {
+        /*
+            This will detect a swipe gesture that will allow the user to access the map that will show the
+            UIMap
+        */
+    }
     func action(gestureRecognizer:UIGestureRecognizer) {
         /* This will send out your emergency location */
         if gestureRecognizer.state == UIGestureRecognizerState.Ended {
-            //println("gesture")
             
             //This is going to get the phone number of the user's phone
             let phone = ""
@@ -138,7 +150,7 @@ class TestViewController: UIViewController, MFMessageComposeViewControllerDelega
                         
                         postalCode = p.postalCode
                         
-                        //country = p.
+                        country = p.country
                         
                         
                     }
@@ -148,18 +160,11 @@ class TestViewController: UIViewController, MFMessageComposeViewControllerDelega
                         thoroughfare = p.thoroughfare
                         
                     }
-                    
                     title = "\(subThoroughfare) \(thoroughfare)"
-                    
                     self.address = "\(title) \(city) \(state) \(postalCode)"
-                    
-                    //println(self.address)
+                    self.counNam = "\(country)"
                 }
-                
             }
-            
         })
-    
     }
-    
 }
