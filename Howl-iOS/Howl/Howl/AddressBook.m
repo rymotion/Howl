@@ -9,73 +9,78 @@
 #import "AddressBook.h"
 
 @implementation AddressBook
-- (void) authorizationView {
-    ABAuthorizationStatus status = ABAddressBookGetAuthorizationStatus();
+-(void) authorizationView {
+    ABAddressBookRef addressBook = ABAddressBookCreate();
+
+    __block BOOL accessGranted = NO;
+
+    if (ABAddressBookRequestAccessWithCompletion != NULL) { // We are on iOS 6
+        dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
     
-    if (status == kABAuthorizationStatusDenied || status == kABAuthorizationStatusRestricted) {
-        // if you got here, user had previously denied/revoked permission for your
-        // app to access the contacts, and all you can do is handle this gracefully,
-        // perhaps telling the user that they have to go to settings to grant access
-        // to contacts
-        
-        [[[UIAlertView alloc] initWithTitle:nil message:@"This app requires access to your contacts to function properly. Please visit to the \"Privacy\" section in the iPhone Settings app." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
-        return;
+        ABAddressBookRequestAccessWithCompletion(addressBook, ^(bool granted, CFErrorRef error) {
+            accessGranted = granted;
+            dispatch_semaphore_signal(semaphore);
+        });
+    
+        dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
+        dispatch_release(semaphore);
     }
-    
-    CFErrorRef error = NULL;
-    ABAddressBookRef addressBook = ABAddressBookCreateWithOptions(NULL, &error);
-    
-    if (!addressBook) {
-        NSLog(@"ABAddressBookCreateWithOptions error: %@", CFBridgingRelease(error));
-        return;
+
+    else { // We are on iOS 5 or Older
+        accessGranted = YES;
+        [self getContactsWithAddressBook:addressBook];
     }
-    
-    ABAddressBookRequestAccessWithCompletion(addressBook, ^(bool granted, CFErrorRef error) {
-        if (error) {
-            NSLog(@"ABAddressBookRequestAccessWithCompletion error: %@", CFBridgingRelease(error));
-        }
-        
-        if (granted) {
-            // if they gave you permission, then just carry on
-            
-            [self listPeopleInAddressBook:addressBook];
-        } else {
-            // however, if they didn't give you permission, handle it gracefully, for example...
-            
-            dispatch_async(dispatch_get_main_queue(), ^{
-                // BTW, this is not on the main thread, so dispatch UI updates back to the main queue
-                
-                [[[UIAlertView alloc] initWithTitle:nil message:@"This app requires access to your contacts to function properly. Please visit to the \"Privacy\" section in the iPhone Settings app." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
-            });
-        }
-        
-        CFRelease(addressBook);
-    });
+
+    if (accessGranted) {
+        [self getContactsWithAddressBook:addressBook];
+    }
 }
-- (void)listPeopleInAddressBook:(ABAddressBookRef)addressBook
-{
-    //This should iterate through all listed contacts in the list
-    NSArray *allPeople = CFBridgingRelease(ABAddressBookCopyArrayOfAllPeople(addressBook));
-    NSInteger numberOfPeople = [allPeople count];
+// Get the contacts.
+- (void)getContactsWithAddressBook:(ABAddressBookRef )addressBook {
     
-    for (NSInteger i = 0; i < numberOfPeople; i++) {
-        ABRecordRef person = (__bridge ABRecordRef)allPeople[i];
+    contactList = [[NSMutableArray alloc] init];
+    CFArrayRef allPeople = ABAddressBookCopyArrayOfAllPeople(addressBook);
+    CFIndex nPeople = ABAddressBookGetPersonCount(addressBook);
+    
+    for (int i=0;i < nPeople;i++) {
+        NSMutableDictionary *dOfPerson=[NSMutableDictionary dictionary];
         
-        NSString *firstName = CFBridgingRelease(ABRecordCopyValue(person, kABPersonFirstNameProperty));
-        NSString *lastName  = CFBridgingRelease(ABRecordCopyValue(person, kABPersonLastNameProperty));
-        NSLog(@"Name:%@ %@", firstName, lastName);
+        ABRecordRef ref = CFArrayGetValueAtIndex(allPeople,i);
         
-        ABMultiValueRef phoneNumbers = ABRecordCopyValue(person, kABPersonPhoneProperty);
+        //For username and surname
+        ABMultiValueRef phones =(__bridge ABMultiValueRef)((__bridge NSString*)ABRecordCopyValue(ref, kABPersonPhoneProperty));
         
-        CFIndex numberOfPhoneNumbers = ABMultiValueGetCount(phoneNumbers);
-        for (CFIndex i = 0; i < numberOfPhoneNumbers; i++) {
-            NSString *phoneNumber = CFBridgingRelease(ABMultiValueCopyValueAtIndex(phoneNumbers, i));
-            NSLog(@"  phone:%@", phoneNumber);
+        CFStringRef firstName, lastName;
+        firstName = ABRecordCopyValue(ref, kABPersonFirstNameProperty);
+        lastName  = ABRecordCopyValue(ref, kABPersonLastNameProperty);
+        [dOfPerson setObject:[NSString stringWithFormat:@"%@ %@", firstName, lastName] forKey:@"name"];
+        
+        //For Email ids
+        ABMutableMultiValueRef eMail  = ABRecordCopyValue(ref, kABPersonEmailProperty);
+        if(ABMultiValueGetCount(eMail) > 0) {
+            [dOfPerson setObject:(__bridge NSString *)ABMultiValueCopyValueAtIndex(eMail, 0) forKey:@"email"];
+            
         }
         
-        CFRelease(phoneNumbers);
+        //For Phone number
+        NSString* mobileLabel;
         
-        NSLog(@"=============================================");
+        for(CFIndex i = 0; i < ABMultiValueGetCount(phones); i++) {
+            mobileLabel = (__bridge NSString*)ABMultiValueCopyLabelAtIndex(phones, i);
+            if([mobileLabel isEqualToString:(NSString *)kABPersonPhoneMobileLabel])
+            {
+                [dOfPerson setObject:(__bridge NSString*)ABMultiValueCopyValueAtIndex(phones, i) forKey:@"Phone"];
+            }
+            else if ([mobileLabel isEqualToString:(NSString*)kABPersonPhoneIPhoneLabel])
+            {
+                [dOfPerson setObject:(__bridge NSString*)ABMultiValueCopyValueAtIndex(phones, i) forKey:@"Phone"];
+                break ;
+            }
+            
+        }
+        [contactList addObject:dOfPerson];
+        
     }
+    NSLog(@"Contacts = %@",contactList);
 }
 @end

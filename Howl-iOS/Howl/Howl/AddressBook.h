@@ -17,8 +17,10 @@
 #import <AddressBook/AddressBookDefines.h>
 #import <UIKit/UIAlertView.h>
 #import <UIKit/UIAlert.h>
+#import <AddressBook/ABAddressBook.h>
+#import <AddressBookUI/AddressBookUI.h>
 
 @interface AddressBook : NSObject
 - (void) authorizationView;
-- (void) listPeopleInAddressBook:(ABAddressBookRef) addressBook;
+- (void) getContacsWithAddressBook:(ABAddressBookRef) addressBook;
 @end

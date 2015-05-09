@@ -52,34 +52,28 @@ class TestViewController: UIViewController, MFMessageComposeViewControllerDelega
         }
         
     }
-    func getEmNum(NSString){
-        /*
-            This is going to read the SQLite database that will get the correct emergency number based on the country 
-            the user is in called in from the locationManager function
-        */
+    func getEmNum(){
+        /*  This is going to read the SQLite database that will get the correct emergency number based on the country the user is in called in from the locationManager function    */
+        var EmNum = ""
+        if (EmNum == nil) {
+            /*  This is going to get the emergency number (AKA EmNum) by taking the user's location and running it through the database if the location matches with one on the database it will set that emergency number accordingly  */
+        }
     }
-    func getRec(NSString){
-        /*
-            This is going to be the code that will be put in to generate the group text
-        */
+    func getRec(/*  This is going to run the shit that will get the contacts    */){
+        /*  This is going to be the code that will be put in to generate the group text */
     }
     
     func action1(gestureRecognizer:UIGestureRecognizer) {
         /* This is going to send out the emergency call to dispatch */
         if gestureRecognizer.state == UIGestureRecognizerState.Began {
-            //println("gesture")
             //This will be based on the user's location and country
             let phone = /*"tel://911"*/
-            NSString.self url = NSURL(string:phone)!
             UIApplication.sharedApplication().openURL(url)
         }
         
     }
     func mapSegue(gestureRecognizer:UIGestureRecognizer) {
-        /*
-            This will detect a swipe gesture that will allow the user to access the map that will show the
-            UIMap
-        */
+        /*  This will detect a swipe gesture that will allow the user to access the map that will show the UIMap    */
     }
     func action(gestureRecognizer:UIGestureRecognizer) {
         /* This will send out your emergency location */
@@ -117,20 +111,14 @@ class TestViewController: UIViewController, MFMessageComposeViewControllerDelega
         var latDelta: CLLocationDegrees = 0.01
         var lonDelta: CLLocationDegrees = 0.01
         
-        //println("user location is \(userLocation)")
-        
         CLGeocoder().reverseGeocodeLocation(userLocation, completionHandler: { (placemarks, error) -> Void in
             
             var title = ""
-            
             var city = ""
-            
             var state = ""
-            
             var postalCode = ""
-            
             var country = ""
-            
+    
             if (error == nil) {
                 
                 if let p = CLPlacemark(placemark: placemarks?[0] as! CLPlacemark) {
@@ -139,20 +127,13 @@ class TestViewController: UIViewController, MFMessageComposeViewControllerDelega
                     var thoroughfare:String = ""
                     
                     if p.subThoroughfare != nil {
-                        
-                        
-                        
+    
                         subThoroughfare = p.subThoroughfare
-                        
+
                         city = p.locality
-                        
                         state = p.administrativeArea
-                        
                         postalCode = p.postalCode
-                        
                         country = p.country
-                        
-                        
                     }
                     
                     if p.thoroughfare != nil {
@@ -161,8 +142,7 @@ class TestViewController: UIViewController, MFMessageComposeViewControllerDelega
                         
                     }
                     title = "\(subThoroughfare) \(thoroughfare)"
-                    self.address = "\(title) \(city) \(state) \(postalCode)"
-                    self.counNam = "\(country)"
+                    self.address = "\(title) \(city) \(state) \(postalCode) \(country)"
                 }
             }
         })
