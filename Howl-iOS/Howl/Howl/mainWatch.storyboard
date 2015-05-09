@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
     </dependencies>
     <scenes>
@@ -10,8 +10,24 @@
             <objects>
                 <controller contentMode="scaleAspectFit" id="CV7-co-D1J">
                     <items>
+                        <button width="1" alignment="left" title="Button" id="sko-32-lGy"/>
                         <group width="1" height="158" alignment="left" id="V6Q-hl-iYS"/>
                     </items>
+                    <menu key="menu" id="FML-mm-5gs">
+                        <items>
+                            <menuItem title="Menu Item" id="cNi-pA-2tQ"/>
+                        </items>
+                    </menu>
+                    <variation key="default">
+                        <mask key="items">
+                            <exclude reference="sko-32-lGy"/>
+                        </mask>
+                    </variation>
+                    <variation key="device=watch38mm">
+                        <mask key="items">
+                            <include reference="sko-32-lGy"/>
+                        </mask>
+                    </variation>
                 </controller>
             </objects>
             <point key="canvasLocation" x="218" y="313.5"/>
@@ -22,11 +38,33 @@
                 <glanceController id="1gr-kb-dnD">
                     <items>
                         <group alignment="left" id="kAg-wq-MwB"/>
-                        <group alignment="left" id="jQn-uu-IFT"/>
+                        <group alignment="left" id="jQn-uu-IFT">
+                            <items>
+                                <button width="1" alignment="left" title="Button" id="mUv-Yp-Xui">
+                                    <accessibilityTraits key="accessibilityTraits" none="YES" button="YES" updatesFrequently="YES"/>
+                                    <variation key="device=watch38mm" title="Howl">
+                                        <accessibilityTraits key="accessibilityTraits" none="YES" button="YES" updatesFrequently="YES"/>
+                                    </variation>
+                                    <variation key="device=watch42mm">
+                                        <accessibilityTraits key="accessibilityTraits" none="YES" button="YES" updatesFrequently="YES"/>
+                                    </variation>
+                                </button>
+                            </items>
+                            <variation key="default">
+                                <mask key="items">
+                                    <exclude reference="mUv-Yp-Xui"/>
+                                </mask>
+                            </variation>
+                            <variation key="device=watch38mm">
+                                <mask key="items">
+                                    <include reference="mUv-Yp-Xui"/>
+                                </mask>
+                            </variation>
+                        </group>
                     </items>
                 </glanceController>
             </objects>
-            <point key="canvasLocation" x="200" y="541"/>
+            <point key="canvasLocation" x="454" y="526"/>
         </scene>
     </scenes>
 </document>
