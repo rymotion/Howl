@@ -11,8 +11,15 @@
 		0554F1061ACAF780000A298C /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0554F1041ACAF780000A298C /* libstdc++.6.0.9.dylib */; };
 		0554F10B1ACAF8B7000A298C /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0554F10A1ACAF8B7000A298C /* libsqlite3.dylib */; };
 		055C8B811AEAD9C6000813B3 /* AddressBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 055C8B801AEAD9C6000813B3 /* AddressBook.m */; };
-		055C8B831AECDEA9000813B3 /* mainWatch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 055C8B821AECDEA9000813B3 /* mainWatch.storyboard */; };
 		058B30ED1ADDD6D400EFCC3F /* Info.m in Sources */ = {isa = PBXBuildFile; fileRef = 058B30EC1ADDD6D400EFCC3F /* Info.m */; };
+		05BF98271AFF09EA00856E49 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05BF98261AFF09EA00856E49 /* InterfaceController.m */; };
+		05BF982A1AFF09EA00856E49 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05BF98291AFF09EA00856E49 /* NotificationController.m */; };
+		05BF982D1AFF09EA00856E49 /* GlanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05BF982C1AFF09EA00856E49 /* GlanceController.m */; };
+		05BF982F1AFF09EA00856E49 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05BF982E1AFF09EA00856E49 /* Images.xcassets */; };
+		05BF98331AFF09EA00856E49 /* Howl WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 05BF98321AFF09EA00856E49 /* Howl WatchKit App.app */; };
+		05BF983B1AFF09EA00856E49 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05BF98391AFF09EA00856E49 /* Interface.storyboard */; };
+		05BF983D1AFF09EA00856E49 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05BF983C1AFF09EA00856E49 /* Images.xcassets */; };
+		05BF98401AFF09EA00856E49 /* Howl WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 05BF98201AFF09EA00856E49 /* Howl WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		05C225511ACA44FC00ACDF1A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C225501ACA44FC00ACDF1A /* main.m */; };
 		05C225541ACA44FC00ACDF1A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C225531ACA44FC00ACDF1A /* AppDelegate.m */; };
 		05C225571ACA44FC00ACDF1A /* Howl.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 05C225551ACA44FC00ACDF1A /* Howl.xcdatamodeld */; };
@@ -65,6 +72,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		05BF98341AFF09EA00856E49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05C225431ACA44FC00ACDF1A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05BF98311AFF09EA00856E49;
+			remoteInfo = "Howl WatchKit App";
+		};
+		05BF983E1AFF09EA00856E49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05C225431ACA44FC00ACDF1A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05BF981F1AFF09EA00856E49;
+			remoteInfo = "Howl WatchKit Extension";
+		};
 		05C225681ACA44FC00ACDF1A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 05C225431ACA44FC00ACDF1A /* Project object */;
@@ -74,15 +95,42 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		05BF98471AFF09EA00856E49 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				05BF98401AFF09EA00856E49 /* Howl WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0554F1031ACAF780000A298C /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		0554F1041ACAF780000A298C /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
 		0554F10A1ACAF8B7000A298C /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		055C8B7F1AEAD9C6000813B3 /* AddressBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressBook.h; sourceTree = "<group>"; };
 		055C8B801AEAD9C6000813B3 /* AddressBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressBook.m; sourceTree = "<group>"; };
-		055C8B821AECDEA9000813B3 /* mainWatch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = mainWatch.storyboard; sourceTree = "<group>"; };
 		058B30EB1ADDD6D400EFCC3F /* Info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Info.h; sourceTree = "<group>"; };
 		058B30EC1ADDD6D400EFCC3F /* Info.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Info.m; sourceTree = "<group>"; };
+		05BF98201AFF09EA00856E49 /* Howl WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Howl WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		05BF98231AFF09EA00856E49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05BF98241AFF09EA00856E49 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		05BF98251AFF09EA00856E49 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		05BF98261AFF09EA00856E49 /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		05BF98281AFF09EA00856E49 /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
+		05BF98291AFF09EA00856E49 /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
+		05BF982B1AFF09EA00856E49 /* GlanceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlanceController.h; sourceTree = "<group>"; };
+		05BF982C1AFF09EA00856E49 /* GlanceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlanceController.m; sourceTree = "<group>"; };
+		05BF982E1AFF09EA00856E49 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		05BF98321AFF09EA00856E49 /* Howl WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Howl WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		05BF98381AFF09EA00856E49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05BF983A1AFF09EA00856E49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		05BF983C1AFF09EA00856E49 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		05C2254B1ACA44FC00ACDF1A /* Howl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Howl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05C2254F1ACA44FC00ACDF1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05C225501ACA44FC00ACDF1A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -142,6 +190,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		05BF981D1AFF09EA00856E49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		05C225481ACA44FC00ACDF1A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -196,6 +251,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05BF98211AFF09EA00856E49 /* Howl WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				05BF98251AFF09EA00856E49 /* InterfaceController.h */,
+				05BF98261AFF09EA00856E49 /* InterfaceController.m */,
+				05BF98281AFF09EA00856E49 /* NotificationController.h */,
+				05BF98291AFF09EA00856E49 /* NotificationController.m */,
+				05BF982B1AFF09EA00856E49 /* GlanceController.h */,
+				05BF982C1AFF09EA00856E49 /* GlanceController.m */,
+				05BF982E1AFF09EA00856E49 /* Images.xcassets */,
+				05BF98221AFF09EA00856E49 /* Supporting Files */,
+			);
+			path = "Howl WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		05BF98221AFF09EA00856E49 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				05BF98231AFF09EA00856E49 /* Info.plist */,
+				05BF98241AFF09EA00856E49 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		05BF98361AFF09EA00856E49 /* Howl WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				05BF98391AFF09EA00856E49 /* Interface.storyboard */,
+				05BF983C1AFF09EA00856E49 /* Images.xcassets */,
+				05BF98371AFF09EA00856E49 /* Supporting Files */,
+			);
+			path = "Howl WatchKit App";
+			sourceTree = "<group>";
+		};
+		05BF98371AFF09EA00856E49 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				05BF98381AFF09EA00856E49 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		05C225421ACA44FC00ACDF1A = {
 			isa = PBXGroup;
 			children = (
@@ -241,6 +338,8 @@
 				05C2254D1ACA44FC00ACDF1A /* Howl */,
 				05C2257B1ACA46B500ACDF1A /* AppBackbone */,
 				05C2256A1ACA44FC00ACDF1A /* HowlTests */,
+				05BF98211AFF09EA00856E49 /* Howl WatchKit Extension */,
+				05BF98361AFF09EA00856E49 /* Howl WatchKit App */,
 				05C2254C1ACA44FC00ACDF1A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -250,6 +349,8 @@
 			children = (
 				05C2254B1ACA44FC00ACDF1A /* Howl.app */,
 				05C225671ACA44FC00ACDF1A /* HowlTests.xctest */,
+				05BF98201AFF09EA00856E49 /* Howl WatchKit Extension.appex */,
+				05BF98321AFF09EA00856E49 /* Howl WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -257,7 +358,6 @@
 		05C2254D1ACA44FC00ACDF1A /* Howl */ = {
 			isa = PBXGroup;
 			children = (
-				055C8B821AECDEA9000813B3 /* mainWatch.storyboard */,
 				055C8B7F1AEAD9C6000813B3 /* AddressBook.h */,
 				055C8B801AEAD9C6000813B3 /* AddressBook.m */,
 				CC2245C41AD8DF5F00C85392 /* PictureViewController.swift */,
@@ -318,6 +418,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		05BF981F1AFF09EA00856E49 /* Howl WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05BF98441AFF09EA00856E49 /* Build configuration list for PBXNativeTarget "Howl WatchKit Extension" */;
+			buildPhases = (
+				05BF981C1AFF09EA00856E49 /* Sources */,
+				05BF981D1AFF09EA00856E49 /* Frameworks */,
+				05BF981E1AFF09EA00856E49 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05BF98351AFF09EA00856E49 /* PBXTargetDependency */,
+			);
+			name = "Howl WatchKit Extension";
+			productName = "Howl WatchKit Extension";
+			productReference = 05BF98201AFF09EA00856E49 /* Howl WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		05BF98311AFF09EA00856E49 /* Howl WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05BF98411AFF09EA00856E49 /* Build configuration list for PBXNativeTarget "Howl WatchKit App" */;
+			buildPhases = (
+				05BF98301AFF09EA00856E49 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Howl WatchKit App";
+			productName = "Howl WatchKit App";
+			productReference = 05BF98321AFF09EA00856E49 /* Howl WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 		05C2254A1ACA44FC00ACDF1A /* Howl */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 05C225711ACA44FC00ACDF1A /* Build configuration list for PBXNativeTarget "Howl" */;
@@ -325,10 +458,12 @@
 				05C225471ACA44FC00ACDF1A /* Sources */,
 				05C225481ACA44FC00ACDF1A /* Frameworks */,
 				05C225491ACA44FC00ACDF1A /* Resources */,
+				05BF98471AFF09EA00856E49 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				05BF983F1AFF09EA00856E49 /* PBXTargetDependency */,
 			);
 			name = Howl;
 			productName = Howl;
@@ -362,6 +497,13 @@
 				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = "Ryan Paglinawan";
 				TargetAttributes = {
+					05BF981F1AFF09EA00856E49 = {
+						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 2K273P6V79;
+					};
+					05BF98311AFF09EA00856E49 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
 					05C2254A1ACA44FC00ACDF1A = {
 						CreatedOnToolsVersion = 6.2;
 						DevelopmentTeam = 2K273P6V79;
@@ -387,11 +529,31 @@
 			targets = (
 				05C2254A1ACA44FC00ACDF1A /* Howl */,
 				05C225661ACA44FC00ACDF1A /* HowlTests */,
+				05BF981F1AFF09EA00856E49 /* Howl WatchKit Extension */,
+				05BF98311AFF09EA00856E49 /* Howl WatchKit App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		05BF981E1AFF09EA00856E49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05BF98331AFF09EA00856E49 /* Howl WatchKit App.app in Resources */,
+				05BF982F1AFF09EA00856E49 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05BF98301AFF09EA00856E49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05BF983B1AFF09EA00856E49 /* Interface.storyboard in Resources */,
+				05BF983D1AFF09EA00856E49 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		05C225491ACA44FC00ACDF1A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -399,7 +561,6 @@
 				CC2245C31AD8DCE600C85392 /* 1HOWL_Title page.png in Resources */,
 				CC2245C71AD8E8C100C85392 /* 2HOWL_Photo page.png in Resources */,
 				05C225621ACA44FC00ACDF1A /* LaunchScreen.xib in Resources */,
-				055C8B831AECDEA9000813B3 /* mainWatch.storyboard in Resources */,
 				05C2255F1ACA44FC00ACDF1A /* Images.xcassets in Resources */,
 				CC2245C91AD8ECAA00C85392 /* Main.storyboard in Resources */,
 			);
@@ -415,6 +576,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		05BF981C1AFF09EA00856E49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05BF982A1AFF09EA00856E49 /* NotificationController.m in Sources */,
+				05BF98271AFF09EA00856E49 /* InterfaceController.m in Sources */,
+				05BF982D1AFF09EA00856E49 /* GlanceController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		05C225471ACA44FC00ACDF1A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -444,6 +615,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		05BF98351AFF09EA00856E49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05BF98311AFF09EA00856E49 /* Howl WatchKit App */;
+			targetProxy = 05BF98341AFF09EA00856E49 /* PBXContainerItemProxy */;
+		};
+		05BF983F1AFF09EA00856E49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05BF981F1AFF09EA00856E49 /* Howl WatchKit Extension */;
+			targetProxy = 05BF983E1AFF09EA00856E49 /* PBXContainerItemProxy */;
+		};
 		05C225691ACA44FC00ACDF1A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 05C2254A1ACA44FC00ACDF1A /* Howl */;
@@ -452,6 +633,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		05BF98391AFF09EA00856E49 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				05BF983A1AFF09EA00856E49 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		05C225601ACA44FC00ACDF1A /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -463,6 +652,76 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		05BF98421AFF09EA00856E49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = Howl_WatchKit_Extension;
+				INFOPLIST_FILE = "Howl WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		05BF98431AFF09EA00856E49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				IBSC_MODULE = Howl_WatchKit_Extension;
+				INFOPLIST_FILE = "Howl WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		05BF98451AFF09EA00856E49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Howl WatchKit Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		05BF98461AFF09EA00856E49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Howl WatchKit Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		05C2256F1ACA44FC00ACDF1A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -609,6 +868,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		05BF98411AFF09EA00856E49 /* Build configuration list for PBXNativeTarget "Howl WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05BF98421AFF09EA00856E49 /* Debug */,
+				05BF98431AFF09EA00856E49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		05BF98441AFF09EA00856E49 /* Build configuration list for PBXNativeTarget "Howl WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05BF98451AFF09EA00856E49 /* Debug */,
+				05BF98461AFF09EA00856E49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		05C225461ACA44FC00ACDF1A /* Build configuration list for PBXProject "Howl" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
