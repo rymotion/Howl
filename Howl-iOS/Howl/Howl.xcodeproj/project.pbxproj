@@ -13,7 +13,6 @@
 		055C8B811AEAD9C6000813B3 /* AddressBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 055C8B801AEAD9C6000813B3 /* AddressBook.m */; };
 		058B30ED1ADDD6D400EFCC3F /* Info.m in Sources */ = {isa = PBXBuildFile; fileRef = 058B30EC1ADDD6D400EFCC3F /* Info.m */; };
 		05BF98271AFF09EA00856E49 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05BF98261AFF09EA00856E49 /* InterfaceController.m */; };
-		05BF982A1AFF09EA00856E49 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05BF98291AFF09EA00856E49 /* NotificationController.m */; };
 		05BF982D1AFF09EA00856E49 /* GlanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05BF982C1AFF09EA00856E49 /* GlanceController.m */; };
 		05BF982F1AFF09EA00856E49 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05BF982E1AFF09EA00856E49 /* Images.xcassets */; };
 		05BF98331AFF09EA00856E49 /* Howl WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 05BF98321AFF09EA00856E49 /* Howl WatchKit App.app */; };
@@ -122,8 +121,6 @@
 		05BF98241AFF09EA00856E49 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		05BF98251AFF09EA00856E49 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
 		05BF98261AFF09EA00856E49 /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
-		05BF98281AFF09EA00856E49 /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
-		05BF98291AFF09EA00856E49 /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
 		05BF982B1AFF09EA00856E49 /* GlanceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlanceController.h; sourceTree = "<group>"; };
 		05BF982C1AFF09EA00856E49 /* GlanceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlanceController.m; sourceTree = "<group>"; };
 		05BF982E1AFF09EA00856E49 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -256,8 +253,6 @@
 			children = (
 				05BF98251AFF09EA00856E49 /* InterfaceController.h */,
 				05BF98261AFF09EA00856E49 /* InterfaceController.m */,
-				05BF98281AFF09EA00856E49 /* NotificationController.h */,
-				05BF98291AFF09EA00856E49 /* NotificationController.m */,
 				05BF982B1AFF09EA00856E49 /* GlanceController.h */,
 				05BF982C1AFF09EA00856E49 /* GlanceController.m */,
 				05BF982E1AFF09EA00856E49 /* Images.xcassets */,
@@ -580,7 +575,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05BF982A1AFF09EA00856E49 /* NotificationController.m in Sources */,
 				05BF98271AFF09EA00856E49 /* InterfaceController.m in Sources */,
 				05BF982D1AFF09EA00856E49 /* GlanceController.m in Sources */,
 			);
@@ -875,6 +869,7 @@
 				05BF98431AFF09EA00856E49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		05BF98441AFF09EA00856E49 /* Build configuration list for PBXNativeTarget "Howl WatchKit Extension" */ = {
 			isa = XCConfigurationList;
@@ -883,6 +878,7 @@
 				05BF98461AFF09EA00856E49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		05C225461ACA44FC00ACDF1A /* Build configuration list for PBXProject "Howl" */ = {
 			isa = XCConfigurationList;

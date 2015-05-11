@@ -8,16 +8,53 @@
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController">
+                    <items>
+                        <button width="1" alignment="left" title="Button" id="fdG-qI-6N1"/>
+                        <separator alignment="left" id="Bk8-6f-qjX"/>
+                        <button width="1" alignment="left" title="Button" id="Ivf-xQ-hO2"/>
+                    </items>
+                </controller>
             </objects>
             <point key="canvasLocation" x="235" y="347"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="Kig-Ah-U4e">
+            <objects>
+                <controller identifier="Map View" title="Map" id="Vsr-Kd-VFf">
+                    <items>
+                        <map height="151" alignment="left" id="W5A-J3-Knf">
+                            <variation key="device=watch38mm" hidden="NO"/>
+                            <variation key="device=watch42mm" hidden="NO"/>
+                        </map>
+                        <separator alignment="left" id="4f0-w9-YbS"/>
+                        <button width="1" alignment="left" title="Button" id="0EY-9D-B6Y"/>
+                    </items>
+                    <variation key="device=watch38mm">
+                        <mask key="items">
+                            <include reference="W5A-J3-Knf"/>
+                        </mask>
+                    </variation>
+                    <variation key="device=watch42mm">
+                        <mask key="items">
+                            <include reference="W5A-J3-Knf"/>
+                        </mask>
+                    </variation>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="417" y="173.5"/>
         </scene>
         <!--Glance Interface Controller-->
         <scene sceneID="BOz-TT-tkC">
             <objects>
                 <glanceController spacing="0.0" id="0uZ-2p-rRc" customClass="GlanceController">
                     <items>
-                        <group alignment="left" id="t8f-Gd-c4y"/>
+                        <group alignment="left" id="t8f-Gd-c4y">
+                            <items>
+                                <label width="55" height="49" alignment="left" text="Howl" textAlignment="center" id="JSh-q4-kYE"/>
+                                <imageView height="53" alignment="left" id="s3I-m5-RIl"/>
+                            </items>
+                        </group>
                         <group alignment="left" id="uCw-4Q-Ouw"/>
                     </items>
                     <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
