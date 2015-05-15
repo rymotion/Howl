@@ -10,9 +10,23 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController">
                     <items>
-                        <button width="1" alignment="left" title="Button" id="fdG-qI-6N1"/>
+                        <button width="1" alignment="left" title="Call" id="fdG-qI-6N1">
+                            <connections>
+                                <action selector="WKCall" destination="AgC-eL-Hgc" id="GeW-wd-664"/>
+                            </connections>
+                        </button>
                         <separator alignment="left" id="Bk8-6f-qjX"/>
-                        <button width="1" alignment="left" title="Button" id="Ivf-xQ-hO2"/>
+                        <button width="1" alignment="left" title="SOS MMS" id="Ivf-xQ-hO2">
+                            <connections>
+                                <action selector="WKSOSMMS" destination="AgC-eL-Hgc" id="aRg-ob-m74"/>
+                            </connections>
+                        </button>
+                        <separator alignment="left" id="kj8-kh-OQF"/>
+                        <button width="1" alignment="left" title="Map" id="2Nn-mK-YQe">
+                            <connections>
+                                <segue destination="Vsr-Kd-VFf" kind="push" id="Or6-Ar-obg"/>
+                            </connections>
+                        </button>
                     </items>
                 </controller>
             </objects>
@@ -28,7 +42,11 @@
                             <variation key="device=watch42mm" hidden="NO"/>
                         </map>
                         <separator alignment="left" id="4f0-w9-YbS"/>
-                        <button width="1" alignment="left" title="Button" id="0EY-9D-B6Y"/>
+                        <button width="1" alignment="left" title="Back" id="0EY-9D-B6Y">
+                            <connections>
+                                <segue destination="AgC-eL-Hgc" kind="push" id="J8o-Wk-O0k"/>
+                            </connections>
+                        </button>
                     </items>
                     <variation key="device=watch38mm">
                         <mask key="items">
@@ -42,7 +60,7 @@
                     </variation>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="417" y="173.5"/>
+            <point key="canvasLocation" x="553" y="273.5"/>
         </scene>
         <!--Glance Interface Controller-->
         <scene sceneID="BOz-TT-tkC">
@@ -51,11 +69,18 @@
                     <items>
                         <group alignment="left" id="t8f-Gd-c4y">
                             <items>
-                                <label width="55" height="49" alignment="left" text="Howl" textAlignment="center" id="JSh-q4-kYE"/>
-                                <imageView height="53" alignment="left" id="s3I-m5-RIl"/>
+                                <imageView width="136" alignment="left" id="pjk-gZ-zGT"/>
                             </items>
                         </group>
-                        <group alignment="left" id="uCw-4Q-Ouw"/>
+                        <group alignment="left" id="uCw-4Q-Ouw">
+                            <items>
+                                <button width="136" height="102" alignment="left" title="Press to Howl" id="oJq-7W-CR9">
+                                    <connections>
+                                        <action selector="howlGlance" destination="0uZ-2p-rRc" id="pDX-Pg-aZR"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
                     </items>
                     <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
                 </glanceController>

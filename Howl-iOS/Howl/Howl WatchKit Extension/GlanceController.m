@@ -15,6 +15,10 @@
 
 
 @implementation GlanceController
+- (IBAction)howlGlance {
+    /*  This is going to handle the functions for the WKGlace for Howl we should do 
+        a force touch detector that would pop up an action menu or it both sends out a 911 call and a group MMS IDK just a thought */
+}
 
 - (void)awakeWithContext:(id)context {
     [super awakeWithContext:context];
