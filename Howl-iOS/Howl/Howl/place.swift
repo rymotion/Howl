@@ -8,6 +8,7 @@
 
 import UIKit
 import MapKit
+import WatchKit
 
 class Place: NSObject {
    

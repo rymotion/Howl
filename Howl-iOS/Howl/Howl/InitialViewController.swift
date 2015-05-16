@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import WatchKit
 
 var contactNumbers = [String]()
 

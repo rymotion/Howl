@@ -15,12 +15,15 @@
 
 
 @implementation InterfaceController
-- (IBAction)WKCall {
-    //This is going to dial the emergency contact number for authorities from the phone app
+
+- (IBAction)Call {
 }
-- (IBAction)WKSOSMMS {
-    //This will get the contacts from the phone or the contacts set into the apple watch
+- (IBAction)Text {
 }
++(WKInterfaceDevice *)currentdevice {
+    
+}
+
 
 - (void)awakeWithContext:(id)context {
     [super awakeWithContext:context];

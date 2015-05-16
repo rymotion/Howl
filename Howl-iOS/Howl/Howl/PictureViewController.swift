@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import WatchKit
 
 class PictureViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     

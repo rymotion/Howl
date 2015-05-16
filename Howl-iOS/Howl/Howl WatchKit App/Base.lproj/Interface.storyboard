@@ -12,13 +12,13 @@
                     <items>
                         <button width="1" alignment="left" title="Call" id="fdG-qI-6N1">
                             <connections>
-                                <action selector="WKCall" destination="AgC-eL-Hgc" id="GeW-wd-664"/>
+                                <action selector="Call" destination="AgC-eL-Hgc" id="YG2-V1-dNd"/>
                             </connections>
                         </button>
                         <separator alignment="left" id="Bk8-6f-qjX"/>
                         <button width="1" alignment="left" title="SOS MMS" id="Ivf-xQ-hO2">
                             <connections>
-                                <action selector="WKSOSMMS" destination="AgC-eL-Hgc" id="aRg-ob-m74"/>
+                                <action selector="Text" destination="AgC-eL-Hgc" id="fMe-NH-baB"/>
                             </connections>
                         </button>
                         <separator alignment="left" id="kj8-kh-OQF"/>

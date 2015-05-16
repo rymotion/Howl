@@ -11,4 +11,7 @@
 
 @interface InterfaceController : WKInterfaceController
 
++(WKInterfaceDevice *)currentdevice;
+
++(BOOL) openParentApplication:(NSDictionary *)userInfo reply:(void (^)(NSDictionary *, NSError *))reply;
 @end

@@ -16,6 +16,7 @@
 
 import UIKit
 import MapKit
+import WatchKit
 
 var userLocation = CLLocation()
 

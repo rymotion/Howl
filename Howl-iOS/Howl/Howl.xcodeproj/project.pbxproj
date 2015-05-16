@@ -64,7 +64,7 @@
 		CC2245C71AD8E8C100C85392 /* 2HOWL_Photo page.png in Resources */ = {isa = PBXBuildFile; fileRef = CC2245C61AD8E8C100C85392 /* 2HOWL_Photo page.png */; };
 		CC2245C91AD8ECAA00C85392 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC2245C81AD8ECAA00C85392 /* Main.storyboard */; };
 		CC35E7011AD343B200A1E115 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC35E7001AD343B200A1E115 /* MapViewController.swift */; };
-		CC5816EF1AD9337F00B74281 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5816EE1AD9337F00B74281 /* TestViewController.swift */; };
+		CC5816EF1AD9337F00B74281 /* HowlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5816EE1AD9337F00B74281 /* HowlViewController.swift */; };
 		CC5816F11AD958F800B74281 /* place.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5816F01AD958F800B74281 /* place.swift */; };
 		CC5816F31AD961FA00B74281 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5816F21AD961FA00B74281 /* InitialViewController.swift */; };
 		CDFF30F31AD650AE004B017D /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFF30F21AD650AE004B017D /* DBManager.m */; };
@@ -179,7 +179,7 @@
 		CC2245C81AD8ECAA00C85392 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		CC35E6FF1AD343B100A1E115 /* Howl-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Howl-Bridging-Header.h"; sourceTree = "<group>"; };
 		CC35E7001AD343B200A1E115 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		CC5816EE1AD9337F00B74281 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		CC5816EE1AD9337F00B74281 /* HowlViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HowlViewController.swift; sourceTree = "<group>"; };
 		CC5816F01AD958F800B74281 /* place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = place.swift; sourceTree = "<group>"; };
 		CC5816F21AD961FA00B74281 /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		CDFF30F11AD650AE004B017D /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DBManager.h; path = Howl/DBManager.h; sourceTree = "<group>"; };
@@ -356,7 +356,7 @@
 				055C8B7F1AEAD9C6000813B3 /* AddressBook.h */,
 				055C8B801AEAD9C6000813B3 /* AddressBook.m */,
 				CC2245C41AD8DF5F00C85392 /* PictureViewController.swift */,
-				CC5816EE1AD9337F00B74281 /* TestViewController.swift */,
+				CC5816EE1AD9337F00B74281 /* HowlViewController.swift */,
 				CC5816F01AD958F800B74281 /* place.swift */,
 				CC2245C81AD8ECAA00C85392 /* Main.storyboard */,
 				05C225521ACA44FC00ACDF1A /* AppDelegate.h */,
@@ -592,7 +592,7 @@
 				058B30ED1ADDD6D400EFCC3F /* Info.m in Sources */,
 				CC35E7011AD343B200A1E115 /* MapViewController.swift in Sources */,
 				CC5816F11AD958F800B74281 /* place.swift in Sources */,
-				CC5816EF1AD9337F00B74281 /* TestViewController.swift in Sources */,
+				CC5816EF1AD9337F00B74281 /* HowlViewController.swift in Sources */,
 				055C8B811AEAD9C6000813B3 /* AddressBook.m in Sources */,
 				05C225511ACA44FC00ACDF1A /* main.m in Sources */,
 			);

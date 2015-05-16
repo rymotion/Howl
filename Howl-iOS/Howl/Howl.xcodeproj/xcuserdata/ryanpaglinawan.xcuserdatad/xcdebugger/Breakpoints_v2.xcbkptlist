@@ -57,7 +57,7 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Howl/TestViewController.swift"
+            filePath = "Howl/HowlViewController.swift"
             timestampString = "452025142.200109"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"

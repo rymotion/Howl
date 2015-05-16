@@ -1,5 +1,5 @@
 //
-//  TestViewController.swift
+//  HowlViewController.swift
 //  Howl
 //
 //  Created by Mbusi Hlatshwayo on 4/11/15.
@@ -9,8 +9,9 @@
 import UIKit
 import MessageUI
 import MapKit
+import WatchKit
 
-class TestViewController: UIViewController, MFMessageComposeViewControllerDelegate, CLLocationManagerDelegate {
+class HowlViewController: UIViewController, MFMessageComposeViewControllerDelegate, CLLocationManagerDelegate {
     var array = [AnyObject]()
     var manager: CLLocationManager!
     var address = ""
@@ -147,4 +148,7 @@ class TestViewController: UIViewController, MFMessageComposeViewControllerDelega
             }
         })
     }
+    optional func application(_ application: UIApplication,
+        handleWatchKitExtensionRequest userInfo: [NSObject : AnyObject]?,
+        reply reply: (([NSObject : AnyObject]!) -> Void)!)
 }
