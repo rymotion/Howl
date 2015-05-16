@@ -6,33 +6,41 @@
 //  Copyright (c) 2015 Ryan Paglinawan. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
+#import <AddressBook/ABAddressBook.h>
+#import <AddressBook/ABGroup.h>
+#import <AddressBook/ABMultiValue.h>
+#import <AddressBook/ABPerson.h>
+#import <AddressBook/ABRecord.h>
+#import <AddressBook/ABSource.h>
+#import <AddressBook/AddressBook.h>
+#import <AddressBook/AddressBookDefines.h>
+#import <UIKit/UIAlertView.h>
+#import <UIKit/UIAlert.h>
+#import <AddressBook/ABAddressBook.h>
+#import <AddressBookUI/AddressBookUI.h>
 #import "AddressBook.h"
 
 @implementation AddressBook
 -(void) authorizationView {
-    ABAddressBookRef addressBook = ABAddressBookCreate();
+    ABAddressBookRef addressBookRef = ABAddressBookCreateWithOptions(NULL, NULL);
 
-    __block BOOL accessGranted = NO;
-
-    if (ABAddressBookRequestAccessWithCompletion != NULL) { // We are on iOS 6
-        dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
-    
-        ABAddressBookRequestAccessWithCompletion(addressBook, ^(bool granted, CFErrorRef error) {
-            accessGranted = granted;
-            dispatch_semaphore_signal(semaphore);
+    if (ABAddressBookGetAuthorizationStatus() == kABAuthorizationStatusNotDetermined) { // We are on iOS 6
+        ABAddressBookRequestAccessWithCompletion(addressBookRef, ^(bool granted, CFErrorRef error) {
+            if (granted){
+                [self _addContactToAddressBook];
+            }
+            else {
+                //error window should come up here
+            }
         });
-    
-        dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
-        dispatch_release(semaphore);
     }
-
-    else { // We are on iOS 5 or Older
-        accessGranted = YES;
-        [self getContactsWithAddressBook:addressBook];
+    else if (ABAddressBookGetAuthorizationStatus() == kABAuthorizationStatusAuthorized){
+        [self _addContactToAddressBook];
     }
-
-    if (accessGranted) {
-        [self getContactsWithAddressBook:addressBook];
+    else{
+        //Permission possibly denied
+        //alert user for not allowing contacts to be used
     }
 }
 // Get the contacts.

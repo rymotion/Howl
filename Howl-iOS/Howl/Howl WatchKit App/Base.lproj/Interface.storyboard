@@ -72,15 +72,7 @@
                                 <imageView width="136" alignment="left" id="pjk-gZ-zGT"/>
                             </items>
                         </group>
-                        <group alignment="left" id="uCw-4Q-Ouw">
-                            <items>
-                                <button width="136" height="102" alignment="left" title="Press to Howl" id="oJq-7W-CR9">
-                                    <connections>
-                                        <action selector="howlGlance" destination="0uZ-2p-rRc" id="pDX-Pg-aZR"/>
-                                    </connections>
-                                </button>
-                            </items>
-                        </group>
+                        <group alignment="left" id="uCw-4Q-Ouw"/>
                     </items>
                     <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
                 </glanceController>

@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>CA49EEB1-BCAB-4582-9F6D-BD1189A09F1E</string>
 	<key>IDESourceControlProjectName</key>
-	<string>Howl</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>638B46CEA718BD45180DEFB1BA6EF1D31E1A0B97</key>
 		<string>https://github.com/rymotion/Howl.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Howl-iOS/Howl/Howl.xcodeproj</string>
+	<string>Howl-iOS/Howl/Howl.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>638B46CEA718BD45180DEFB1BA6EF1D31E1A0B97</key>

@@ -24,6 +24,9 @@
     
 }
 
++ (BOOL) openParentApplication:(NSDictionary *)userInfo reply:(void (^)(NSDictionary *, NSError *))reply{
+    
+}
 
 - (void)awakeWithContext:(id)context {
     [super awakeWithContext:context];
