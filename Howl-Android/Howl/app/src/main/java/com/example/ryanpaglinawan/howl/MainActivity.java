@@ -33,7 +33,7 @@ public class MainActivity extends Activity implements
     @Override
     public void onLongPress(MotionEvent event){
         callEmNum();
-
+        Log.d(DEBUG_TAG,"Using emCall function")
     }
 
     @Override
@@ -72,8 +72,8 @@ public class MainActivity extends Activity implements
 
     protected void callEmNum() {
         Log.d(DEBUG_TAG, "Emergency services contacted");
-        getEmNum();
-
+        //getEmNum();
+        String emNum = "911";
     }
     protected void sendSMSMessage() {
         Log.i("Send SMS", "");

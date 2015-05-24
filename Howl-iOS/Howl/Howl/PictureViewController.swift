@@ -8,6 +8,7 @@
 
 import UIKit
 import WatchKit
+import AVFoundation
 
 class PictureViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     

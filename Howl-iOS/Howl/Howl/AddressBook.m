@@ -22,6 +22,7 @@
 #import "AddressBook.h"
 
 @implementation AddressBook
+
 -(void) authorizationView {
     ABAddressBookRef addressBookRef = ABAddressBookCreateWithOptions(NULL, NULL);
 

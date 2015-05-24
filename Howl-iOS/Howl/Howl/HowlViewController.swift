@@ -53,13 +53,14 @@ class HowlViewController: UIViewController, MFMessageComposeViewControllerDelega
         }
         
     }
-    func getEmNum(){
+    func beginBackgroundTaskWithName(getEmNum: String?, expirationHandler handler: (() -> Void)?) -> UIBackgroundTaskIdentifier;){
         /*  This is going to read the SQLite database that will get the correct emergency number based on the country the user is in called in from the locationManager function    */
         var EmNum = ""
         if (EmNum == nil) {
             /*  This is going to get the emergency number (AKA EmNum) by taking the user's location and running it through the database if the location matches with one on the database it will set that emergency number accordingly  */
         }
     }
+    func endBackgroundTask(getEmNum: UIBackgroundTaskIdentifier)
     func getRec(/*  This is going to run the shit that will get the contacts    */){
         /*  This is going to be the code that will be put in to generate the group text */
     }
@@ -148,7 +149,4 @@ class HowlViewController: UIViewController, MFMessageComposeViewControllerDelega
             }
         })
     }
-    optional func application(_ application: UIApplication,
-        handleWatchKitExtensionRequest userInfo: [NSObject : AnyObject]?,
-        reply reply: (([NSObject : AnyObject]!) -> Void)!)
 }

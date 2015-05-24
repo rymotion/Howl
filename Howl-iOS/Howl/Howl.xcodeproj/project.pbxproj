@@ -67,7 +67,6 @@
 		CC5816EF1AD9337F00B74281 /* HowlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5816EE1AD9337F00B74281 /* HowlViewController.swift */; };
 		CC5816F11AD958F800B74281 /* place.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5816F01AD958F800B74281 /* place.swift */; };
 		CC5816F31AD961FA00B74281 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5816F21AD961FA00B74281 /* InitialViewController.swift */; };
-		CDFF30F31AD650AE004B017D /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFF30F21AD650AE004B017D /* DBManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -182,8 +181,6 @@
 		CC5816EE1AD9337F00B74281 /* HowlViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HowlViewController.swift; sourceTree = "<group>"; };
 		CC5816F01AD958F800B74281 /* place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = place.swift; sourceTree = "<group>"; };
 		CC5816F21AD961FA00B74281 /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
-		CDFF30F11AD650AE004B017D /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DBManager.h; path = Howl/DBManager.h; sourceTree = "<group>"; };
-		CDFF30F21AD650AE004B017D /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DBManager.m; path = Howl/DBManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -291,8 +288,6 @@
 		05C225421ACA44FC00ACDF1A = {
 			isa = PBXGroup;
 			children = (
-				CDFF30F11AD650AE004B017D /* DBManager.h */,
-				CDFF30F21AD650AE004B017D /* DBManager.m */,
 				0554F10A1ACAF8B7000A298C /* libsqlite3.dylib */,
 				0554F1031ACAF780000A298C /* libsqlite3.0.dylib */,
 				0554F1041ACAF780000A298C /* libstdc++.6.0.9.dylib */,
@@ -587,7 +582,6 @@
 				CC2245C51AD8DF5F00C85392 /* PictureViewController.swift in Sources */,
 				05C225541ACA44FC00ACDF1A /* AppDelegate.m in Sources */,
 				05C225571ACA44FC00ACDF1A /* Howl.xcdatamodeld in Sources */,
-				CDFF30F31AD650AE004B017D /* DBManager.m in Sources */,
 				CC5816F31AD961FA00B74281 /* InitialViewController.swift in Sources */,
 				058B30ED1ADDD6D400EFCC3F /* Info.m in Sources */,
 				CC35E7011AD343B200A1E115 /* MapViewController.swift in Sources */,
