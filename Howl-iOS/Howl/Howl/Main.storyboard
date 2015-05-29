@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="LeS-b2-Ubg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="LeS-b2-Ubg">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Photo_ID-->
         <scene sceneID="cjn-So-2Hj">
             <objects>
-                <viewController title="Photo_ID" id="LeS-b2-Ubg" customClass="PictureViewController" customModule="Howl" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Photo_ID" id="LeS-b2-Ubg" customClass="PictureView" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yf6-d9-SRf"/>
                         <viewControllerLayoutGuide type="bottom" id="1s4-Bi-3rf"/>
@@ -35,7 +35,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="setImage:" destination="LeS-b2-Ubg" eventType="touchUpInside" id="OZT-A0-EfT"/>
+                                    <action selector="takePicture:" destination="LeS-b2-Ubg" eventType="touchUpInside" id="JOU-UE-gnG"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -56,7 +56,7 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="profilePic" destination="qFI-Ug-tEd" id="uDQ-dh-ZMx"/>
+                        <outlet property="previewView" destination="qFI-Ug-tEd" id="TwJ-sj-ayM"/>
                         <segue destination="hLg-ic-uEE" kind="show" identifier="basicSegue" id="T1s-lM-qHL"/>
                     </connections>
                 </viewController>
