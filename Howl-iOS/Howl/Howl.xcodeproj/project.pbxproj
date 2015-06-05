@@ -329,7 +329,6 @@
 				05C2259D1ACA48A600ACDF1A /* WatchKit.framework */,
 				05C2259E1ACA48A600ACDF1A /* WebKit.framework */,
 				05C2254D1ACA44FC00ACDF1A /* Howl */,
-				05C2257B1ACA46B500ACDF1A /* AppBackbone */,
 				05C2256A1ACA44FC00ACDF1A /* HowlTests */,
 				05BF98211AFF09EA00856E49 /* Howl WatchKit Extension */,
 				05BF98361AFF09EA00856E49 /* Howl WatchKit App */,
@@ -400,14 +399,6 @@
 				05C2256C1ACA44FC00ACDF1A /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		05C2257B1ACA46B500ACDF1A /* AppBackbone */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = AppBackbone;
-			path = Howl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

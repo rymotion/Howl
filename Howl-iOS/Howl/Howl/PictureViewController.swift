@@ -10,12 +10,13 @@ import UIKit
 import WatchKit
 import AVFoundation
 
-class PictureViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class PictureViewController: PictureView{
+    
     
     @IBOutlet var profileImage: UIImageView!
     @IBOutlet var profilePic: UIImageView!
     @IBAction func setImage(sender: AnyObject) {
-        var image = UIImagePickerController()
+        var image = PictureView()
         image.delegate = self
         image.sourceType = UIImagePickerControllerSourceType.Camera
         image.allowsEditing = false
