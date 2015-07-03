@@ -5,36 +5,24 @@
 //  Created by Ryan Paglinawan on 4/24/15.
 //  Copyright (c) 2015 Ryan Paglinawan. All rights reserved.
 //
+//  The commented lines are going to be used in the next update in the Fall
 
-#import <Foundation/Foundation.h>
-#import <AddressBook/ABAddressBook.h>
-#import <AddressBook/ABGroup.h>
-#import <AddressBook/ABMultiValue.h>
-#import <AddressBook/ABPerson.h>
-#import <AddressBook/ABRecord.h>
-#import <AddressBook/ABSource.h>
-#import <AddressBook/AddressBook.h>
-#import <AddressBook/AddressBookDefines.h>
-#import <UIKit/UIAlertView.h>
-#import <UIKit/UIAlert.h>
-#import <AddressBook/ABAddressBook.h>
-#import <AddressBookUI/AddressBookUI.h>
-#import <UIKit/UIKit.h>
+@import Foundation;
+@import UIKit;
+@import AddressBook;
+//@import Contacts;
 
 @interface AddressBook : NSObject
-- (void) authorizationView;
-- (void) getContacsWithAddressBook:(ABAddressBookRef) addressBook;
 
-/*  This will have all the stuff about the contact  */
-@property (nonatomic, strong) NSDictionary *dictContDetails;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, strong) NSMutableArray *groups;
 
-/*  Contact Info  */
-@property (nonatomic, weak) IBOutlet UILabel *lblContInfo;
+-(id)initWithAllGroups:(NSMutableArray *) allGroups
+                  name:(NSString *)sourceName;
 
-/*  Contact ID Picture that is stored from the user */
-@property (nonatomic, weak) IBOutlet UIImage *contId;
-
-/*  This is going to set it in a tableView  */
-@property (nonatomic, weak) IBOutlet UITableView *tblContDetails;
+@property (nonatomic, readonly) ABAddressBookRef contactInfo;
+@property (nonatomic, strong) NSMutableArray *source;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *addContact;
+//@property(readonly, copy, nonatomic) NSArray <CNLabeledValue<CNPhoneNumber *> *> *phoneNumbers;
 
 @end

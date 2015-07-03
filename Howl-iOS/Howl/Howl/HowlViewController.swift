@@ -10,6 +10,8 @@ import UIKit
 import MessageUI
 import MapKit
 import WatchKit
+import Foundation
+import Dispatch
 
 class HowlViewController: UIViewController, MFMessageComposeViewControllerDelegate, CLLocationManagerDelegate {
     var array = [AnyObject]()
@@ -17,26 +19,29 @@ class HowlViewController: UIViewController, MFMessageComposeViewControllerDelega
     var address = ""
     var buildings = [CLLocation]()
     var nearBuildings = [CLLocation]()
-    @IBAction func backToViewController(segue:UIStoryboardSegue) {
-    }
+    
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(true)
         buildings.append(userLocation)
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         var array: AnyObject? = NSUserDefaults.standardUserDefaults().objectForKey("emergencyNumbers")
             println(array)
+        
         /* This is going to be the long press emergency contact gesture */
-        var UILongPress = UILongPressGestureRecognizer(target: self, action: "action1:")
+        var UILongPress = UILongPressGestureRecognizer(target: self, action: "emNum:")
         UILongPress.minimumPressDuration = 1.0
         view.addGestureRecognizer(UILongPress)
+        
         /* This is going to allow the view to segue over to the map view */
         let swipeGesture = UISwipeGestureRecognizer(target: self, action: "mapSegue:")
-        //swipeGesture.description = "left"
+        swipeGesture.numberOfTouchesRequired = 2
         view.addGestureRecognizer(swipeGesture)
+        
         /* This is going to bring up the user interface for sendingo out the emergency location */
-        let tapGesture = UITapGestureRecognizer(target: self, action: "action:")
+        let tapGesture = UITapGestureRecognizer(target: self, action: "smsSOS:")
         tapGesture.numberOfTapsRequired = 2
         view.addGestureRecognizer(tapGesture)
         
@@ -51,40 +56,19 @@ class HowlViewController: UIViewController, MFMessageComposeViewControllerDelega
             println(buildings)
             
         }
-        
-    }
-    func beginBackgroundTaskWithName(getEmNum: String?, expirationHandler handler: (() -> Void)?) -> UIBackgroundTaskIdentifier;){
-        /*  This is going to read the SQLite database that will get the correct emergency number based on the country the user is in called in from the locationManager function    */
-        var EmNum = ""
-        if (EmNum == nil) {
-            /*  This is going to get the emergency number (AKA EmNum) by taking the user's location and running it through the database if the location matches with one on the database it will set that emergency number accordingly  */
-        }
-    }
-    func endBackgroundTask(getEmNum: UIBackgroundTaskIdentifier)
-    func getRec(/*  This is going to run the shit that will get the contacts    */){
-        /*  This is going to be the code that will be put in to generate the group text */
     }
     
-    func action1(gestureRecognizer:UIGestureRecognizer) {
-        /* This is going to send out the emergency call to dispatch */
-        if gestureRecognizer.state == UIGestureRecognizerState.Began {
-            //This will be based on the user's location and country
-            let phone = /*"tel://911"*/
-            UIApplication.sharedApplication().openURL(url)
-        }
+    func mapSegue(gestureRecognizer:UIGestureRecognizer) {
         
     }
-    func mapSegue(gestureRecognizer:UIGestureRecognizer) {
-        /*  This will detect a swipe gesture that will allow the user to access the map that will show the UIMap    */
-    }
-    func action(gestureRecognizer:UIGestureRecognizer) {
+    
+    func smsSOS(gestureRecognizer:UIGestureRecognizer) {
         /* This will send out your emergency location */
         if gestureRecognizer.state == UIGestureRecognizerState.Ended {
             
             //This is going to get the phone number of the user's phone
             let phone = ""
             let url:NSURL = NSURL(string:phone)!
-            //UIApplication.sharedApplication().openURL(url)
          
             if (MFMessageComposeViewController.canSendText()) {
                 let controller = MFMessageComposeViewController();
@@ -93,9 +77,16 @@ class HowlViewController: UIViewController, MFMessageComposeViewControllerDelega
                 controller.messageComposeDelegate = self;
                 self.presentViewController(controller, animated: true, completion: nil);
             }
-         
         }
-        
+    }
+    
+    func emNum(gestureRecognizer:UIGestureRecognizer) {
+        /* This is going to send out the emergency call to dispatch */
+        if gestureRecognizer.state == UIGestureRecognizerState.Began {
+            //This will be based on the user's location and country
+            let phone = /*"tel://911"*/
+            UIApplication.sharedApplication().openURL(url)
+        }
     }
     
     func messageComposeViewController(controller: MFMessageComposeViewController!, didFinishWithResult result: MessageComposeResult) {

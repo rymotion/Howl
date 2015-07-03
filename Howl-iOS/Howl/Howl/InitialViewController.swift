@@ -8,6 +8,7 @@
 
 import UIKit
 import WatchKit
+import Foundation
 
 var contactNumbers = [String]()
 

@@ -5,13 +5,18 @@
 //  Created by Ryan Paglinawan on 5/9/15.
 //  Copyright (c) 2015 Ryan Paglinawan. All rights reserved.
 //
+//  The following code/ properties and implemenations are for the WatchOS2 rollout in the fall
 
-#import <WatchKit/WatchKit.h>
-#import <Foundation/Foundation.h>
+@import WatchKit;
+@import Foundation;
+//@import Contacts;
 
 @interface InterfaceController : WKInterfaceController
 
-+(WKInterfaceDevice *)currentdevice;
+/*  This will get the contact saved onto the watch */
+@property (readonly, copy, nonatomic) NSString *contact;
 
-+(BOOL) openParentApplication:(NSDictionary *)userInfo reply:(void (^)(NSDictionary *, NSError *))reply;
+/*  This will just copy the contact into the Apple Watch */
+//@property (readonly, nonatomic) CNContactType contactType;
+
 @end
