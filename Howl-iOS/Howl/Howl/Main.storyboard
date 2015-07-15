@@ -20,14 +20,8 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mainScreen" translatesAutoresizingMaskIntoConstraints="NO" id="LmK-he-QjA">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qFI-Ug-tEd">
-                                <rect key="frame" x="40" y="72" width="240" height="281"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="281" id="Rhp-B5-zgV"/>
-                                </constraints>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NqQ-a6-T7v">
-                                <rect key="frame" x="32" y="376" width="256" height="52"/>
+                                <rect key="frame" x="32" y="496" width="256" height="52"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="52" id="PKc-hy-czo"/>
                                 </constraints>
@@ -38,17 +32,23 @@
                                     <action selector="takePicture:" destination="LeS-b2-Ubg" eventType="touchUpInside" id="JOU-UE-gnG"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qFI-Ug-tEd">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="568" id="Rhp-B5-zgV"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="LmK-he-QjA" firstAttribute="top" secondItem="ka2-JS-CFu" secondAttribute="top" id="4rJ-ps-Yho"/>
                             <constraint firstItem="NqQ-a6-T7v" firstAttribute="leading" secondItem="ka2-JS-CFu" secondAttribute="leadingMargin" constant="16" id="ExH-Fk-GHN"/>
                             <constraint firstAttribute="trailing" secondItem="LmK-he-QjA" secondAttribute="trailing" id="GSd-za-p8D"/>
-                            <constraint firstItem="qFI-Ug-tEd" firstAttribute="leading" secondItem="ka2-JS-CFu" secondAttribute="leadingMargin" constant="24" id="OLX-BJ-T8W"/>
+                            <constraint firstItem="qFI-Ug-tEd" firstAttribute="leading" secondItem="ka2-JS-CFu" secondAttribute="leadingMargin" constant="-16" id="OLX-BJ-T8W"/>
                             <constraint firstItem="LmK-he-QjA" firstAttribute="leading" secondItem="ka2-JS-CFu" secondAttribute="leading" id="PmH-Xw-sBy"/>
-                            <constraint firstItem="qFI-Ug-tEd" firstAttribute="top" secondItem="yf6-d9-SRf" secondAttribute="bottom" constant="52" id="aXZ-uj-HoR"/>
+                            <constraint firstItem="qFI-Ug-tEd" firstAttribute="top" secondItem="yf6-d9-SRf" secondAttribute="bottom" constant="-20" id="aXZ-uj-HoR"/>
                             <constraint firstItem="NqQ-a6-T7v" firstAttribute="centerX" secondItem="qFI-Ug-tEd" secondAttribute="centerX" id="dK9-qk-0a7"/>
-                            <constraint firstItem="NqQ-a6-T7v" firstAttribute="top" secondItem="qFI-Ug-tEd" secondAttribute="bottom" constant="23" id="hdb-kK-eHM"/>
+                            <constraint firstItem="NqQ-a6-T7v" firstAttribute="top" secondItem="qFI-Ug-tEd" secondAttribute="bottom" constant="-72" id="hdb-kK-eHM"/>
                             <constraint firstItem="LmK-he-QjA" firstAttribute="bottom" secondItem="1s4-Bi-3rf" secondAttribute="top" id="knR-Nr-SOw"/>
                             <constraint firstItem="qFI-Ug-tEd" firstAttribute="centerX" secondItem="LmK-he-QjA" secondAttribute="centerX" id="vfz-9s-QJb"/>
                         </constraints>

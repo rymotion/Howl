@@ -10,6 +10,7 @@ import UIKit
 import MessageUI
 import MapKit
 import WatchKit
+import Foundation
 
 class HowlViewController: UIViewController, MFMessageComposeViewControllerDelegate, CLLocationManagerDelegate {
     var array = [AnyObject]()
@@ -60,7 +61,6 @@ class HowlViewController: UIViewController, MFMessageComposeViewControllerDelega
             /*  This is going to get the emergency number (AKA EmNum) by taking the user's location and running it through the database if the location matches with one on the database it will set that emergency number accordingly  */
         }
     }
-    func endBackgroundTask(getEmNum: UIBackgroundTaskIdentifier)
     func getRec(/*  This is going to run the shit that will get the contacts    */){
         /*  This is going to be the code that will be put in to generate the group text */
     }
@@ -70,7 +70,7 @@ class HowlViewController: UIViewController, MFMessageComposeViewControllerDelega
         if gestureRecognizer.state == UIGestureRecognizerState.Began {
             //This will be based on the user's location and country
             let phone = /*"tel://911"*/
-            UIApplication.sharedApplication().openURL(url)
+            UIApplication.sharedApplication().openURL(phone)
         }
         
     }

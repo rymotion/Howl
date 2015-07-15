@@ -1,31 +1,22 @@
 //
-//  InterfaceController.m
-//  Howl WatchKit Extension
+//  wkMapController.m
+//  Howl
 //
-//  Created by Ryan Paglinawan on 5/9/15.
+//  Created by Ryan Paglinawan on 5/29/15.
 //  Copyright (c) 2015 Ryan Paglinawan. All rights reserved.
 //
 
-#import "InterfaceController.h"
+#import "wkMapController.h"
 
-
-@interface InterfaceController()
+@interface wkMapController ()
 
 @end
 
-
-@implementation InterfaceController
-
-- (IBAction)Call {
-    
-}
-- (IBAction)Text {
-    
-}
+@implementation wkMapController
 
 - (void)awakeWithContext:(id)context {
     [super awakeWithContext:context];
-
+    
     // Configure interface objects here.
 }
 
@@ -39,12 +30,5 @@
     [super didDeactivate];
 }
 
-- (IBAction)wkCall {
-}
 
-- (IBAction)wkMMS {
-}
 @end
-
-
-

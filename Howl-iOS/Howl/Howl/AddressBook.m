@@ -29,7 +29,7 @@
     if (ABAddressBookGetAuthorizationStatus() == kABAuthorizationStatusNotDetermined) { // We are on iOS 6
         ABAddressBookRequestAccessWithCompletion(addressBookRef, ^(bool granted, CFErrorRef error) {
             if (granted){
-                [self _addContactToAddressBook];
+                [self getContacsWithAddressBook];
             }
             else {
                 //error window should come up here
@@ -37,7 +37,7 @@
         });
     }
     else if (ABAddressBookGetAuthorizationStatus() == kABAuthorizationStatusAuthorized){
-        [self _addContactToAddressBook];
+        [self getContacsWithAddressBook];
     }
     else{
         //Permission possibly denied

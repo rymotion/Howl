@@ -10,8 +10,7 @@
 #import <Foundation/Foundation.h>
 
 @interface InterfaceController : WKInterfaceController
+- (IBAction)wkCall;
+- (IBAction)wkMMS;
 
-+(WKInterfaceDevice *)currentdevice;
-
-+(BOOL) openParentApplication:(NSDictionary *)userInfo reply:(void (^)(NSDictionary *, NSError *))reply;
 @end

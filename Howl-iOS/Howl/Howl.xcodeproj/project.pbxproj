@@ -67,6 +67,7 @@
 		CC5816EF1AD9337F00B74281 /* HowlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5816EE1AD9337F00B74281 /* HowlViewController.swift */; };
 		CC5816F11AD958F800B74281 /* place.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5816F01AD958F800B74281 /* place.swift */; };
 		CC5816F31AD961FA00B74281 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5816F21AD961FA00B74281 /* InitialViewController.swift */; };
+		CD37BD871B185654008E9105 /* wkMapController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD37BD861B185654008E9105 /* wkMapController.m */; };
 		CDBAE1E21B136F9B000192DB /* PictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = CDBAE1E11B136F9B000192DB /* PictureView.m */; };
 /* End PBXBuildFile section */
 
@@ -177,11 +178,12 @@
 		CC2245C41AD8DF5F00C85392 /* PictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
 		CC2245C61AD8E8C100C85392 /* 2HOWL_Photo page.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2HOWL_Photo page.png"; sourceTree = "<group>"; };
 		CC2245C81AD8ECAA00C85392 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		CC35E6FF1AD343B100A1E115 /* Howl-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Howl-Bridging-Header.h"; sourceTree = "<group>"; };
 		CC35E7001AD343B200A1E115 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		CC5816EE1AD9337F00B74281 /* HowlViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HowlViewController.swift; sourceTree = "<group>"; };
 		CC5816F01AD958F800B74281 /* place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = place.swift; sourceTree = "<group>"; };
 		CC5816F21AD961FA00B74281 /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		CD37BD851B185654008E9105 /* wkMapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wkMapController.h; path = "Howl WatchKit Extension/wkMapController.h"; sourceTree = SOURCE_ROOT; };
+		CD37BD861B185654008E9105 /* wkMapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = wkMapController.m; path = "Howl WatchKit Extension/wkMapController.m"; sourceTree = SOURCE_ROOT; };
 		CDBAE1E11B136F9B000192DB /* PictureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PictureView.m; path = ../PictureView.m; sourceTree = "<group>"; };
 		CDBAE1E31B136FBB000192DB /* PictureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PictureView.h; path = ../PictureView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -251,6 +253,8 @@
 		05BF98211AFF09EA00856E49 /* Howl WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				CD37BD851B185654008E9105 /* wkMapController.h */,
+				CD37BD861B185654008E9105 /* wkMapController.m */,
 				05BF98251AFF09EA00856E49 /* InterfaceController.h */,
 				05BF98261AFF09EA00856E49 /* InterfaceController.m */,
 				05BF982B1AFF09EA00856E49 /* GlanceController.h */,
@@ -366,7 +370,6 @@
 				05C225601ACA44FC00ACDF1A /* LaunchScreen.xib */,
 				05C225551ACA44FC00ACDF1A /* Howl.xcdatamodeld */,
 				05C2254E1ACA44FC00ACDF1A /* Supporting Files */,
-				CC35E6FF1AD343B100A1E115 /* Howl-Bridging-Header.h */,
 				058B30EB1ADDD6D400EFCC3F /* Info.h */,
 				058B30EC1ADDD6D400EFCC3F /* Info.m */,
 			);
@@ -568,6 +571,7 @@
 			files = (
 				05BF98271AFF09EA00856E49 /* InterfaceController.m in Sources */,
 				05BF982D1AFF09EA00856E49 /* GlanceController.m in Sources */,
+				CD37BD871B185654008E9105 /* wkMapController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

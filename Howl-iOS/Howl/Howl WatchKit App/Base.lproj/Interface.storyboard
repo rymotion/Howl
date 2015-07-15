@@ -12,16 +12,14 @@
                     <items>
                         <button width="1" alignment="left" title="Call" id="fdG-qI-6N1">
                             <connections>
-                                <action selector="Call" destination="AgC-eL-Hgc" id="YG2-V1-dNd"/>
+                                <action selector="wkCall" destination="AgC-eL-Hgc" id="W0Q-F9-B27"/>
                             </connections>
                         </button>
-                        <separator alignment="left" id="Bk8-6f-qjX"/>
-                        <button width="1" alignment="left" title="SOS MMS" id="Ivf-xQ-hO2">
+                        <button width="1" alignment="left" title="SOS MMS" id="Sx7-lH-ona">
                             <connections>
-                                <action selector="Text" destination="AgC-eL-Hgc" id="fMe-NH-baB"/>
+                                <action selector="wkMMS" destination="AgC-eL-Hgc" id="k8S-MW-QZb"/>
                             </connections>
                         </button>
-                        <separator alignment="left" id="kj8-kh-OQF"/>
                         <button width="1" alignment="left" title="Map" id="2Nn-mK-YQe">
                             <connections>
                                 <segue destination="Vsr-Kd-VFf" kind="push" id="Or6-Ar-obg"/>
@@ -30,7 +28,7 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="235" y="347"/>
+            <point key="canvasLocation" x="150" y="333"/>
         </scene>
         <!--Map-->
         <scene sceneID="Kig-Ah-U4e">
@@ -41,7 +39,6 @@
                             <variation key="device=watch38mm" hidden="NO"/>
                             <variation key="device=watch42mm" hidden="NO"/>
                         </map>
-                        <separator alignment="left" id="4f0-w9-YbS"/>
                         <button width="1" alignment="left" title="Back" id="0EY-9D-B6Y">
                             <connections>
                                 <segue destination="AgC-eL-Hgc" kind="push" id="J8o-Wk-O0k"/>
@@ -60,7 +57,7 @@
                     </variation>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="553" y="273.5"/>
+            <point key="canvasLocation" x="633" y="370.5"/>
         </scene>
         <!--Glance Interface Controller-->
         <scene sceneID="BOz-TT-tkC">
