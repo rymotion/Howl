@@ -1,11 +1,11 @@
 {\rtf1\ansi\ansicpg1252\cocoartf1348\cocoasubrtf170
 {\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\colortbl;\red255\green255\blue255;}
 \margl1440\margr1440\vieww10800\viewh8400\viewkind0
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
 
 \f0\fs24 \cf0 Albania 17 18 19\
-algeria 21606666 14 17\
+Algeria 21606666 14 17\
 American Samoa 911\
 Andorra 118 110\
 Angola 118 118 110\
@@ -50,11 +50,11 @@ Colombia 119\
 Cook Islands 998 996 999\
 Costa Rica 911\
 \pard\pardeftab720
-\cf2 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 C\'f4te d'Ivoire - 110 180\
+\cf0 \expnd0\expndtw0\kerning0
+C\'f4te d'Ivoire - 110 180\
 Croatia 112\
 Cuba 26811\
-\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 Curacao 112 114 444444\
+\kerning1\expnd0\expndtw0 Curacao 112 114 444444\
 Cyprus 112\
 Czech Republic 155 150 158\
 Denmark 112\
