@@ -13,7 +13,6 @@
                         <button width="1" alignment="left" title="Call" id="fdG-qI-6N1">
                             <connections>
                                 <action selector="wkCall" destination="AgC-eL-Hgc" id="W0Q-F9-B27"/>
-                                <segue destination="X8x-Z9-6BV" kind="push" id="uXc-ih-TKa"/>
                             </connections>
                         </button>
                         <button width="1" alignment="left" title="SOS MMS" id="Sx7-lH-ona">
@@ -59,23 +58,6 @@
                 </controller>
             </objects>
             <point key="canvasLocation" x="633" y="370.5"/>
-        </scene>
-        <!--Interface Controller-->
-        <scene sceneID="nYT-8g-YO6">
-            <objects>
-                <controller id="X8x-Z9-6BV">
-                    <items>
-                        <table alignment="left" id="T65-Cm-zoi">
-                            <items>
-                                <tableRow id="BNa-Bb-mvl">
-                                    <group key="rootItem" width="1" alignment="left" id="L4e-Mz-c5D"/>
-                                </tableRow>
-                            </items>
-                        </table>
-                    </items>
-                </controller>
-            </objects>
-            <point key="canvasLocation" x="543" y="690"/>
         </scene>
         <!--Glance Interface Controller-->
         <scene sceneID="BOz-TT-tkC">
