@@ -16,13 +16,6 @@
 
 @implementation InterfaceController
 
-- (IBAction)Call {
-    
-}
-- (IBAction)Text {
-    
-}
-
 - (void)awakeWithContext:(id)context {
     [super awakeWithContext:context];
 

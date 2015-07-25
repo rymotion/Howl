@@ -8,56 +8,9 @@
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController">
-                    <items>
-                        <button width="1" alignment="left" title="Call" id="fdG-qI-6N1">
-                            <connections>
-                                <action selector="wkCall" destination="AgC-eL-Hgc" id="W0Q-F9-B27"/>
-                            </connections>
-                        </button>
-                        <button width="1" alignment="left" title="SOS MMS" id="Sx7-lH-ona">
-                            <connections>
-                                <action selector="wkMMS" destination="AgC-eL-Hgc" id="k8S-MW-QZb"/>
-                            </connections>
-                        </button>
-                        <button width="1" alignment="left" title="Map" id="2Nn-mK-YQe">
-                            <connections>
-                                <segue destination="Vsr-Kd-VFf" kind="push" id="Or6-Ar-obg"/>
-                            </connections>
-                        </button>
-                    </items>
-                </controller>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController"/>
             </objects>
             <point key="canvasLocation" x="150" y="333"/>
-        </scene>
-        <!--Map-->
-        <scene sceneID="Kig-Ah-U4e">
-            <objects>
-                <controller identifier="Map View" title="Map" id="Vsr-Kd-VFf">
-                    <items>
-                        <map height="151" alignment="left" id="W5A-J3-Knf">
-                            <variation key="device=watch38mm" hidden="NO"/>
-                            <variation key="device=watch42mm" hidden="NO"/>
-                        </map>
-                        <button width="1" alignment="left" title="Back" id="0EY-9D-B6Y">
-                            <connections>
-                                <segue destination="AgC-eL-Hgc" kind="push" id="J8o-Wk-O0k"/>
-                            </connections>
-                        </button>
-                    </items>
-                    <variation key="device=watch38mm">
-                        <mask key="items">
-                            <include reference="W5A-J3-Knf"/>
-                        </mask>
-                    </variation>
-                    <variation key="device=watch42mm">
-                        <mask key="items">
-                            <include reference="W5A-J3-Knf"/>
-                        </mask>
-                    </variation>
-                </controller>
-            </objects>
-            <point key="canvasLocation" x="633" y="370.5"/>
         </scene>
         <!--Glance Interface Controller-->
         <scene sceneID="BOz-TT-tkC">

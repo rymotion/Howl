@@ -16,6 +16,7 @@ class HowlViewController: UIViewController, MFMessageComposeViewControllerDelega
     var array = [AnyObject]()
     var manager: CLLocationManager!
     var address = ""
+    var cname = ""
     var buildings = [CLLocation]()
     var nearBuildings = [CLLocation]()
     @IBAction func backToViewController(segue:UIStoryboardSegue) {
@@ -55,10 +56,20 @@ class HowlViewController: UIViewController, MFMessageComposeViewControllerDelega
         
     }
     func beginBackgroundTaskWithName(getEmNum: String?, expirationHandler handler: (() -> Void)?) -> UIBackgroundTaskIdentifier;){
-        /*  This is going to read the SQLite database that will get the correct emergency number based on the country the user is in called in from the locationManager function    */
-        var EmNum = ""
+        /*  This is going to read the text database that will get the correct emergency number based on the country the user is in called in from the locationManager function    */
+        var medNum = " "
+        var firNum = " "
+        var polNum = " "
         if (EmNum == nil) {
-            /*  This is going to get the emergency number (AKA EmNum) by taking the user's location and running it through the database if the location matches with one on the database it will set that emergency number accordingly  */
+            /* Loop for to read the list of countries */
+            for (var i = 0; i <= /* list size*/; i++){
+                    if cname == /* list[i]*/{
+                    /* this is going to be set to the emergency number(s) that are next to the country name*/
+                    medNum =
+                    firNum =
+                    polNum =
+                }
+            }
         }
     }
     func getRec(/*  This is going to run the shit that will get the contacts    */){
@@ -69,8 +80,7 @@ class HowlViewController: UIViewController, MFMessageComposeViewControllerDelega
         /* This is going to send out the emergency call to dispatch */
         if gestureRecognizer.state == UIGestureRecognizerState.Began {
             //This will be based on the user's location and country
-            let phone = /*"tel://911"*/
-            UIApplication.sharedApplication().openURL(phone)
+            UIApplication.sharedApplication().openURL(polNum)
         }
         
     }
@@ -82,7 +92,7 @@ class HowlViewController: UIViewController, MFMessageComposeViewControllerDelega
         if gestureRecognizer.state == UIGestureRecognizerState.Ended {
             
             //This is going to get the phone number of the user's phone
-            let phone = ""
+            let phone = " "
             let url:NSURL = NSURL(string:phone)!
             //UIApplication.sharedApplication().openURL(url)
          
@@ -96,6 +106,14 @@ class HowlViewController: UIViewController, MFMessageComposeViewControllerDelega
          
         }
         
+    }
+    
+    @IBAction func Fire(sender: UIButton) {
+        UIApplication.sharedApplication().openURL(firNum)
+    }
+    
+    @IBAction func Medical(sender: UIButton) {
+        UIApplication.sharedApplication().openURL(medNum)
     }
     
     func messageComposeViewController(controller: MFMessageComposeViewController!, didFinishWithResult result: MessageComposeResult) {
@@ -145,6 +163,7 @@ class HowlViewController: UIViewController, MFMessageComposeViewControllerDelega
                     }
                     title = "\(subThoroughfare) \(thoroughfare)"
                     self.address = "\(title) \(city) \(state) \(postalCode) \(country)"
+                    self.cname = "\(country)"
                 }
             }
         })
