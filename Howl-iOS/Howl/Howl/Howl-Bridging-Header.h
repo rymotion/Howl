@@ -7,3 +7,6 @@
 
 //This is going to have the new stuff for the camera interface
 #import "PictureView.h"
+
+//This is going to pull the contacts from the phone
+#import "AddressBook.h"

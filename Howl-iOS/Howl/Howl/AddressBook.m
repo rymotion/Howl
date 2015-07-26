@@ -92,4 +92,7 @@
     }
     NSLog(@"Contacts = %@",contactList);
 }
+-(void) getContacsWithAddressBook:(ABAddressBookRef)addressBook {
+
+}
 @end
