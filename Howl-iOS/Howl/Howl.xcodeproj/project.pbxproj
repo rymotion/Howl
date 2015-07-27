@@ -10,7 +10,7 @@
 		0554F1051ACAF780000A298C /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0554F1031ACAF780000A298C /* libsqlite3.0.dylib */; };
 		0554F1061ACAF780000A298C /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0554F1041ACAF780000A298C /* libstdc++.6.0.9.dylib */; };
 		0554F10B1ACAF8B7000A298C /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0554F10A1ACAF8B7000A298C /* libsqlite3.dylib */; };
-		055C8B811AEAD9C6000813B3 /* AddressBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 055C8B801AEAD9C6000813B3 /* AddressBook.m */; };
+		055C8B811AEAD9C6000813B3 /* Contlist.m in Sources */ = {isa = PBXBuildFile; fileRef = 055C8B801AEAD9C6000813B3 /* Contlist.m */; };
 		058B30ED1ADDD6D400EFCC3F /* Info.m in Sources */ = {isa = PBXBuildFile; fileRef = 058B30EC1ADDD6D400EFCC3F /* Info.m */; };
 		05BF98271AFF09EA00856E49 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05BF98261AFF09EA00856E49 /* InterfaceController.m */; };
 		05BF982D1AFF09EA00856E49 /* GlanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05BF982C1AFF09EA00856E49 /* GlanceController.m */; };
@@ -113,8 +113,8 @@
 		0554F1031ACAF780000A298C /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		0554F1041ACAF780000A298C /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
 		0554F10A1ACAF8B7000A298C /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		055C8B7F1AEAD9C6000813B3 /* AddressBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressBook.h; sourceTree = "<group>"; };
-		055C8B801AEAD9C6000813B3 /* AddressBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressBook.m; sourceTree = "<group>"; };
+		055C8B7F1AEAD9C6000813B3 /* ContList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContList.h; sourceTree = "<group>"; };
+		055C8B801AEAD9C6000813B3 /* Contlist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contlist.m; sourceTree = "<group>"; };
 		058B30EB1ADDD6D400EFCC3F /* Info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Info.h; sourceTree = "<group>"; };
 		058B30EC1ADDD6D400EFCC3F /* Info.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Info.m; sourceTree = "<group>"; };
 		05BF98201AFF09EA00856E49 /* Howl WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Howl WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -356,8 +356,8 @@
 			children = (
 				CDBAE1E31B136FBB000192DB /* PictureView.h */,
 				CDBAE1E11B136F9B000192DB /* PictureView.m */,
-				055C8B7F1AEAD9C6000813B3 /* AddressBook.h */,
-				055C8B801AEAD9C6000813B3 /* AddressBook.m */,
+				055C8B7F1AEAD9C6000813B3 /* ContList.h */,
+				055C8B801AEAD9C6000813B3 /* Contlist.m */,
 				CC2245C41AD8DF5F00C85392 /* PictureViewController.swift */,
 				CC5816EE1AD9337F00B74281 /* HowlViewController.swift */,
 				CC5816F01AD958F800B74281 /* place.swift */,
@@ -589,7 +589,7 @@
 				CDBAE1E21B136F9B000192DB /* PictureView.m in Sources */,
 				CC5816F11AD958F800B74281 /* place.swift in Sources */,
 				CC5816EF1AD9337F00B74281 /* HowlViewController.swift in Sources */,
-				055C8B811AEAD9C6000813B3 /* AddressBook.m in Sources */,
+				055C8B811AEAD9C6000813B3 /* Contlist.m in Sources */,
 				05C225511ACA44FC00ACDF1A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
