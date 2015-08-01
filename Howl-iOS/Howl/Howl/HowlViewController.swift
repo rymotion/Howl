@@ -60,14 +60,16 @@ class HowlViewController: UIViewController, MFMessageComposeViewControllerDelega
         var medNum = " "
         var firNum = " "
         var polNum = " "
+        var _emNumGlob = " "
         if (EmNum == nil) {
             /* Loop for to read the list of countries */
             for (var i = 0; i <= /* list size*/; i++){
                     if cname == /* list[i]*/{
                     /* this is going to be set to the emergency number(s) that are next to the country name*/
-                    medNum =
-                    firNum =
-                    polNum =
+                    medNum = /* this is going to be the first number */
+                    firNum = /* this is going to be the second number */
+                    polNum = /* this is going to be the third number */
+                    _emNumGlob = /* if there is only one number for that country set it to this */
                 }
             }
         }
