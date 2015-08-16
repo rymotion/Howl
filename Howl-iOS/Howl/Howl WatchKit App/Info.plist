@@ -7,13 +7,13 @@
 	<key>CFBundleDisplayName</key>
 	<string>Howl</string>
 	<key>CFBundleExecutable</key>
-	<string>$(EXECUTABLE_NAME)</string>
+	<string>$(HOWL_APP)</string>
 	<key>CFBundleIdentifier</key>
 	<string>RyanPaglinawan.Howl.watchkitapp</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>$(PRODUCT_NAME)</string>
+	<string>$(HOWL_APPL_WAT)</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>

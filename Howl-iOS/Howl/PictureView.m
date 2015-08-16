@@ -165,7 +165,7 @@ static CGContextRef CreateCGBitmapContextForSize(CGSize size)
     
     // Make a still image output
     stillImageOutput = [AVCaptureStillImageOutput new];
-    [stillImageOutput addObserver:self forKeyPath:@"capturingStillImage" options:NSKeyValueObservingOptionNew context:AVCaptureStillImageIsCapturingStillImageContext];
+    [stillImageOutput addObserver:self forKeyPath:@"capturingStillImage" options:NSKeyValueObservingOptionNew context:(__bridge void *)(AVCaptureStillImageIsCapturingStillImageContext)];
     if ( [session canAddOutput:stillImageOutput] )
         [session addOutput:stillImageOutput];
     

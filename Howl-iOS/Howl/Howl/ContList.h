@@ -7,6 +7,7 @@
 //
 @import AddressBook;
 @import UIKit;
+@import Foundation;
 
 @class ContList;
 
@@ -16,9 +17,6 @@ void ABAddressBookRequestAccessWithCompletion ( ABAddressBookRef addressBook, AB
 
 ABAuthorizationStatus ABAddressBookGetAuthorizationStatus ( void );
 
-- (instancetype) initWithTitle:(NSString *) title
-                       message:(NSString *) message
-                      delegate:(id) delegate
-             cancelButtonTitle:(NSString *) cancelButtonTitle otherButtonTitles:(NSString *) otherButtonTitles;
+UIView appUsageWarn();
 
 @end

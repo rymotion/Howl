@@ -31,3 +31,6 @@
 - (IBAction)takePicture:(id)sender;
 - (IBAction)switchCameras:(id)sender;
 - (IBAction)toggleFaceDetection:(id)sender;
+
+@end
+@end
