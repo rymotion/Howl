@@ -4,10 +4,40 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Complication - Howl 2.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
+		<key>Complication - Howl Watch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>11</integer>
+		</dict>
+		<key>Glance - Howl 2.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+		<key>Glance - Howl Watch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>10</integer>
+		</dict>
 		<key>Glance - Howl WatchKit App.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>3</integer>
+		</dict>
+		<key>Howl 2.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>Howl Watch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
 		</dict>
 		<key>Howl WatchKit App.xcscheme</key>
 		<dict>
@@ -19,6 +49,16 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>Notification - Howl 2.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>Notification - Howl Watch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>9</integer>
+		</dict>
 		<key>Notification - Howl WatchKit App.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -27,6 +67,16 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>0577D52C1C560C29001261FD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>05B39ED41BDD5232006E7602</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>05BF98311AFF09EA00856E49</key>
 		<dict>
 			<key>primary</key>

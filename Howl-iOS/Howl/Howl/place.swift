@@ -16,12 +16,12 @@ var address = ""
 func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
     
     // centers map on users location
-    userLocation = locations[0] as! CLLocation
-    var latitude = userLocation.coordinate.latitude
-    var longitude = userLocation.coordinate.longitude
-    var coordinate = CLLocationCoordinate2DMake(latitude, longitude)
-    var latDelta: CLLocationDegrees = 0.01
-    var lonDelta: CLLocationDegrees = 0.01
+    //userLocation = locations[0] as! CLLocation
+    //var latitude = userLocation.coordinate.latitude
+    //var longitude = userLocation.coordinate.longitude
+    //var coordinate = CLLocationCoordinate2DMake(latitude, longitude)
+    //var latDelta: CLLocationDegrees = 0.01
+    //var lonDelta: CLLocationDegrees = 0.01
     
     CLGeocoder().reverseGeocodeLocation(userLocation, completionHandler: { (placemarks, error) -> Void in
         
@@ -33,30 +33,25 @@ func locationManager(manager: CLLocationManager!, didUpdateLocations locations: 
         
         if (error == nil) {
             
-            if let p = CLPlacemark(placemark: placemarks?[0] as! CLPlacemark) {
+            if let p = placemarks?.first {
+                // With Swift 2.0 we had to change how we handled the data
+                // p is in an optional wrapper  cause it would b a nil value be default
+                let subThoroughfare = p.subThoroughfare ?? ""
+                city = p.locality ?? ""
+                state = p.administrativeArea ?? ""
+                postalCode = p.postalCode ?? ""
+                country = p.country ?? ""
+                let thoroughfare = p.thoroughfare ?? ""
                 
-                var subThoroughfare:String = ""
-                var thoroughfare:String = ""
-                
-                if p.subThoroughfare != nil {
-                    
-                    subThoroughfare = p.subThoroughfare
-                    
-                    city = p.locality
-                    state = p.administrativeArea
-                    postalCode = p.postalCode
-                    country = p.country
-                }
-                
-                if p.thoroughfare != nil {
-                    
-                    thoroughfare = p.thoroughfare
-                    
-                }
-                title = "\(subThoroughfare) \(thoroughfare)"
                 address = "\(title) \(city) \(state) \(postalCode) \(country)"
+                title = "\(subThoroughfare) \(thoroughfare)"
+                // This is what the program will outout and tell the user
+                // Now we transfer data to the watch which will be handled by the ContList.h and .m
             }
         }
     })
 }
+func readData(){
+    // This will grab the data from the sqlite database
+    let emsNum = sharedInstance.ContList();
 }

@@ -7,17 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0554F1051ACAF780000A298C /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0554F1031ACAF780000A298C /* libsqlite3.0.dylib */; };
-		0554F1061ACAF780000A298C /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0554F1041ACAF780000A298C /* libstdc++.6.0.9.dylib */; };
-		0554F10B1ACAF8B7000A298C /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0554F10A1ACAF8B7000A298C /* libsqlite3.dylib */; };
 		055C8B811AEAD9C6000813B3 /* Contlist.m in Sources */ = {isa = PBXBuildFile; fileRef = 055C8B801AEAD9C6000813B3 /* Contlist.m */; };
+		056C96411BFF90F9005E9E21 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 056C96401BFF90F9005E9E21 /* libsqlite3.tbd */; };
+		0577D5281C560571001261FD /* Howl.sql in Resources */ = {isa = PBXBuildFile; fileRef = 0577D5271C560570001261FD /* Howl.sql */; };
+		0577D5311C560C29001261FD /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0577D52F1C560C29001261FD /* Interface.storyboard */; };
+		0577D5331C560C29001261FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0577D5321C560C29001261FD /* Assets.xcassets */; };
+		0577D53A1C560C29001261FD /* Howl Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0577D5391C560C29001261FD /* Howl Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0577D5421C560C29001261FD /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0577D5411C560C29001261FD /* InterfaceController.m */; };
+		0577D5451C560C29001261FD /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0577D5441C560C29001261FD /* ExtensionDelegate.m */; };
+		0577D5481C560C29001261FD /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0577D5471C560C29001261FD /* NotificationController.m */; };
+		0577D54B1C560C29001261FD /* GlanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0577D54A1C560C29001261FD /* GlanceController.m */; };
+		0577D54E1C560C29001261FD /* ComplicationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0577D54D1C560C29001261FD /* ComplicationController.m */; };
+		0577D5501C560C29001261FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0577D54F1C560C29001261FD /* Assets.xcassets */; };
+		0577D5541C560C29001261FD /* Howl Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 0577D52D1C560C29001261FD /* Howl Watch.app */; };
 		058B30ED1ADDD6D400EFCC3F /* Info.m in Sources */ = {isa = PBXBuildFile; fileRef = 058B30EC1ADDD6D400EFCC3F /* Info.m */; };
-		05BF98271AFF09EA00856E49 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05BF98261AFF09EA00856E49 /* InterfaceController.m */; };
-		05BF982D1AFF09EA00856E49 /* GlanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05BF982C1AFF09EA00856E49 /* GlanceController.m */; };
-		05BF982F1AFF09EA00856E49 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05BF982E1AFF09EA00856E49 /* Images.xcassets */; };
+		05B39EE21BDD5232006E7602 /* Howl 2 Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 05B39EE11BDD5232006E7602 /* Howl 2 Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		05B39EF71BDD5232006E7602 /* Howl 2.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 05B39ED51BDD5232006E7602 /* Howl 2.app */; };
 		05BF98331AFF09EA00856E49 /* Howl WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 05BF98321AFF09EA00856E49 /* Howl WatchKit App.app */; };
-		05BF983B1AFF09EA00856E49 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05BF98391AFF09EA00856E49 /* Interface.storyboard */; };
-		05BF983D1AFF09EA00856E49 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05BF983C1AFF09EA00856E49 /* Images.xcassets */; };
 		05BF98401AFF09EA00856E49 /* Howl WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 05BF98201AFF09EA00856E49 /* Howl WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		05C225511ACA44FC00ACDF1A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C225501ACA44FC00ACDF1A /* main.m */; };
 		05C225541ACA44FC00ACDF1A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C225531ACA44FC00ACDF1A /* AppDelegate.m */; };
@@ -42,7 +48,6 @@
 		05C225AE1ACA48A600ACDF1A /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C2258B1ACA48A600ACDF1A /* ExternalAccessory.framework */; };
 		05C225AF1ACA48A600ACDF1A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C2258C1ACA48A600ACDF1A /* Foundation.framework */; };
 		05C225B01ACA48A600ACDF1A /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C2258D1ACA48A600ACDF1A /* ImageIO.framework */; };
-		05C225B11ACA48A600ACDF1A /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C2258E1ACA48A600ACDF1A /* JavaScriptCore.framework */; };
 		05C225B21ACA48A600ACDF1A /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C2258F1ACA48A600ACDF1A /* LocalAuthentication.framework */; };
 		05C225B31ACA48A600ACDF1A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C225901ACA48A600ACDF1A /* MapKit.framework */; };
 		05C225B41ACA48A600ACDF1A /* MediaAccessibility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C225911ACA48A600ACDF1A /* MediaAccessibility.framework */; };
@@ -53,12 +58,9 @@
 		05C225B91ACA48A600ACDF1A /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C225961ACA48A600ACDF1A /* NotificationCenter.framework */; };
 		05C225BA1ACA48A600ACDF1A /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C225971ACA48A600ACDF1A /* Photos.framework */; };
 		05C225BB1ACA48A600ACDF1A /* PhotosUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C225981ACA48A600ACDF1A /* PhotosUI.framework */; };
-		05C225BC1ACA48A600ACDF1A /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C225991ACA48A600ACDF1A /* SafariServices.framework */; };
-		05C225BD1ACA48A600ACDF1A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C2259A1ACA48A600ACDF1A /* Security.framework */; };
 		05C225BE1ACA48A600ACDF1A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C2259B1ACA48A600ACDF1A /* SystemConfiguration.framework */; };
 		05C225BF1ACA48A600ACDF1A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C2259C1ACA48A600ACDF1A /* UIKit.framework */; };
 		05C225C01ACA48A600ACDF1A /* WatchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C2259D1ACA48A600ACDF1A /* WatchKit.framework */; };
-		05C225C11ACA48A600ACDF1A /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C2259E1ACA48A600ACDF1A /* WebKit.framework */; };
 		CC2245C31AD8DCE600C85392 /* 1HOWL_Title page.png in Resources */ = {isa = PBXBuildFile; fileRef = CC2245C21AD8DCE600C85392 /* 1HOWL_Title page.png */; };
 		CC2245C51AD8DF5F00C85392 /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2245C41AD8DF5F00C85392 /* PictureViewController.swift */; };
 		CC2245C71AD8E8C100C85392 /* 2HOWL_Photo page.png in Resources */ = {isa = PBXBuildFile; fileRef = CC2245C61AD8E8C100C85392 /* 2HOWL_Photo page.png */; };
@@ -67,11 +69,38 @@
 		CC5816EF1AD9337F00B74281 /* HowlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5816EE1AD9337F00B74281 /* HowlViewController.swift */; };
 		CC5816F11AD958F800B74281 /* place.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5816F01AD958F800B74281 /* place.swift */; };
 		CC5816F31AD961FA00B74281 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5816F21AD961FA00B74281 /* InitialViewController.swift */; };
-		CD37BD871B185654008E9105 /* wkMapController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD37BD861B185654008E9105 /* wkMapController.m */; };
 		CDBAE1E21B136F9B000192DB /* PictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = CDBAE1E11B136F9B000192DB /* PictureView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		0577D53B1C560C29001261FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05C225431ACA44FC00ACDF1A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0577D5381C560C29001261FD;
+			remoteInfo = "Howl Watch Extension";
+		};
+		0577D5521C560C29001261FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05C225431ACA44FC00ACDF1A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0577D52C1C560C29001261FD;
+			remoteInfo = "Howl Watch";
+		};
+		05B39EE31BDD5232006E7602 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05C225431ACA44FC00ACDF1A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05B39EE01BDD5232006E7602;
+			remoteInfo = "Howl 2 Extension";
+		};
+		05B39EF51BDD5232006E7602 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05C225431ACA44FC00ACDF1A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05B39ED41BDD5232006E7602;
+			remoteInfo = "Howl 2";
+		};
 		05BF98341AFF09EA00856E49 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 05C225431ACA44FC00ACDF1A /* Project object */;
@@ -96,6 +125,40 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		0577D5581C560C29001261FD /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0577D53A1C560C29001261FD /* Howl Watch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05B39EFB1BDD5232006E7602 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				05B39EE21BDD5232006E7602 /* Howl 2 Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05B39EFF1BDD5232006E7602 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				0577D5541C560C29001261FD /* Howl Watch.app in Embed Watch Content */,
+				05B39EF71BDD5232006E7602 /* Howl 2.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		05BF98471AFF09EA00856E49 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -110,25 +173,35 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0554F1031ACAF780000A298C /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
-		0554F1041ACAF780000A298C /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
-		0554F10A1ACAF8B7000A298C /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		055C8B7F1AEAD9C6000813B3 /* ContList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContList.h; sourceTree = "<group>"; };
 		055C8B801AEAD9C6000813B3 /* Contlist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contlist.m; sourceTree = "<group>"; };
+		056C96401BFF90F9005E9E21 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		0577D5271C560570001261FD /* Howl.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Howl.sql; sourceTree = SOURCE_ROOT; };
+		0577D52D1C560C29001261FD /* Howl Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Howl Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0577D5301C560C29001261FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		0577D5321C560C29001261FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0577D5341C560C29001261FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0577D5391C560C29001261FD /* Howl Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Howl Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0577D53F1C560C29001261FD /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		0577D5401C560C29001261FD /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		0577D5411C560C29001261FD /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		0577D5431C560C29001261FD /* ExtensionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtensionDelegate.h; sourceTree = "<group>"; };
+		0577D5441C560C29001261FD /* ExtensionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtensionDelegate.m; sourceTree = "<group>"; };
+		0577D5461C560C29001261FD /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
+		0577D5471C560C29001261FD /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
+		0577D5491C560C29001261FD /* GlanceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlanceController.h; sourceTree = "<group>"; };
+		0577D54A1C560C29001261FD /* GlanceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlanceController.m; sourceTree = "<group>"; };
+		0577D54C1C560C29001261FD /* ComplicationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComplicationController.h; sourceTree = "<group>"; };
+		0577D54D1C560C29001261FD /* ComplicationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComplicationController.m; sourceTree = "<group>"; };
+		0577D54F1C560C29001261FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0577D5511C560C29001261FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		058B30EB1ADDD6D400EFCC3F /* Info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Info.h; sourceTree = "<group>"; };
 		058B30EC1ADDD6D400EFCC3F /* Info.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Info.m; sourceTree = "<group>"; };
+		05A466F91C7970A9009736D1 /* Howl-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Howl-Bridging-Header.h"; sourceTree = "<group>"; };
+		05B39ED51BDD5232006E7602 /* Howl 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Howl 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		05B39EE11BDD5232006E7602 /* Howl 2 Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Howl 2 Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		05BF98201AFF09EA00856E49 /* Howl WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Howl WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		05BF98231AFF09EA00856E49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		05BF98241AFF09EA00856E49 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		05BF98251AFF09EA00856E49 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
-		05BF98261AFF09EA00856E49 /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
-		05BF982B1AFF09EA00856E49 /* GlanceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlanceController.h; sourceTree = "<group>"; };
-		05BF982C1AFF09EA00856E49 /* GlanceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlanceController.m; sourceTree = "<group>"; };
-		05BF982E1AFF09EA00856E49 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		05BF98321AFF09EA00856E49 /* Howl WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Howl WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		05BF98381AFF09EA00856E49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		05BF983A1AFF09EA00856E49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
-		05BF983C1AFF09EA00856E49 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		05C2254B1ACA44FC00ACDF1A /* Howl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Howl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05C2254F1ACA44FC00ACDF1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05C225501ACA44FC00ACDF1A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -157,7 +230,6 @@
 		05C2258B1ACA48A600ACDF1A /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		05C2258C1ACA48A600ACDF1A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		05C2258D1ACA48A600ACDF1A /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
-		05C2258E1ACA48A600ACDF1A /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		05C2258F1ACA48A600ACDF1A /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 		05C225901ACA48A600ACDF1A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		05C225911ACA48A600ACDF1A /* MediaAccessibility.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaAccessibility.framework; path = System/Library/Frameworks/MediaAccessibility.framework; sourceTree = SDKROOT; };
@@ -168,12 +240,9 @@
 		05C225961ACA48A600ACDF1A /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		05C225971ACA48A600ACDF1A /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
 		05C225981ACA48A600ACDF1A /* PhotosUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhotosUI.framework; path = System/Library/Frameworks/PhotosUI.framework; sourceTree = SDKROOT; };
-		05C225991ACA48A600ACDF1A /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
-		05C2259A1ACA48A600ACDF1A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		05C2259B1ACA48A600ACDF1A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		05C2259C1ACA48A600ACDF1A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		05C2259D1ACA48A600ACDF1A /* WatchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchKit.framework; path = System/Library/Frameworks/WatchKit.framework; sourceTree = SDKROOT; };
-		05C2259E1ACA48A600ACDF1A /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		CC2245C21AD8DCE600C85392 /* 1HOWL_Title page.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1HOWL_Title page.png"; sourceTree = "<group>"; };
 		CC2245C41AD8DF5F00C85392 /* PictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
 		CC2245C61AD8E8C100C85392 /* 2HOWL_Photo page.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2HOWL_Photo page.png"; sourceTree = "<group>"; };
@@ -182,13 +251,25 @@
 		CC5816EE1AD9337F00B74281 /* HowlViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HowlViewController.swift; sourceTree = "<group>"; };
 		CC5816F01AD958F800B74281 /* place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = place.swift; sourceTree = "<group>"; };
 		CC5816F21AD961FA00B74281 /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
-		CD37BD851B185654008E9105 /* wkMapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wkMapController.h; path = "Howl WatchKit Extension/wkMapController.h"; sourceTree = SOURCE_ROOT; };
-		CD37BD861B185654008E9105 /* wkMapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = wkMapController.m; path = "Howl WatchKit Extension/wkMapController.m"; sourceTree = SOURCE_ROOT; };
 		CDBAE1E11B136F9B000192DB /* PictureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PictureView.m; path = ../PictureView.m; sourceTree = "<group>"; };
 		CDBAE1E31B136FBB000192DB /* PictureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PictureView.h; path = ../PictureView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0577D5361C560C29001261FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05B39EDE1BDD5232006E7602 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		05BF981D1AFF09EA00856E49 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -200,9 +281,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0554F10B1ACAF8B7000A298C /* libsqlite3.dylib in Frameworks */,
-				0554F1051ACAF780000A298C /* libsqlite3.0.dylib in Frameworks */,
-				0554F1061ACAF780000A298C /* libstdc++.6.0.9.dylib in Frameworks */,
+				056C96411BFF90F9005E9E21 /* libsqlite3.tbd in Frameworks */,
 				05C2259F1ACA48A600ACDF1A /* AddressBook.framework in Frameworks */,
 				05C225A11ACA48A600ACDF1A /* AVFoundation.framework in Frameworks */,
 				05C225A21ACA48A600ACDF1A /* AVKit.framework in Frameworks */,
@@ -220,7 +299,6 @@
 				05C225AE1ACA48A600ACDF1A /* ExternalAccessory.framework in Frameworks */,
 				05C225AF1ACA48A600ACDF1A /* Foundation.framework in Frameworks */,
 				05C225B01ACA48A600ACDF1A /* ImageIO.framework in Frameworks */,
-				05C225B11ACA48A600ACDF1A /* JavaScriptCore.framework in Frameworks */,
 				05C225B21ACA48A600ACDF1A /* LocalAuthentication.framework in Frameworks */,
 				05C225B31ACA48A600ACDF1A /* MapKit.framework in Frameworks */,
 				05C225B41ACA48A600ACDF1A /* MediaAccessibility.framework in Frameworks */,
@@ -231,12 +309,9 @@
 				05C225B91ACA48A600ACDF1A /* NotificationCenter.framework in Frameworks */,
 				05C225BA1ACA48A600ACDF1A /* Photos.framework in Frameworks */,
 				05C225BB1ACA48A600ACDF1A /* PhotosUI.framework in Frameworks */,
-				05C225BC1ACA48A600ACDF1A /* SafariServices.framework in Frameworks */,
-				05C225BD1ACA48A600ACDF1A /* Security.framework in Frameworks */,
 				05C225BE1ACA48A600ACDF1A /* SystemConfiguration.framework in Frameworks */,
 				05C225BF1ACA48A600ACDF1A /* UIKit.framework in Frameworks */,
 				05C225C01ACA48A600ACDF1A /* WatchKit.framework in Frameworks */,
-				05C225C11ACA48A600ACDF1A /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,44 +325,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		05BF98211AFF09EA00856E49 /* Howl WatchKit Extension */ = {
+		0577D52E1C560C29001261FD /* Howl Watch */ = {
 			isa = PBXGroup;
 			children = (
-				CD37BD851B185654008E9105 /* wkMapController.h */,
-				CD37BD861B185654008E9105 /* wkMapController.m */,
-				05BF98251AFF09EA00856E49 /* InterfaceController.h */,
-				05BF98261AFF09EA00856E49 /* InterfaceController.m */,
-				05BF982B1AFF09EA00856E49 /* GlanceController.h */,
-				05BF982C1AFF09EA00856E49 /* GlanceController.m */,
-				05BF982E1AFF09EA00856E49 /* Images.xcassets */,
-				05BF98221AFF09EA00856E49 /* Supporting Files */,
+				0577D52F1C560C29001261FD /* Interface.storyboard */,
+				0577D5321C560C29001261FD /* Assets.xcassets */,
+				0577D5341C560C29001261FD /* Info.plist */,
 			);
-			path = "Howl WatchKit Extension";
+			path = "Howl Watch";
 			sourceTree = "<group>";
 		};
-		05BF98221AFF09EA00856E49 /* Supporting Files */ = {
+		0577D53D1C560C29001261FD /* Howl Watch Extension */ = {
 			isa = PBXGroup;
 			children = (
-				05BF98231AFF09EA00856E49 /* Info.plist */,
-				05BF98241AFF09EA00856E49 /* PushNotificationPayload.apns */,
+				0577D5401C560C29001261FD /* InterfaceController.h */,
+				0577D5411C560C29001261FD /* InterfaceController.m */,
+				0577D5431C560C29001261FD /* ExtensionDelegate.h */,
+				0577D5441C560C29001261FD /* ExtensionDelegate.m */,
+				0577D5461C560C29001261FD /* NotificationController.h */,
+				0577D5471C560C29001261FD /* NotificationController.m */,
+				0577D5491C560C29001261FD /* GlanceController.h */,
+				0577D54A1C560C29001261FD /* GlanceController.m */,
+				0577D54C1C560C29001261FD /* ComplicationController.h */,
+				0577D54D1C560C29001261FD /* ComplicationController.m */,
+				0577D54F1C560C29001261FD /* Assets.xcassets */,
+				0577D5511C560C29001261FD /* Info.plist */,
+				0577D53E1C560C29001261FD /* Supporting Files */,
 			);
-			name = "Supporting Files";
+			path = "Howl Watch Extension";
 			sourceTree = "<group>";
 		};
-		05BF98361AFF09EA00856E49 /* Howl WatchKit App */ = {
+		0577D53E1C560C29001261FD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				05BF98391AFF09EA00856E49 /* Interface.storyboard */,
-				05BF983C1AFF09EA00856E49 /* Images.xcassets */,
-				05BF98371AFF09EA00856E49 /* Supporting Files */,
-			);
-			path = "Howl WatchKit App";
-			sourceTree = "<group>";
-		};
-		05BF98371AFF09EA00856E49 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				05BF98381AFF09EA00856E49 /* Info.plist */,
+				0577D53F1C560C29001261FD /* PushNotificationPayload.apns */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -295,9 +366,7 @@
 		05C225421ACA44FC00ACDF1A = {
 			isa = PBXGroup;
 			children = (
-				0554F10A1ACAF8B7000A298C /* libsqlite3.dylib */,
-				0554F1031ACAF780000A298C /* libsqlite3.0.dylib */,
-				0554F1041ACAF780000A298C /* libstdc++.6.0.9.dylib */,
+				056C96401BFF90F9005E9E21 /* libsqlite3.tbd */,
 				05C2257C1ACA48A600ACDF1A /* AddressBook.framework */,
 				05C2257E1ACA48A600ACDF1A /* AVFoundation.framework */,
 				05C2257F1ACA48A600ACDF1A /* AVKit.framework */,
@@ -315,7 +384,6 @@
 				05C2258B1ACA48A600ACDF1A /* ExternalAccessory.framework */,
 				05C2258C1ACA48A600ACDF1A /* Foundation.framework */,
 				05C2258D1ACA48A600ACDF1A /* ImageIO.framework */,
-				05C2258E1ACA48A600ACDF1A /* JavaScriptCore.framework */,
 				05C2258F1ACA48A600ACDF1A /* LocalAuthentication.framework */,
 				05C225901ACA48A600ACDF1A /* MapKit.framework */,
 				05C225911ACA48A600ACDF1A /* MediaAccessibility.framework */,
@@ -326,16 +394,13 @@
 				05C225961ACA48A600ACDF1A /* NotificationCenter.framework */,
 				05C225971ACA48A600ACDF1A /* Photos.framework */,
 				05C225981ACA48A600ACDF1A /* PhotosUI.framework */,
-				05C225991ACA48A600ACDF1A /* SafariServices.framework */,
-				05C2259A1ACA48A600ACDF1A /* Security.framework */,
 				05C2259B1ACA48A600ACDF1A /* SystemConfiguration.framework */,
 				05C2259C1ACA48A600ACDF1A /* UIKit.framework */,
 				05C2259D1ACA48A600ACDF1A /* WatchKit.framework */,
-				05C2259E1ACA48A600ACDF1A /* WebKit.framework */,
 				05C2254D1ACA44FC00ACDF1A /* Howl */,
 				05C2256A1ACA44FC00ACDF1A /* HowlTests */,
-				05BF98211AFF09EA00856E49 /* Howl WatchKit Extension */,
-				05BF98361AFF09EA00856E49 /* Howl WatchKit App */,
+				0577D52E1C560C29001261FD /* Howl Watch */,
+				0577D53D1C560C29001261FD /* Howl Watch Extension */,
 				05C2254C1ACA44FC00ACDF1A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -347,6 +412,10 @@
 				05C225671ACA44FC00ACDF1A /* HowlTests.xctest */,
 				05BF98201AFF09EA00856E49 /* Howl WatchKit Extension.appex */,
 				05BF98321AFF09EA00856E49 /* Howl WatchKit App.app */,
+				05B39ED51BDD5232006E7602 /* Howl 2.app */,
+				05B39EE11BDD5232006E7602 /* Howl 2 Extension.appex */,
+				0577D52D1C560C29001261FD /* Howl Watch.app */,
+				0577D5391C560C29001261FD /* Howl Watch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -354,6 +423,7 @@
 		05C2254D1ACA44FC00ACDF1A /* Howl */ = {
 			isa = PBXGroup;
 			children = (
+				0577D5271C560570001261FD /* Howl.sql */,
 				CDBAE1E31B136FBB000192DB /* PictureView.h */,
 				CDBAE1E11B136F9B000192DB /* PictureView.m */,
 				055C8B7F1AEAD9C6000813B3 /* ContList.h */,
@@ -361,6 +431,7 @@
 				CC2245C41AD8DF5F00C85392 /* PictureViewController.swift */,
 				CC5816EE1AD9337F00B74281 /* HowlViewController.swift */,
 				CC5816F01AD958F800B74281 /* place.swift */,
+				05A466F91C7970A9009736D1 /* Howl-Bridging-Header.h */,
 				CC2245C81AD8ECAA00C85392 /* Main.storyboard */,
 				05C225521ACA44FC00ACDF1A /* AppDelegate.h */,
 				CC5816F21AD961FA00B74281 /* InitialViewController.swift */,
@@ -407,6 +478,74 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0577D52C1C560C29001261FD /* Howl Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0577D5591C560C29001261FD /* Build configuration list for PBXNativeTarget "Howl Watch" */;
+			buildPhases = (
+				0577D52B1C560C29001261FD /* Resources */,
+				0577D5581C560C29001261FD /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0577D53C1C560C29001261FD /* PBXTargetDependency */,
+			);
+			name = "Howl Watch";
+			productName = "Howl Watch";
+			productReference = 0577D52D1C560C29001261FD /* Howl Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		0577D5381C560C29001261FD /* Howl Watch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0577D5551C560C29001261FD /* Build configuration list for PBXNativeTarget "Howl Watch Extension" */;
+			buildPhases = (
+				0577D5351C560C29001261FD /* Sources */,
+				0577D5361C560C29001261FD /* Frameworks */,
+				0577D5371C560C29001261FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Howl Watch Extension";
+			productName = "Howl Watch Extension";
+			productReference = 0577D5391C560C29001261FD /* Howl Watch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		05B39ED41BDD5232006E7602 /* Howl 2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05B39EFC1BDD5232006E7602 /* Build configuration list for PBXNativeTarget "Howl 2" */;
+			buildPhases = (
+				05B39ED31BDD5232006E7602 /* Resources */,
+				05B39EFB1BDD5232006E7602 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05B39EE41BDD5232006E7602 /* PBXTargetDependency */,
+			);
+			name = "Howl 2";
+			productName = "Howl 2";
+			productReference = 05B39ED51BDD5232006E7602 /* Howl 2.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		05B39EE01BDD5232006E7602 /* Howl 2 Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05B39EF81BDD5232006E7602 /* Build configuration list for PBXNativeTarget "Howl 2 Extension" */;
+			buildPhases = (
+				05B39EDD1BDD5232006E7602 /* Sources */,
+				05B39EDE1BDD5232006E7602 /* Frameworks */,
+				05B39EDF1BDD5232006E7602 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Howl 2 Extension";
+			productName = "Howl 2 Extension";
+			productReference = 05B39EE11BDD5232006E7602 /* Howl 2 Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		05BF981F1AFF09EA00856E49 /* Howl WatchKit Extension */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 05BF98441AFF09EA00856E49 /* Build configuration list for PBXNativeTarget "Howl WatchKit Extension" */;
@@ -448,11 +587,14 @@
 				05C225481ACA44FC00ACDF1A /* Frameworks */,
 				05C225491ACA44FC00ACDF1A /* Resources */,
 				05BF98471AFF09EA00856E49 /* Embed App Extensions */,
+				05B39EFF1BDD5232006E7602 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				05BF983F1AFF09EA00856E49 /* PBXTargetDependency */,
+				05B39EF61BDD5232006E7602 /* PBXTargetDependency */,
+				0577D5531C560C29001261FD /* PBXTargetDependency */,
 			);
 			name = Howl;
 			productName = Howl;
@@ -483,12 +625,29 @@
 		05C225431ACA44FC00ACDF1A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0620;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Ryan Paglinawan";
 				TargetAttributes = {
+					0577D52C1C560C29001261FD = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = J53H4T44Y4;
+					};
+					0577D5381C560C29001261FD = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = J53H4T44Y4;
+					};
+					05B39ED41BDD5232006E7602 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = J53H4T44Y4;
+					};
+					05B39EE01BDD5232006E7602 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = J53H4T44Y4;
+					};
 					05BF981F1AFF09EA00856E49 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = 2K273P6V79;
+						DevelopmentTeam = J53H4T44Y4;
 					};
 					05BF98311AFF09EA00856E49 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -496,7 +655,7 @@
 					};
 					05C2254A1ACA44FC00ACDF1A = {
 						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = 2K273P6V79;
+						DevelopmentTeam = J53H4T44Y4;
 					};
 					05C225661ACA44FC00ACDF1A = {
 						CreatedOnToolsVersion = 6.2;
@@ -521,17 +680,51 @@
 				05C225661ACA44FC00ACDF1A /* HowlTests */,
 				05BF981F1AFF09EA00856E49 /* Howl WatchKit Extension */,
 				05BF98311AFF09EA00856E49 /* Howl WatchKit App */,
+				05B39ED41BDD5232006E7602 /* Howl 2 */,
+				05B39EE01BDD5232006E7602 /* Howl 2 Extension */,
+				0577D52C1C560C29001261FD /* Howl Watch */,
+				0577D5381C560C29001261FD /* Howl Watch Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0577D52B1C560C29001261FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0577D5331C560C29001261FD /* Assets.xcassets in Resources */,
+				0577D5311C560C29001261FD /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0577D5371C560C29001261FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0577D5501C560C29001261FD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05B39ED31BDD5232006E7602 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05B39EDF1BDD5232006E7602 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		05BF981E1AFF09EA00856E49 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				05BF98331AFF09EA00856E49 /* Howl WatchKit App.app in Resources */,
-				05BF982F1AFF09EA00856E49 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -539,8 +732,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05BF983B1AFF09EA00856E49 /* Interface.storyboard in Resources */,
-				05BF983D1AFF09EA00856E49 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -552,6 +743,7 @@
 				CC2245C71AD8E8C100C85392 /* 2HOWL_Photo page.png in Resources */,
 				05C225621ACA44FC00ACDF1A /* LaunchScreen.xib in Resources */,
 				05C2255F1ACA44FC00ACDF1A /* Images.xcassets in Resources */,
+				0577D5281C560571001261FD /* Howl.sql in Resources */,
 				CC2245C91AD8ECAA00C85392 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -566,13 +758,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0577D5351C560C29001261FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0577D5451C560C29001261FD /* ExtensionDelegate.m in Sources */,
+				0577D5421C560C29001261FD /* InterfaceController.m in Sources */,
+				0577D5481C560C29001261FD /* NotificationController.m in Sources */,
+				0577D54B1C560C29001261FD /* GlanceController.m in Sources */,
+				0577D54E1C560C29001261FD /* ComplicationController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05B39EDD1BDD5232006E7602 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		05BF981C1AFF09EA00856E49 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05BF98271AFF09EA00856E49 /* InterfaceController.m in Sources */,
-				05BF982D1AFF09EA00856E49 /* GlanceController.m in Sources */,
-				CD37BD871B185654008E9105 /* wkMapController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -605,6 +813,26 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		0577D53C1C560C29001261FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0577D5381C560C29001261FD /* Howl Watch Extension */;
+			targetProxy = 0577D53B1C560C29001261FD /* PBXContainerItemProxy */;
+		};
+		0577D5531C560C29001261FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0577D52C1C560C29001261FD /* Howl Watch */;
+			targetProxy = 0577D5521C560C29001261FD /* PBXContainerItemProxy */;
+		};
+		05B39EE41BDD5232006E7602 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05B39EE01BDD5232006E7602 /* Howl 2 Extension */;
+			targetProxy = 05B39EE31BDD5232006E7602 /* PBXContainerItemProxy */;
+		};
+		05B39EF61BDD5232006E7602 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05B39ED41BDD5232006E7602 /* Howl 2 */;
+			targetProxy = 05B39EF51BDD5232006E7602 /* PBXContainerItemProxy */;
+		};
 		05BF98351AFF09EA00856E49 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 05BF98311AFF09EA00856E49 /* Howl WatchKit App */;
@@ -623,10 +851,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		05BF98391AFF09EA00856E49 /* Interface.storyboard */ = {
+		0577D52F1C560C29001261FD /* Interface.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				05BF983A1AFF09EA00856E49 /* Base */,
+				0577D5301C560C29001261FD /* Base */,
 			);
 			name = Interface.storyboard;
 			sourceTree = "<group>";
@@ -642,6 +870,180 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0577D5561C560C29001261FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = "Howl Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = RyanPaglinawan.Howl.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		0577D5571C560C29001261FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Howl Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = RyanPaglinawan.Howl.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		0577D55A1C560C29001261FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				IBSC_MODULE = Howl_Watch_Extension;
+				INFOPLIST_FILE = "Howl Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = RyanPaglinawan.Howl.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		0577D55B1C560C29001261FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				IBSC_MODULE = Howl_Watch_Extension;
+				INFOPLIST_FILE = "Howl Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = RyanPaglinawan.Howl.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		05B39EF91BDD5232006E7602 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Howl 2 Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = RyanPaglinawan.Howl.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		05B39EFA1BDD5232006E7602 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Howl 2 Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = RyanPaglinawan.Howl.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		05B39EFD1BDD5232006E7602 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IBSC_MODULE = Howl_2_Extension;
+				INFOPLIST_FILE = "Howl 2/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = RyanPaglinawan.Howl.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		05B39EFE1BDD5232006E7602 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				IBSC_MODULE = Howl_2_Extension;
+				INFOPLIST_FILE = "Howl 2/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = RyanPaglinawan.Howl.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
 		05BF98421AFF09EA00856E49 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -657,6 +1059,7 @@
 				IBSC_MODULE = Howl_WatchKit_Extension;
 				INFOPLIST_FILE = "Howl WatchKit App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				PRODUCT_BUNDLE_IDENTIFIER = RyanPaglinawan.Howl.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
@@ -676,6 +1079,7 @@
 				IBSC_MODULE = Howl_WatchKit_Extension;
 				INFOPLIST_FILE = "Howl WatchKit App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				PRODUCT_BUNDLE_IDENTIFIER = RyanPaglinawan.Howl.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
@@ -698,7 +1102,9 @@
 				INFOPLIST_FILE = "Howl WatchKit Extension/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = RyanPaglinawan.Howl.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -713,7 +1119,9 @@
 				INFOPLIST_FILE = "Howl WatchKit Extension/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = RyanPaglinawan.Howl.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -721,7 +1129,7 @@
 		05C2256F1ACA44FC00ACDF1A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -735,12 +1143,14 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -763,7 +1173,7 @@
 		05C225701ACA44FC00ACDF1A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -777,11 +1187,13 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -804,11 +1216,14 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Howl/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "RyanPaglinawan.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Howl/Howl-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -820,10 +1235,13 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Howl/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "RyanPaglinawan.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Howl/Howl-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -841,6 +1259,7 @@
 				);
 				INFOPLIST_FILE = HowlTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "RyanPaglinawan.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Howl.app/Howl";
 			};
@@ -856,6 +1275,7 @@
 				);
 				INFOPLIST_FILE = HowlTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "RyanPaglinawan.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Howl.app/Howl";
 			};
@@ -864,6 +1284,42 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0577D5551C560C29001261FD /* Build configuration list for PBXNativeTarget "Howl Watch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0577D5561C560C29001261FD /* Debug */,
+				0577D5571C560C29001261FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0577D5591C560C29001261FD /* Build configuration list for PBXNativeTarget "Howl Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0577D55A1C560C29001261FD /* Debug */,
+				0577D55B1C560C29001261FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05B39EF81BDD5232006E7602 /* Build configuration list for PBXNativeTarget "Howl 2 Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05B39EF91BDD5232006E7602 /* Debug */,
+				05B39EFA1BDD5232006E7602 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05B39EFC1BDD5232006E7602 /* Build configuration list for PBXNativeTarget "Howl 2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05B39EFD1BDD5232006E7602 /* Debug */,
+				05B39EFE1BDD5232006E7602 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		05BF98411AFF09EA00856E49 /* Build configuration list for PBXNativeTarget "Howl WatchKit App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

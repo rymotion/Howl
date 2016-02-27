@@ -16,11 +16,13 @@ class PictureViewController: PictureView{
     @IBOutlet var profileImage: UIImageView!
     @IBOutlet var profilePic: UIImageView!
     @IBAction func setImage(sender: AnyObject) {
-        var image = PictureView()
+        let image = PictureView()
+        /*
         image.delegate = self
         image.sourceType = UIImagePickerControllerSourceType.Camera
         image.allowsEditing = false
         self.presentViewController(image, animated: true, completion: nil)
+        */
     }
     func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage!, editingInfo: [NSObject : AnyObject]!) {
         self.dismissViewControllerAnimated(true, completion: nil)
@@ -28,7 +30,7 @@ class PictureViewController: PictureView{
         NSUserDefaults.standardUserDefaults().setObject(UIImagePNGRepresentation(image), forKey: "profilePic")
     }
     func displayAlert(title: String, error: String) {
-        var alert = UIAlertController(title: title, message: error, preferredStyle: UIAlertControllerStyle.Alert)
+        let alert = UIAlertController(title: title, message: error, preferredStyle: UIAlertControllerStyle.Alert)
         alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
         self.presentViewController(alert, animated: true, completion: nil)
     }
@@ -37,12 +39,12 @@ class PictureViewController: PictureView{
         // if user tries to use app without image
     }
     override func viewDidAppear(animated: Bool) {
-        println("view did appear called")
-        var image: AnyObject? = NSUserDefaults.standardUserDefaults().objectForKey("profilePic")
+        print("view did appear called")
+        let image: AnyObject? = NSUserDefaults.standardUserDefaults().objectForKey("profilePic")
         if image == nil {
             self.displayAlert("Please take a photo to get full functionality", error: "")
         } else {
-            println("segue")
+            print("segue")
             self.performSegueWithIdentifier("basicSegue", sender: self)
         }
     }

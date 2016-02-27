@@ -46,9 +46,15 @@
     // Saves changes in the application's managed object context before the application terminates.
     [self saveContext];
 }
-- (void)updateLocation{
+- (void) application:(UIApplication *)application handleWatchKitExtensionRequest:(NSDictionary *) userInfo reply:(void (^)(NSDictionary * _Nullable))reply {
     
 }
+- (void) application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL))completionHandler {
+    if ([shortcutItem.type isEqual: @"com.Howl.ems"]) {
+
+    }
+}
+
 #pragma mark - Core Data stack
 
 @synthesize managedObjectContext = _managedObjectContext;
@@ -97,23 +103,7 @@
     
     return _persistentStoreCoordinator;
 }
-
-
-- (NSManagedObjectContext *)managedObjectContext {
-    // Returns the managed object context for the application (which is already bound to the persistent store coordinator for the application.)
-    if (_managedObjectContext != nil) {
-        return _managedObjectContext;
-    }
-    
-    NSPersistentStoreCoordinator *coordinator = [self persistentStoreCoordinator];
-    if (!coordinator) {
-        return nil;
-    }
-    _managedObjectContext = [[NSManagedObjectContext alloc] init];
-    [_managedObjectContext setPersistentStoreCoordinator:coordinator];
-    return _managedObjectContext;
-}
-
+		
 #pragma mark - Core Data Saving support
 
 - (void)saveContext {

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14F27" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="EmergencyNum" isAbstract="YES" syncable="YES">
+    <entity name="Country" isAbstract="YES" syncable="YES">
         <attribute name="firNum" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="medNum" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="polNum" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="polNum" optional="YES" attributeType="String" minValueString="0" maxValueString="100" syncable="YES"/>
     </entity>
     <elements>
-        <element name="EmergencyNum" positionX="-6795" positionY="-5742" width="387" height="90"/>
+        <element name="Country" positionX="-6795" positionY="-5742" width="387" height="88"/>
     </elements>
 </model>

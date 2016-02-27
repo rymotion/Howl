@@ -7,33 +7,56 @@
 //
 #import "ContList.h"
 
-void ABAddressBookRequestAccessWithCompletion ( ABAddressBookRef addressBook, ABAddressBookRequestAccessCompletionHandler granted ) {
-    if (granted){
-        /* This will get the contacts from the phone */
-        CFArrayRef allPeople = ABAddressBookCopyArrayOfAllPeople( addressBook );
-        CFIndex nPeople = ABAddressBookGetPersonCount( addressBook );
-        for (int i = 0; i < nPeople; i++) {
-            ABRecordRef ref;
-            ref = CFArrayGetValueAtIndex( allPeople , i );
-            /* This should be sent out to view on a list to the user to choose which contact they want to howl to*/
+@interface ContList()
+
+@end
+
+@implementation ContList
+
+static sqlite3 *database;
+static sqlite3_stmt *enableForeignKey;
+static sqlite3 *dataPath;
+
++ (sqlite3 *) sharedInstance{
+    
+    if (database == NULL){
+        sqlite3 *newConnection;
+        
+        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+        NSString *documentDirectory = [paths objectAtIndex:0];
+        NSString *path = [documentDirectory stringByAppendingPathComponent:@"Howl.sql"];
+        
+        if(sqlite3_open([path UTF8String], &newConnection) == SQLITE_OK){
+            NSLog(@"Database loaded");
+            
+            database = newConnection;
+            
+            if(sqlite3_prepare_v2(database, "PRAGMA foreign_keys = ON", -1, &enableForeignKey, NULL) != SQLITE_OK){
+                NSLog(@"ERROR IN PRAGMA !");
+            }
+            
+            sqlite3_finalize(enableForeignKey);
+        } else {
+            NSLog(@"Error in opening database, resetting");
+            database = NULL;
         }
     }
-    else {
-        appUsageWarn();
+    NSLog(@"Database ready to use.");
+    return database;
+}
+-(void) getData{
+    if (sqlite3_open_v2([dataPath UTF8String] , &database) == SQLITE_OK){
+        sqlite3_stmt *selectStmt;
+        
+        NSString *querySelect = [NSString stringWithFormat:@"SELECT * FROM country"];
+        NSLog(@"Selected =%@", querySelect);
+        
+        if (sqlite3_prepare_v2(database, [querySelect UTF8String], -1, &selectStmt, NULL) == SQLITE3_OK) {
+            while (sqlite3_step(selectStmt) == SQLITE_ROW) {
+                char 
+            }
+        }
     }
 }
-ABAuthorizationStatus ABAddressBookGetAuthorizationStatus (void) {
-    /* Get authorization to use the user's contact book */
-}
 
-UIView appUsageWarn() { // I'm trying to build a UIALERT view thing here but you can see it works so well
-    /* This will prompt an alert that will say that user will only have access to contact emergency services until they allow Howl to use the contacts from phone */
-    UIAlertView * alert = [[UIAlertView alloc] initWithTitle: @"Heads Up"
-                                                     message: @"You are restricted to only contact emergency services, ergo not able to use this app for your personal contacts. Is that okay?"
-                                                    delegate: self
-                           /* */
-                                           cancelButtonTitle: @"Yes"
-                                           otherButtonTitles: @"No", nil];
-    /* This should connect the app to send it to the settings options in the settings menu */
-    [alert show];
-}
+@end

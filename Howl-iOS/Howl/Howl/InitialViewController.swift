@@ -17,51 +17,30 @@ class InitialViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var contactTextField: UITextField!
     
     @IBAction func done(sender: AnyObject) {
-        
         self.performSegueWithIdentifier("standardSegue", sender: self)
-        
-        NSUserDefaults.standardUserDefaults().setObject(contactNumbers, forKey: "emergencyNumbers") 
-        
+        NSUserDefaults.standardUserDefaults().setObject(contactNumbers, forKey: "emergencyNumbers")
     }
     
     func displayAlert(title: String, error: String) {
-        
-        var alert = UIAlertController(title: title, message: error, preferredStyle: UIAlertControllerStyle.Alert)
-        
+        let alert = UIAlertController(title: title, message: error, preferredStyle: UIAlertControllerStyle.Alert)
         alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
-        
         self.presentViewController(alert, animated: true, completion: nil)
-        
     }
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         contactTextField.delegate = self
-
         displayAlert("Enter emergency contact numbers", error: "")
-        
-        
-        
-        
     }
 
     override func viewDidAppear(animated: Bool) {
-        
         super.viewDidAppear(true)
-        
         if (NSUserDefaults.standardUserDefaults().objectForKey("emergencyNumbers") == nil) {
-            
-            println("put numbers")
-            
+            print("put numbers")
         } else {
-            
             self.performSegueWithIdentifier("standardSegue", sender: self)
-            
         }
-        
-        
     }
     
     override func didReceiveMemoryWarning() {
@@ -72,11 +51,11 @@ class InitialViewController: UIViewController, UITextFieldDelegate {
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         
         contactTextField.resignFirstResponder()  //if desired
-        contactNumbers.append(contactTextField.text)
+        contactNumbers.append(contactTextField.text!)
         contactTextField.text = ""
-        println("return")
+        print("return")
         
-        println(contactNumbers)
+        print(contactNumbers)
         
         return true
     }

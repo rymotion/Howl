@@ -19,6 +19,8 @@ class HowlViewController: UIViewController, MFMessageComposeViewControllerDelega
     var cname = ""
     var buildings = [CLLocation]()
     var nearBuildings = [CLLocation]()
+    var phone = ""
+    
     @IBAction func backToViewController(segue:UIStoryboardSegue) {
     }
     override func viewDidAppear(animated: Bool) {
@@ -26,17 +28,23 @@ class HowlViewController: UIViewController, MFMessageComposeViewControllerDelega
         buildings.append(userLocation)
     }
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-        var array: AnyObject? = NSUserDefaults.standardUserDefaults().objectForKey("emergencyNumbers")
-            println(array)
+        
+        let array: AnyObject? = ContList.self
+            print(array)
+        
         /* This is going to be the long press emergency contact gesture */
-        var UILongPress = UILongPressGestureRecognizer(target: self, action: "action1:")
+        let UILongPress = UILongPressGestureRecognizer(target: self, action: "action1:")
         UILongPress.minimumPressDuration = 1.0
         view.addGestureRecognizer(UILongPress)
+        
         /* This is going to allow the view to segue over to the map view */
         let swipeGesture = UISwipeGestureRecognizer(target: self, action: "mapSegue:")
+        
         //swipeGesture.description = "left"
         view.addGestureRecognizer(swipeGesture)
+        
         /* This is going to bring up the user interface for sendingo out the emergency location */
         let tapGesture = UITapGestureRecognizer(target: self, action: "action:")
         tapGesture.numberOfTapsRequired = 2
@@ -48,39 +56,25 @@ class HowlViewController: UIViewController, MFMessageComposeViewControllerDelega
         manager.requestWhenInUseAuthorization()
         manager.startUpdatingLocation()
     
-        for builings in nearBuildings {
+        for buildings in nearBuildings {
             
-            println(buildings)
+            print(buildings)
             
         }
         
     }
-    func beginBackgroundTaskWithName(getEmNum: String?, expirationHandler handler: (() -> Void)?) -> UIBackgroundTaskIdentifier;){
-        /*  This is going to read the text database that will get the correct emergency number based on the country the user is in called in from the locationManager function    */
-        var medNum = " "
-        var firNum = " "
-        var polNum = " "
-        if (EmNum == nil) {
-            /* Loop for to read the list of countries */
-            for (var i = 0; i <= /* list size*/; i++){
-                    if cname == /* list[i]*/{
-                    /* this is going to be set to the emergency number(s) that are next to the country name*/
-                    medNum =
-                    firNum =
-                    polNum =
-                }
-            }
-        }
+    func beginBackgroundTaskWithName(){
+        /*  This is going to read the data doel from "Howl.xcdatamodel" that will get the correct emergency number based on the country the user is in called in from the locationManager function    */
+        let country = ContList.cname();
+        let emsNum = ContList.emsNum();
+        let polNum = ContList.polNum();
+        let firNum = ContList.firNum();
     }
-    func getRec(/*  This is going to run the shit that will get the contacts    */){
-        /*  This is going to be the code that will be put in to generate the group text */
-    }
-    
     func action1(gestureRecognizer:UIGestureRecognizer) {
         /* This is going to send out the emergency call to dispatch */
         if gestureRecognizer.state == UIGestureRecognizerState.Began {
             //This will be based on the user's location and country
-            UIApplication.sharedApplication().openURL(polNum)
+            //UIApplication.sharedApplication().openURL()
         }
         
     }
@@ -92,9 +86,8 @@ class HowlViewController: UIViewController, MFMessageComposeViewControllerDelega
         if gestureRecognizer.state == UIGestureRecognizerState.Ended {
             
             //This is going to get the phone number of the user's phone
-            let phone = " "
             let url:NSURL = NSURL(string:phone)!
-            //UIApplication.sharedApplication().openURL(url)
+            UIApplication.sharedApplication().openURL(url);
          
             if (MFMessageComposeViewController.canSendText()) {
                 let controller = MFMessageComposeViewController();
@@ -108,29 +101,22 @@ class HowlViewController: UIViewController, MFMessageComposeViewControllerDelega
         
     }
     
-    @IBAction func Fire(sender: UIButton) {
-        UIApplication.sharedApplication().openURL(firNum)
-    }
-    
-    @IBAction func Medical(sender: UIButton) {
-        UIApplication.sharedApplication().openURL(medNum)
-    }
-    
-    func messageComposeViewController(controller: MFMessageComposeViewController!, didFinishWithResult result: MessageComposeResult) {
+    func messageComposeViewController(controller: MFMessageComposeViewController, didFinishWithResult result: MessageComposeResult) {
 
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
-    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
+    func HowllocManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) // This location manger mangages just the location configuration for Howl and does not refer to the CLLocationManager function
+    {
         
-        // centers map on users location
+        /* centers map on users location
         userLocation = locations[0] as! CLLocation
-        var latitude = userLocation.coordinate.latitude
-        var longitude = userLocation.coordinate.longitude
+        let latitude = userLocation.coordinate.latitude
+        let longitude = userLocation.coordinate.longitude
         var coordinate = CLLocationCoordinate2DMake(latitude, longitude)
         var latDelta: CLLocationDegrees = 0.01
         var lonDelta: CLLocationDegrees = 0.01
-        
+        */
         CLGeocoder().reverseGeocodeLocation(userLocation, completionHandler: { (placemarks, error) -> Void in
             
             var title = ""
@@ -141,31 +127,33 @@ class HowlViewController: UIViewController, MFMessageComposeViewControllerDelega
     
             if (error == nil) {
                 
-                if let p = CLPlacemark(placemark: placemarks?[0] as! CLPlacemark) {
-                    
+                if let p = placemarks?.first {
+                    //We get the user's information from the GPS coor
                     var subThoroughfare:String = ""
                     var thoroughfare:String = ""
-                    
+                
                     if p.subThoroughfare != nil {
     
-                        subThoroughfare = p.subThoroughfare
+                        subThoroughfare = p.subThoroughfare!
 
-                        city = p.locality
-                        state = p.administrativeArea
-                        postalCode = p.postalCode
-                        country = p.country
+                        city = p.locality!
+                        state = p.administrativeArea!
+                        postalCode = p.postalCode!
+                        country = p.country!
                     }
                     
                     if p.thoroughfare != nil {
                         
-                        thoroughfare = p.thoroughfare
+                        thoroughfare = (p.thoroughfare)!
                         
                     }
                     title = "\(subThoroughfare) \(thoroughfare)"
                     self.address = "\(title) \(city) \(state) \(postalCode) \(country)"
                     self.cname = "\(country)"
+                    self.countLabel.text = "(city), (state), (postalCode), (country)"
                 }
             }
         })
     }
+    @IBOutlet weak var countLabel: UILabel!
 }

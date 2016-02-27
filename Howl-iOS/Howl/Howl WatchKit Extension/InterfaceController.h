@@ -10,7 +10,6 @@
 #import <Foundation/Foundation.h>
 
 @interface InterfaceController : WKInterfaceController
-- (IBAction)wkCall;
-- (IBAction)wkMMS;
+
 
 @end
