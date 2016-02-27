@@ -63,12 +63,36 @@ class HowlViewController: UIViewController, MFMessageComposeViewControllerDelega
         }
         
     }
+<<<<<<< HEAD
     func beginBackgroundTaskWithName(){
         /*  This is going to read the data doel from "Howl.xcdatamodel" that will get the correct emergency number based on the country the user is in called in from the locationManager function    */
         let country = ContList.cname();
         let emsNum = ContList.emsNum();
         let polNum = ContList.polNum();
         let firNum = ContList.firNum();
+=======
+    func beginBackgroundTaskWithName(getEmNum: String?, expirationHandler handler: (() -> Void)?) -> UIBackgroundTaskIdentifier;){
+        /*  This is going to read the text database that will get the correct emergency number based on the country the user is in called in from the locationManager function    */
+        var medNum = " "
+        var firNum = " "
+        var polNum = " "
+        var _emNumGlob = " "
+        if (EmNum == nil) {
+            /* Loop for to read the list of countries */
+            for (var i = 0; i <= /* list size*/; i++){
+                    if cname == /* list[i]*/{
+                    /* this is going to be set to the emergency number(s) that are next to the country name*/
+                    medNum = /* this is going to be the first number */
+                    firNum = /* this is going to be the second number */
+                    polNum = /* this is going to be the third number */
+                    _emNumGlob = /* if there is only one number for that country set it to this */
+                }
+            }
+        }
+    }
+    func getRec(/*  This is going to run the shit that will get the contacts    */){
+        /*  This is going to be the code that will be put in to generate the group text */
+>>>>>>> origin/beta
     }
     func action1(gestureRecognizer:UIGestureRecognizer) {
         /* This is going to send out the emergency call to dispatch */
