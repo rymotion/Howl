@@ -51,7 +51,3 @@ func locationManager(manager: CLLocationManager!, didUpdateLocations locations: 
         }
     })
 }
-func readData(){
-    // This will grab the data from the sqlite database
-    let emsNum = sharedInstance.ContList();
-}

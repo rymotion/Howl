@@ -12,6 +12,6 @@
 #import "Contlist.h"
 #import "AppDelegate.h"
 #import "Info.h"
-
+#import "Howl-Swift.h"
 
 #endif /* Howl_Bridging_Header_h */

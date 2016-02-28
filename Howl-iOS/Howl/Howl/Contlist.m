@@ -6,6 +6,7 @@
 //  Copyright (c) 2015 Ryan Paglinawan. All rights reserved.
 //
 #import "ContList.h"
+#import "Howl-Swift.h"
 
 @interface ContList()
 
@@ -24,9 +25,9 @@ static sqlite3 *dataPath;
         
         NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
         NSString *documentDirectory = [paths objectAtIndex:0];
-        NSString *path = [documentDirectory stringByAppendingPathComponent:@"Howl.sql"];
+        NSString *dataPath = [documentDirectory stringByAppendingPathComponent:@"Howl.sql"];
         
-        if(sqlite3_open([path UTF8String], &newConnection) == SQLITE_OK){
+        if(sqlite3_open([dataPath UTF8String], &newConnection) == SQLITE_OK){
             NSLog(@"Database loaded");
             
             database = newConnection;
@@ -44,19 +45,24 @@ static sqlite3 *dataPath;
     NSLog(@"Database ready to use.");
     return database;
 }
--(void) getData{
-    if (sqlite3_open_v2([dataPath UTF8String] , &database) == SQLITE_OK){
-        sqlite3_stmt *selectStmt;
++(NSString *) getData:(NSString*) country{
+    
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentDirectory = [paths objectAtIndex:0];
+    NSString *dataPath = [documentDirectory stringByAppendingPathComponent:@"Howl.sql"];
+    NSString *cData; //  Data from the country and emergency number
+    
+    if (sqlite3_open([dataPath UTF8String] , &database) == SQLITE_OK){
+        NSLog(@"Database ready to be used");
+        NSString *searchCount = [[NSString alloc]initWithFormat:@"SELECT distinct en_Num, coname FROM country WHERE coname = '%@'", country];
+        NSLog(@"search Query is : '%@'", searchCount);
         
-        NSString *querySelect = [NSString stringWithFormat:@"SELECT * FROM country"];
-        NSLog(@"Selected =%@", querySelect);
-        
-        if (sqlite3_prepare_v2(database, [querySelect UTF8String], -1, &selectStmt, NULL) == SQLITE3_OK) {
-            while (sqlite3_step(selectStmt) == SQLITE_ROW) {
-                char 
-            }
-        }
+        //sqlite3_stmt * // Continue from here
+        // Need to be done is: pulling data from a database
+                                 
     }
+    return cData;
+
 }
 
 @end
