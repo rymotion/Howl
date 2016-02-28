@@ -16,7 +16,6 @@
 
 static sqlite3 *database;
 static sqlite3_stmt *enableForeignKey;
-static sqlite3 *dataPath;
 
 + (sqlite3 *) sharedInstance{
     
@@ -45,7 +44,7 @@ static sqlite3 *dataPath;
     NSLog(@"Database ready to use.");
     return database;
 }
-+(NSString *) getData:(NSString*) country{
+/*+(NSString *) getData:(NSString*) country{
     
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentDirectory = [paths objectAtIndex:0];
@@ -63,6 +62,6 @@ static sqlite3 *dataPath;
     }
     return cData;
 
-}
+}*/
 
 @end

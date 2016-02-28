@@ -215,13 +215,10 @@ bail:
 // clean up capture setup
 - (void)teardownAVCapture
 {
-    [videoDataOutput release];
     if (videoDataOutputQueue)
         dispatch_release(videoDataOutputQueue);
     [stillImageOutput removeObserver:self forKeyPath:@"isCapturingStillImage"];
-    [stillImageOutput release];
     [previewLayer removeFromSuperlayer];
-    [previewLayer release];
 }
 
 // perform a flash bulb animation using KVO to monitor the value of the capturingStillImage property of the AVCaptureStillImageOutput class
@@ -250,7 +247,6 @@ bail:
                              }
                              completion:^(BOOL finished){
                                  [flashView removeFromSuperview];
-                                 [flashView release];
                                  flashView = nil;
                              }
              ];

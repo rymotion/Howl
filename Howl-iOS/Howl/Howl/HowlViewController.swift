@@ -19,7 +19,7 @@ class HowlViewController: UIViewController, MFMessageComposeViewControllerDelega
     var buildings = [CLLocation]()
     var nearBuildings = [CLLocation]()
     var phone = ""
-    
+    @IBOutlet weak var countLabel: UILabel!
     @IBAction func backToViewController(segue:UIStoryboardSegue) {
     }
     override func viewDidAppear(animated: Bool) {
@@ -64,19 +64,11 @@ class HowlViewController: UIViewController, MFMessageComposeViewControllerDelega
     }
 
     func beginBackgroundTaskWithName(){
-        /*  This is going to read the data doel from "Howl.xcdatamodel" that will get the correct emergency number based on the country the user is in called in from the locationManager function    */
-        let country = ContList.cname();
-        let emsNum = ContList.emsNum();
-        let polNum = ContList.polNum();
-        let firNum = ContList.firNum();
-    func beginBackgroundTaskWithName(){
         /*  This is going to read the text database that will get the correct emergency number based on the country the user is in called in from the locationManager function    */
-        var medNum = " "
-        var firNum = " "
-        var polNum = " "
-        var _emNumGlob = " "
+        //var medNum = " "
+        //var firNum = " "
+        //var polNum = " "
         
-        }
     }
     func getRec(/*  This is going to run the shit that will get the contacts    */){
         /*  This is going to be the code that will be put in to generate the group text */
@@ -85,8 +77,9 @@ class HowlViewController: UIViewController, MFMessageComposeViewControllerDelega
     func action1(gestureRecognizer:UIGestureRecognizer) {
         /* This is going to send out the emergency call to dispatch */
         if gestureRecognizer.state == UIGestureRecognizerState.Began {
+            let emNumGlob = NSURL(fileURLWithPath: "tel:// 911");
             //This will be based on the user's location and country
-            //UIApplication.sharedApplication().openURL()
+            UIApplication.sharedApplication().openURL(emNumGlob);
         }
         
     }
@@ -129,43 +122,37 @@ class HowlViewController: UIViewController, MFMessageComposeViewControllerDelega
         var latDelta: CLLocationDegrees = 0.01
         var lonDelta: CLLocationDegrees = 0.01
         */
-        CLGeocoder().reverseGeocodeLocation(userLocation, completionHandler: { (placemarks, error) -> String in
-            
+        CLGeocoder().reverseGeocodeLocation(userLocation){_,_ in 
+            let p = CLPlacemark()
             var title = ""
             var city = ""
             var state = ""
             var postalCode = ""
             var country = ""
-    
-            if (error == nil) {
+            //We get the user's information from the GPS coor
+            var subThoroughfare:String = " "
+            var thoroughfare:String = " "
                 
-                if let p = placemarks?.first {
-                    //We get the user's information from the GPS coor
-                    var subThoroughfare:String = ""
-                    var thoroughfare:String = ""
-                
-                    if p.subThoroughfare != nil {
+            if (p.subThoroughfare != nil) {
     
-                        subThoroughfare = p.subThoroughfare!
+                subThoroughfare = (p.subThoroughfare)!
 
-                        city = p.locality!
-                        state = p.administrativeArea!
-                        postalCode = p.postalCode!
-                        country = p.country!
-                    }
-                    
-                    if p.thoroughfare != nil {
-                        
-                        thoroughfare = (p.thoroughfare)!
-                        
-                    }
-                    title = "\(subThoroughfare) \(thoroughfare)"
-                    self.address = "\(title) \(city) \(state) \(postalCode) \(country)"
-                    self.cname = "\(country)"
-                    self.countLabel.text = "(city), (state), (postalCode), (country)"
-                }
+                city = (p.locality)!
+                state = (p.administrativeArea)!
+                postalCode = ((p.postalCode))!
+                country = (p.country)!
             }
-        })//    This closes the CLGeocoder block
+                    
+            if (p.thoroughfare != nil) {
+                        
+                thoroughfare = (p.thoroughfare)!
+                        
+            }
+                title = "\(subThoroughfare) \(thoroughfare)"
+                self.address = "\(title) \(city) \(state) \(postalCode) \(country)"
+                self.cname = "\(country)"
+                self.countLabel.text = "(city), (state), (postalCode), (country)"
+            }//    This closes the CLGeocoder block
     }
-    @IBOutlet weak var countLabel: UILabel!
+
 }

@@ -30,6 +30,6 @@
 	<key>WKCompanionAppBundleIdentifier</key>
 	<string>RyanPaglinawan.Howl</string>
 	<key>WKWatchKitApp</key>
-	<true/>
+	<false/>
 </dict>
 </plist>

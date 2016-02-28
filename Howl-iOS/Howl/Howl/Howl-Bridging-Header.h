@@ -8,10 +8,9 @@
 
 #ifndef Howl_Bridging_Header_h
 #define Howl_Bridging_Header_h
-#import "PictureView.h"
 #import "Contlist.h"
 #import "AppDelegate.h"
 #import "Info.h"
-#import "Howl-Swift.h"
+//#import "Howl-Swift.h"
 
 #endif /* Howl_Bridging_Header_h */

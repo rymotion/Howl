@@ -17,12 +17,10 @@ class PictureViewController: PictureView{
     @IBOutlet var profilePic: UIImageView!
     @IBAction func setImage(sender: AnyObject) {
         let image = PictureView()
-        /*
-        image.delegate = self
-        image.sourceType = UIImagePickerControllerSourceType.Camera
-        image.allowsEditing = false
+        //image.sourceType = UIImagePickerControllerSourceType.Camera
+        //image.allowsEditing = false
         self.presentViewController(image, animated: true, completion: nil)
-        */
+        
     }
     func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage!, editingInfo: [NSObject : AnyObject]!) {
         self.dismissViewControllerAnimated(true, completion: nil)

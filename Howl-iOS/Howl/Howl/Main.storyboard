@@ -1,67 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="LeS-b2-Ubg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hLg-ic-uEE">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Photo_ID-->
-        <scene sceneID="cjn-So-2Hj">
-            <objects>
-                <viewController title="Photo_ID" id="LeS-b2-Ubg" customClass="PictureView" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="lCX-Oq-fbH"/>
-                        <viewControllerLayoutGuide type="bottom" id="ecR-rd-pza"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="ka2-JS-CFu">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mainScreen" translatesAutoresizingMaskIntoConstraints="NO" id="LmK-he-QjA">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NqQ-a6-T7v">
-                                <rect key="frame" x="32" y="496" width="256" height="52"/>
-                                <state key="normal" backgroundImage="photoButt">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="takePicture:" destination="LeS-b2-Ubg" eventType="touchUpInside" id="JOU-UE-gnG"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qFI-Ug-tEd">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="qFI-Ug-tEd" firstAttribute="bottom" secondItem="ecR-rd-pza" secondAttribute="top" id="CwQ-CB-7iS"/>
-                            <constraint firstItem="qFI-Ug-tEd" firstAttribute="top" secondItem="ka2-JS-CFu" secondAttribute="top" id="FkF-WN-F2v"/>
-                            <constraint firstItem="LmK-he-QjA" firstAttribute="bottom" secondItem="ecR-rd-pza" secondAttribute="top" id="QnW-Rg-4Ml"/>
-                            <constraint firstAttribute="trailing" secondItem="LmK-he-QjA" secondAttribute="trailing" id="W75-DW-7jZ"/>
-                            <constraint firstItem="NqQ-a6-T7v" firstAttribute="leading" secondItem="ka2-JS-CFu" secondAttribute="leadingMargin" constant="16" id="WkN-mP-zb4"/>
-                            <constraint firstItem="NqQ-a6-T7v" firstAttribute="centerX" secondItem="qFI-Ug-tEd" secondAttribute="centerX" id="cdT-h8-j2U"/>
-                            <constraint firstItem="LmK-he-QjA" firstAttribute="leading" secondItem="ka2-JS-CFu" secondAttribute="leading" id="fe8-Bb-iBn"/>
-                            <constraint firstAttribute="bottom" secondItem="NqQ-a6-T7v" secondAttribute="bottom" constant="20" symbolic="YES" id="izs-1g-tKC"/>
-                            <constraint firstItem="LmK-he-QjA" firstAttribute="top" secondItem="qFI-Ug-tEd" secondAttribute="top" id="jDp-TP-Qhz"/>
-                            <constraint firstItem="NqQ-a6-T7v" firstAttribute="top" secondItem="lCX-Oq-fbH" secondAttribute="bottom" constant="476" id="loL-BH-bng"/>
-                            <constraint firstItem="LmK-he-QjA" firstAttribute="leading" secondItem="qFI-Ug-tEd" secondAttribute="leading" id="szH-NY-2bS"/>
-                            <constraint firstItem="LmK-he-QjA" firstAttribute="trailing" secondItem="qFI-Ug-tEd" secondAttribute="trailing" id="uD5-fl-VnK"/>
-                        </constraints>
-                    </view>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                    <connections>
-                        <outlet property="previewView" destination="qFI-Ug-tEd" id="TwJ-sj-ayM"/>
-                        <segue destination="hLg-ic-uEE" kind="presentation" identifier="basicSegue" id="T1s-lM-qHL"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eXX-JY-bUi" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-208.125" y="20.070422535211264"/>
-        </scene>
         <!--infoController-->
         <scene sceneID="T3O-CZ-dft">
             <objects>
@@ -239,6 +185,5 @@
         <image name="infoButton" width="77" height="77"/>
         <image name="mSButton" width="485" height="507"/>
         <image name="mainScreen" width="640" height="1136"/>
-        <image name="photoButt" width="445" height="75"/>
     </resources>
 </document>
