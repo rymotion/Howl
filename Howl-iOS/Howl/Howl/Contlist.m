@@ -6,7 +6,6 @@
 //  Copyright (c) 2015 Ryan Paglinawan. All rights reserved.
 //
 #import "ContList.h"
-#import "Howl-Swift.h"
 
 @interface ContList()
 

@@ -9,7 +9,6 @@
 @import UIKit;
 @import Foundation;
 #import <sqlite3.h>
-#import "Howl-Bridging-Header.h"
 //note to self use "" when importing .swift files
 
 @class ContList;
