@@ -5,7 +5,7 @@
 //  Created by Ryan Paglinawan on 4/24/15.
 //  Copyright (c) 2015 Ryan Paglinawan. All rights reserved.
 //
-@import AddressBook;
+//@import AddressBook;
 @import UIKit;
 @import Foundation;
 #import <sqlite3.h>
@@ -21,6 +21,6 @@
 @property (nonatomic, retain) NSString *polNum;
 @property (nonatomic, retain) NSString *firNum;
 
-
-
+-(id)initWithName:(NSString *) cname emsNum:(NSString *) emsNum polNum:(NSString *) polNum firNum:(NSString *) firNum;
+- (NSString*) getData:(NSString*) country;
 @end

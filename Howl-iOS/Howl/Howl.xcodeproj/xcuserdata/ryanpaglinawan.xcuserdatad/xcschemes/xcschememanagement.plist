@@ -4,20 +4,85 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Complication - HowlWatch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>Complication - Howl_Apple_watch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
+		<key>Glance - HowlWatch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>Howl-Watch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>9</integer>
+		</dict>
 		<key>Howl.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>HowlWatch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>Howl_Apple_watch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
 		</dict>
 		<key>Howl_watch.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
+		<key>Notification - Howl-Watch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>10</integer>
+		</dict>
+		<key>Notification - HowlWatch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>Notification - Howl_Apple_watch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>0534B1B51CC1F02100E59372</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>055D4DA41CC27552006EF220</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>0577D52C1C560C29001261FD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0595A9FB1CAB0D77000EFC1C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>05B0A3E31CC27DF700C4AE41</key>
 		<dict>
 			<key>primary</key>
 			<true/>

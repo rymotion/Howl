@@ -8,9 +8,10 @@
 
 #ifndef Howl_Bridging_Header_h
 #define Howl_Bridging_Header_h
+/*  This is going to be calling from the database in the user's phone's contact list */
 #import "Contlist.h"
+
 #import "AppDelegate.h"
-#import "Info.h"
-//#import "Howl-Swift.h"
+/*  This will bring up the pop up window for how howl works */
 
 #endif /* Howl_Bridging_Header_h */

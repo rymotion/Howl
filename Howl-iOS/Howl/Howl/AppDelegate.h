@@ -9,6 +9,7 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
+#import <Foundation/Foundation.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

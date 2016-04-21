@@ -10,8 +10,9 @@ import MessageUI
 import MapKit
 import WatchKit
 import Foundation
+import Dispatch
 
-class HowlViewController: UIViewController, MFMessageComposeViewControllerDelegate, CLLocationManagerDelegate {
+class HowlViewController: OperationLogic{
     var array = [AnyObject]()
     var manager: CLLocationManager!
     var address = ""
@@ -19,22 +20,23 @@ class HowlViewController: UIViewController, MFMessageComposeViewControllerDelega
     var buildings = [CLLocation]()
     var nearBuildings = [CLLocation]()
     var phone = ""
+    var emNumGlobe = ""
+    
     @IBOutlet weak var countLabel: UILabel!
     @IBAction func backToViewController(segue:UIStoryboardSegue) {
-    }
-    override func viewDidAppear(animated: Bool) {
+        
+    func viewDidAppear(animated: Bool) {
         super.viewDidAppear(true)
         buildings.append(userLocation)
     }
-    override func viewDidLoad() {
-        
+    
+    func viewDidLoad() {
         super.viewDidLoad()
-        
-        let array: AnyObject? = ContList.self
-            print(array)
         
         /* This is going to be the long press emergency contact gesture */
         let UILongPress = UILongPressGestureRecognizer(target: self, action: "action1:")
+        //We need to implement a force touch capability
+        //var forceTouchCapability: UIForceTouchCapability{ get }
         UILongPress.minimumPressDuration = 1.0
         view.addGestureRecognizer(UILongPress)
         
@@ -49,43 +51,38 @@ class HowlViewController: UIViewController, MFMessageComposeViewControllerDelega
         tapGesture.numberOfTapsRequired = 2
         view.addGestureRecognizer(tapGesture)
         
-        manager = CLLocationManager()
-        manager.delegate = self
-        manager.desiredAccuracy = kCLLocationAccuracyBest
-        manager.requestWhenInUseAuthorization()
-        manager.startUpdatingLocation()
+    }
     
-        for buildings in nearBuildings {
-            
-            print(buildings)
-            
-        }
-        
+    func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
     }
-
-    func beginBackgroundTaskWithName(){
-        /*  This is going to read the text database that will get the correct emergency number based on the country the user is in called in from the locationManager function    */
-        //var medNum = " "
-        //var firNum = " "
-        //var polNum = " "
-        
+    
+    func DBparser(function: Void -> Void){
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 3), function)
     }
-    func getRec(/*  This is going to run the shit that will get the contacts    */){
-        /*  This is going to be the code that will be put in to generate the group text */
-
+    
+    func Background(function: Void -> Void) {
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 2), function)
     }
+    
     func action1(gestureRecognizer:UIGestureRecognizer) {
         /* This is going to send out the emergency call to dispatch */
         if gestureRecognizer.state == UIGestureRecognizerState.Began {
-            let emNumGlob = NSURL(fileURLWithPath: "tel:// 911");
+            let tempNum = NSUserDefaults.standardUserDefaults()
+            
+            emNumGlobe = (tempNum.stringForKey("policeNumber"))!
+            print("got and set policenum")
+    
             //This will be based on the user's location and country
-            UIApplication.sharedApplication().openURL(emNumGlob);
+            UIApplication.sharedApplication().openURL(NSURL(string: emNumGlobe)!)
         }
         
     }
+    
     func mapSegue(gestureRecognizer:UIGestureRecognizer) {
         /*  This will detect a swipe gesture that will allow the user to access the map that will show the UIMap    */
     }
+    
     func action(gestureRecognizer:UIGestureRecognizer) {
         /* This will send out your emergency location */
         if gestureRecognizer.state == UIGestureRecognizerState.Ended {
@@ -93,14 +90,6 @@ class HowlViewController: UIViewController, MFMessageComposeViewControllerDelega
             //This is going to get the phone number of the user's phone
             let url:NSURL = NSURL(string:phone)!
             UIApplication.sharedApplication().openURL(url);
-         
-            if (MFMessageComposeViewController.canSendText()) {
-                let controller = MFMessageComposeViewController();
-                controller.body = "The emergency location is \(userLocation.coordinate.latitude) \(userLocation.coordinate.longitude) \(address) "
-                controller.recipients = []// This is going to get the contacts from the phone itself
-                controller.messageComposeDelegate = self;
-                self.presentViewController(controller, animated: true, completion: nil);
-            }
          
         }
         
@@ -111,48 +100,50 @@ class HowlViewController: UIViewController, MFMessageComposeViewControllerDelega
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
+    
     func HowllocManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) // This location manger mangages just the location configuration for Howl and does not refer to the CLLocationManager function
     {
-        
-        /* centers map on users location
-        userLocation = locations[0] as! CLLocation
-        let latitude = userLocation.coordinate.latitude
-        let longitude = userLocation.coordinate.longitude
-        var coordinate = CLLocationCoordinate2DMake(latitude, longitude)
-        var latDelta: CLLocationDegrees = 0.01
-        var lonDelta: CLLocationDegrees = 0.01
-        */
-        CLGeocoder().reverseGeocodeLocation(userLocation){_,_ in 
-            let p = CLPlacemark()
-            var title = ""
-            var city = ""
-            var state = ""
-            var postalCode = ""
-            var country = ""
-            //We get the user's information from the GPS coor
-            var subThoroughfare:String = " "
-            var thoroughfare:String = " "
+        Background{
+            CLGeocoder().reverseGeocodeLocation(userLocation){_,_ in
+                let p = CLPlacemark()
+                var title = ""
+                var city = ""
+                var state = ""
+                var postalCode = ""
+                var country = ""
+                //We get the user's information from the GPS coor
+                var subThoroughfare:String = " "
+                var thoroughfare:String = " "
                 
-            if (p.subThoroughfare != nil) {
+                if (p.subThoroughfare != nil) {
     
-                subThoroughfare = (p.subThoroughfare)!
+                    subThoroughfare = (p.subThoroughfare)!
 
-                city = (p.locality)!
-                state = (p.administrativeArea)!
-                postalCode = ((p.postalCode))!
-                country = (p.country)!
-            }
+                    city = (p.locality)!
+                    state = (p.administrativeArea)!
+                    postalCode = ((p.postalCode))!
+                    country = (p.country)!
+                }
                     
-            if (p.thoroughfare != nil) {
+                if (p.thoroughfare != nil) {
                         
-                thoroughfare = (p.thoroughfare)!
+                    thoroughfare = (p.thoroughfare)!
                         
+                }
+                    title = "\(subThoroughfare) \(thoroughfare)"
+                    self.address = "\(title) \(city) \(state) \(postalCode) \(country)"
+                    self.cname = "\(country)"
+                    self.countLabel.text = "(city), (state), (postalCode), (country)"
+                }//    This closes the CLGeocoder block
+             DBparser{
+                ContList().getData(self.cname);
+                print("database parsed")
+                
             }
-                title = "\(subThoroughfare) \(thoroughfare)"
-                self.address = "\(title) \(city) \(state) \(postalCode) \(country)"
-                self.cname = "\(country)"
-                self.countLabel.text = "(city), (state), (postalCode), (country)"
-            }//    This closes the CLGeocoder block
+            
+        }
     }
 
 }
+}
+

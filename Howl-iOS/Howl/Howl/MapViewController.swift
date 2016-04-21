@@ -21,7 +21,7 @@ import Foundation
 
 var userLocation = CLLocation()
 
-class MapViewController: UIViewController, CLLocationManagerDelegate {
+class MapViewController: OperationLogic {
     
     @IBOutlet var map: MKMapView!
     @IBOutlet var WKmap: WKInterfaceMap!
